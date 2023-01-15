@@ -34,7 +34,11 @@ namespace QMS
         public int BorderRadius
         { 
             get => borderRadius; 
-            set { borderRadius = value;
+            set {
+                if (value <= this.Height)
+                    borderRadius = value;
+                else borderRadius= this.Height;
+               
                 this.Invalidate();
             }
         }
@@ -67,8 +71,11 @@ namespace QMS
             this.FlatAppearance.BorderSize = 0;
             this.BackColor= Color.MediumSlateBlue;
             this.ForeColor= Color.White;
+            this.Resize += new EventHandler(Button_Resize);
 
         }
+
+       
 
         //Methods
         private GraphicsPath GetFigurePath(Rectangle rect, float radius)
@@ -141,6 +148,10 @@ namespace QMS
                 this.Invalidate();
 
         }
-
+        private void Button_Resize(object sender, EventArgs e)
+        {
+            if (borderRadius > this.Height)
+                borderRadius = this.Height;
+        }
     }
 }

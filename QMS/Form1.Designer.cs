@@ -99,7 +99,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.roundedbtn1);
             this.panel1.ForeColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(75, 362);
+            this.panel1.Location = new System.Drawing.Point(72, 362);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(173, 40);
             this.panel1.TabIndex = 6;
@@ -208,16 +208,16 @@
             // 
             this.roundedbtn1.BackColor = System.Drawing.Color.Transparent;
             this.roundedbtn1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedbtn1.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn1.BorderRadius = 16;
+            this.roundedbtn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn1.BackgroundImage")));
+            this.roundedbtn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundedbtn1.BorderColor = System.Drawing.Color.Transparent;
+            this.roundedbtn1.BorderRadius = 13;
             this.roundedbtn1.BorderSize = 0;
             this.roundedbtn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedbtn1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.roundedbtn1.FlatAppearance.BorderSize = 0;
             this.roundedbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn1.Font = new System.Drawing.Font("Roboto", 14.25F);
+            this.roundedbtn1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedbtn1.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn1.Image = ((System.Drawing.Image)(resources.GetObject("roundedbtn1.Image")));
             this.roundedbtn1.Location = new System.Drawing.Point(0, 0);
             this.roundedbtn1.Name = "roundedbtn1";
             this.roundedbtn1.Size = new System.Drawing.Size(173, 40);
