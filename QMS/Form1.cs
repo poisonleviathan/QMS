@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
 
 namespace QMS
 {
@@ -50,8 +42,8 @@ namespace QMS
 
         private void Uname_txt_TextChanged(object sender, EventArgs e)
         {
-            
-            
+
+
         }
 
         private void login_pwd_panel_Paint(object sender, PaintEventArgs e)
@@ -61,7 +53,13 @@ namespace QMS
 
         private void Login_Uname_panel_Paint(object sender, PaintEventArgs e)
         {
-            
+
+        }
+
+        private void roundedbtn1_Click(object sender, EventArgs e)
+        {
+            frm_Dashboard dashboard= new frm_Dashboard();
+            dashboard.ShowDialog();
         }
     }
 }

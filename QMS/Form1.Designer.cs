@@ -33,6 +33,7 @@
             this.Login_img = new System.Windows.Forms.PictureBox();
             this.Login_right_panel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.roundedbtn1 = new QMS.roundedbtn();
             this.login_pwd_panel = new System.Windows.Forms.Panel();
             this.Pwd_txt = new System.Windows.Forms.TextBox();
             this.lbl_pwd = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.Login_greet_img = new System.Windows.Forms.PictureBox();
             this.Login_exit_btn = new System.Windows.Forms.Button();
             this.Login_logo_img = new System.Windows.Forms.PictureBox();
-            this.roundedbtn1 = new QMS.roundedbtn();
             this.Login_left_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Login_img)).BeginInit();
             this.Login_right_panel.SuspendLayout();
@@ -103,6 +103,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(173, 40);
             this.panel1.TabIndex = 6;
+            // 
+            // roundedbtn1
+            // 
+            this.roundedbtn1.BackColor = System.Drawing.Color.Transparent;
+            this.roundedbtn1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.roundedbtn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn1.BackgroundImage")));
+            this.roundedbtn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundedbtn1.BorderColor = System.Drawing.Color.Transparent;
+            this.roundedbtn1.BorderRadius = 13;
+            this.roundedbtn1.BorderSize = 0;
+            this.roundedbtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedbtn1.FlatAppearance.BorderSize = 0;
+            this.roundedbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedbtn1.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn1.Location = new System.Drawing.Point(0, 0);
+            this.roundedbtn1.Name = "roundedbtn1";
+            this.roundedbtn1.Size = new System.Drawing.Size(173, 40);
+            this.roundedbtn1.TabIndex = 0;
+            this.roundedbtn1.Text = "Login";
+            this.roundedbtn1.TextColor = System.Drawing.Color.White;
+            this.roundedbtn1.UseVisualStyleBackColor = false;
+            this.roundedbtn1.Click += new System.EventHandler(this.roundedbtn1_Click);
             // 
             // login_pwd_panel
             // 
@@ -203,28 +226,6 @@
             this.Login_logo_img.Size = new System.Drawing.Size(61, 95);
             this.Login_logo_img.TabIndex = 0;
             this.Login_logo_img.TabStop = false;
-            // 
-            // roundedbtn1
-            // 
-            this.roundedbtn1.BackColor = System.Drawing.Color.Transparent;
-            this.roundedbtn1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedbtn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn1.BackgroundImage")));
-            this.roundedbtn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roundedbtn1.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedbtn1.BorderRadius = 13;
-            this.roundedbtn1.BorderSize = 0;
-            this.roundedbtn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedbtn1.FlatAppearance.BorderSize = 0;
-            this.roundedbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedbtn1.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn1.Location = new System.Drawing.Point(0, 0);
-            this.roundedbtn1.Name = "roundedbtn1";
-            this.roundedbtn1.Size = new System.Drawing.Size(173, 40);
-            this.roundedbtn1.TabIndex = 0;
-            this.roundedbtn1.Text = "Login";
-            this.roundedbtn1.TextColor = System.Drawing.Color.White;
-            this.roundedbtn1.UseVisualStyleBackColor = false;
             // 
             // Login_form
             // 
