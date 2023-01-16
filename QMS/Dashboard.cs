@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +25,32 @@ namespace QMS
 
         private void btn_dashboard_MouseHover(object sender, EventArgs e)
         {
-            btn_dashboard.BackColor= Color.Indigo;
+           
+        }
+
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+            btn_dashboard.BackColor = Color.FromArgb(168, 168, 168);
+        }
+
+        private void btn_quiz_Click(object sender, EventArgs e)
+        {
+            btn_dashboard.BackColor = Color.FromArgb(168, 168, 168);
+        }
+
+        private void btn_adminPanel_Click(object sender, EventArgs e)
+        {
+            btn_dashboard.BackColor = Color.FromArgb(168, 168, 168);
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            btn_dashboard.BackColor = Color.FromArgb(168, 168, 168);
+        }
+
+        private void frm_Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -55,5 +55,11 @@ namespace QMS
         {
 
         }
+
+        private void roundedbtn1_Click(object sender, EventArgs e)
+        {
+            frm_Dashboard dashboard= new frm_Dashboard();
+            dashboard.ShowDialog();
+        }
     }
 }
