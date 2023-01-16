@@ -21,5 +21,10 @@ namespace QMS
         {
 
         }
+
+        private void btn_dashboard_MouseHover(object sender, EventArgs e)
+        {
+            btn_dashboard.BackColor= Color.Indigo;
+        }
     }
 }
