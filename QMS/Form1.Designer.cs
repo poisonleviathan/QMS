@@ -320,6 +320,7 @@
             this.btn_studentLogin.Text = "Login";
             this.btn_studentLogin.TextColor = System.Drawing.Color.White;
             this.btn_studentLogin.UseVisualStyleBackColor = false;
+            this.btn_studentLogin.Click += new System.EventHandler(this.btn_studentLogin_Click);
             // 
             // btn_studentReg
             // 

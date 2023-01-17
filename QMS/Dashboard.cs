@@ -9,10 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace QMS
 {
     public partial class frm_Dashboard : Form
     {
+        
         public frm_Dashboard()
         {
             InitializeComponent();
@@ -30,25 +32,40 @@ namespace QMS
 
         private void btn_dashboard_Click(object sender, EventArgs e)
         {
-            btn_dashboard.BackColor = Color.FromArgb(168, 168, 168);
+           
         }
 
         private void btn_quiz_Click(object sender, EventArgs e)
         {
-            btn_dashboard.BackColor = Color.FromArgb(168, 168, 168);
+
+            panel_quiz.Visible = true;
+            btn_quizActive.Visible = true;
+
         }
 
         private void btn_adminPanel_Click(object sender, EventArgs e)
         {
-            btn_dashboard.BackColor = Color.FromArgb(168, 168, 168);
+           
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            btn_dashboard.BackColor = Color.FromArgb(168, 168, 168);
+            
         }
 
         private void frm_Dashboard_Load(object sender, EventArgs e)
+        {
+           panel_quiz.Visible= false;
+           btn_quizActive.Visible= false;
+            
+        }
+
+        private void btn_studentLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundedbtn2_Click(object sender, EventArgs e)
         {
 
         }

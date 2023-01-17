@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -39,14 +38,19 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.panel_quiz = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.roundedbtn4 = new QMS.roundedbtn();
+            this.roundedbtn2 = new QMS.roundedbtn();
+            this.roundedbtn1 = new QMS.roundedbtn();
+            this.btn_chem = new QMS.roundedbtn();
             this.roundedbtn5 = new QMS.roundedbtn();
             this.btn_logout = new QMS.roundedbtn();
             this.btn_dashboard = new QMS.roundedbtn();
-            this.btn_adminPanel = new QMS.roundedbtn();
+            this.btn_quizActive = new QMS.roundedbtn();
             this.roundedbtn3 = new QMS.roundedbtn();
             this.btn_quiz = new QMS.roundedbtn();
             this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -55,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel_quiz.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,29 +67,21 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(127, 450);
             this.panel1.TabIndex = 0;
             // 
-            // panel6
-            // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel6.Controls.Add(this.btn_adminPanel);
-            this.panel6.Location = new System.Drawing.Point(0, 266);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(127, 82);
-            this.panel6.TabIndex = 3;
-            // 
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel4.Controls.Add(this.btn_quizActive);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.btn_quiz);
-            this.panel4.Location = new System.Drawing.Point(0, 185);
+            this.panel4.Location = new System.Drawing.Point(1, 227);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(127, 82);
             this.panel4.TabIndex = 2;
@@ -122,7 +119,7 @@
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.btn_dashboard);
-            this.panel3.Location = new System.Drawing.Point(1, 106);
+            this.panel3.Location = new System.Drawing.Point(0, 119);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(127, 82);
             this.panel3.TabIndex = 1;
@@ -145,7 +142,7 @@
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.btn_logout);
-            this.panel7.Location = new System.Drawing.Point(1, 343);
+            this.panel7.Location = new System.Drawing.Point(0, 332);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(127, 82);
             this.panel7.TabIndex = 4;
@@ -157,6 +154,127 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(200, 82);
             this.panel8.TabIndex = 2;
+            // 
+            // panel_quiz
+            // 
+            this.panel_quiz.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_quiz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_quiz.BackgroundImage")));
+            this.panel_quiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel_quiz.Controls.Add(this.roundedbtn4);
+            this.panel_quiz.Controls.Add(this.roundedbtn2);
+            this.panel_quiz.Controls.Add(this.roundedbtn1);
+            this.panel_quiz.Controls.Add(this.btn_chem);
+            this.panel_quiz.Controls.Add(this.label1);
+            this.panel_quiz.Location = new System.Drawing.Point(124, 0);
+            this.panel_quiz.Name = "panel_quiz";
+            this.panel_quiz.Size = new System.Drawing.Size(676, 450);
+            this.panel_quiz.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Inter", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(236, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(255, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Quiz Category";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // roundedbtn4
+            // 
+            this.roundedbtn4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.roundedbtn4.BackColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn4.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundedbtn4.BorderColor = System.Drawing.Color.Transparent;
+            this.roundedbtn4.BorderRadius = 13;
+            this.roundedbtn4.BorderSize = 0;
+            this.roundedbtn4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedbtn4.FlatAppearance.BorderSize = 0;
+            this.roundedbtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn4.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedbtn4.ForeColor = System.Drawing.Color.Black;
+            this.roundedbtn4.Location = new System.Drawing.Point(257, 365);
+            this.roundedbtn4.Name = "roundedbtn4";
+            this.roundedbtn4.Size = new System.Drawing.Size(205, 40);
+            this.roundedbtn4.TabIndex = 38;
+            this.roundedbtn4.Text = "GK";
+            this.roundedbtn4.TextColor = System.Drawing.Color.Black;
+            this.roundedbtn4.UseVisualStyleBackColor = false;
+            // 
+            // roundedbtn2
+            // 
+            this.roundedbtn2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.roundedbtn2.BackColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundedbtn2.BorderColor = System.Drawing.Color.Transparent;
+            this.roundedbtn2.BorderRadius = 13;
+            this.roundedbtn2.BorderSize = 0;
+            this.roundedbtn2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedbtn2.FlatAppearance.BorderSize = 0;
+            this.roundedbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn2.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedbtn2.ForeColor = System.Drawing.Color.Black;
+            this.roundedbtn2.Location = new System.Drawing.Point(257, 305);
+            this.roundedbtn2.Name = "roundedbtn2";
+            this.roundedbtn2.Size = new System.Drawing.Size(205, 40);
+            this.roundedbtn2.TabIndex = 37;
+            this.roundedbtn2.Text = "ICT";
+            this.roundedbtn2.TextColor = System.Drawing.Color.Black;
+            this.roundedbtn2.UseVisualStyleBackColor = false;
+            this.roundedbtn2.Click += new System.EventHandler(this.roundedbtn2_Click);
+            // 
+            // roundedbtn1
+            // 
+            this.roundedbtn1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.roundedbtn1.BackColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn1.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.roundedbtn1.BorderColor = System.Drawing.Color.Transparent;
+            this.roundedbtn1.BorderRadius = 13;
+            this.roundedbtn1.BorderSize = 0;
+            this.roundedbtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedbtn1.FlatAppearance.BorderSize = 0;
+            this.roundedbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn1.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedbtn1.ForeColor = System.Drawing.Color.Black;
+            this.roundedbtn1.Location = new System.Drawing.Point(257, 245);
+            this.roundedbtn1.Name = "roundedbtn1";
+            this.roundedbtn1.Size = new System.Drawing.Size(205, 40);
+            this.roundedbtn1.TabIndex = 36;
+            this.roundedbtn1.Text = "Maths";
+            this.roundedbtn1.TextColor = System.Drawing.Color.Black;
+            this.roundedbtn1.UseVisualStyleBackColor = false;
+            // 
+            // btn_chem
+            // 
+            this.btn_chem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_chem.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_chem.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_chem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_chem.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_chem.BorderRadius = 13;
+            this.btn_chem.BorderSize = 0;
+            this.btn_chem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_chem.FlatAppearance.BorderSize = 0;
+            this.btn_chem.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_chem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_chem.Font = new System.Drawing.Font("Inter", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_chem.ForeColor = System.Drawing.Color.Black;
+            this.btn_chem.Location = new System.Drawing.Point(257, 185);
+            this.btn_chem.Name = "btn_chem";
+            this.btn_chem.Size = new System.Drawing.Size(205, 40);
+            this.btn_chem.TabIndex = 35;
+            this.btn_chem.Text = "Chemistry";
+            this.btn_chem.TextColor = System.Drawing.Color.Black;
+            this.btn_chem.UseVisualStyleBackColor = false;
+            this.btn_chem.Click += new System.EventHandler(this.btn_studentLogin_Click);
             // 
             // roundedbtn5
             // 
@@ -220,26 +338,25 @@
             this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
             this.btn_dashboard.MouseHover += new System.EventHandler(this.btn_dashboard_MouseHover);
             // 
-            // btn_adminPanel
+            // btn_quizActive
             // 
-            this.btn_adminPanel.BackColor = System.Drawing.Color.LightGray;
-            this.btn_adminPanel.BackgroundColor = System.Drawing.Color.LightGray;
-            this.btn_adminPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_adminPanel.BackgroundImage")));
-            this.btn_adminPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_adminPanel.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_adminPanel.BorderRadius = 16;
-            this.btn_adminPanel.BorderSize = 0;
-            this.btn_adminPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_adminPanel.FlatAppearance.BorderSize = 0;
-            this.btn_adminPanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adminPanel.ForeColor = System.Drawing.Color.White;
-            this.btn_adminPanel.Location = new System.Drawing.Point(40, 17);
-            this.btn_adminPanel.Name = "btn_adminPanel";
-            this.btn_adminPanel.Size = new System.Drawing.Size(52, 54);
-            this.btn_adminPanel.TabIndex = 0;
-            this.btn_adminPanel.TextColor = System.Drawing.Color.White;
-            this.btn_adminPanel.UseVisualStyleBackColor = false;
-            this.btn_adminPanel.Click += new System.EventHandler(this.btn_adminPanel_Click);
+            this.btn_quizActive.BackColor = System.Drawing.Color.Black;
+            this.btn_quizActive.BackgroundColor = System.Drawing.Color.Black;
+            this.btn_quizActive.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_quizActive.BackgroundImage")));
+            this.btn_quizActive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_quizActive.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_quizActive.BorderRadius = 16;
+            this.btn_quizActive.BorderSize = 0;
+            this.btn_quizActive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_quizActive.FlatAppearance.BorderSize = 0;
+            this.btn_quizActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_quizActive.ForeColor = System.Drawing.Color.White;
+            this.btn_quizActive.Location = new System.Drawing.Point(40, 18);
+            this.btn_quizActive.Name = "btn_quizActive";
+            this.btn_quizActive.Size = new System.Drawing.Size(52, 54);
+            this.btn_quizActive.TabIndex = 3;
+            this.btn_quizActive.TextColor = System.Drawing.Color.White;
+            this.btn_quizActive.UseVisualStyleBackColor = false;
             // 
             // roundedbtn3
             // 
@@ -285,10 +402,11 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel_quiz);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
+            this.HelpButton = true;
             this.Name = "frm_Dashboard";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -297,7 +415,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_Dashboard_Load);
             this.panel1.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -306,6 +423,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            this.panel_quiz.ResumeLayout(false);
+            this.panel_quiz.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -316,8 +435,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox Login_logo_img;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel6;
-        private roundedbtn btn_adminPanel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private roundedbtn roundedbtn3;
@@ -328,5 +445,12 @@
         private System.Windows.Forms.Panel panel8;
         private roundedbtn roundedbtn5;
         private roundedbtn btn_logout;
+        private System.Windows.Forms.Panel panel_quiz;
+        private System.Windows.Forms.Label label1;
+        private roundedbtn roundedbtn4;
+        private roundedbtn roundedbtn2;
+        private roundedbtn roundedbtn1;
+        private roundedbtn btn_chem;
+        private roundedbtn btn_quizActive;
     }
 }

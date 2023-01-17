@@ -60,8 +60,7 @@ namespace QMS
 
         private void roundedbtn1_Click(object sender, EventArgs e)
         {
-            frm_Dashboard dashboard= new frm_Dashboard();
-            dashboard.ShowDialog();
+           
         }
 
         private void label1_Click_2(object sender, EventArgs e)
@@ -116,6 +115,13 @@ namespace QMS
                 
                 studnet_panel.Visible = true;
             }
+        }
+
+        private void btn_studentLogin_Click(object sender, EventArgs e)
+        {
+            frm_Dashboard dashboard = new frm_Dashboard();
+            dashboard.ShowDialog();
+           Close();
         }
     }
 }
