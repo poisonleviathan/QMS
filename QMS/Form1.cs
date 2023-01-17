@@ -22,7 +22,9 @@ namespace QMS
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
+            studnet_panel.Visible = false;
+            Teacher_panel.Visible = false;
+            lbl_wrong_cred.Visible = false;
         }
 
         private void btn_lg_close_Click(object sender, EventArgs e)
@@ -58,8 +60,68 @@ namespace QMS
 
         private void roundedbtn1_Click(object sender, EventArgs e)
         {
-            frm_Dashboard dashboard= new frm_Dashboard();
+           
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label1_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_Uname_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_reg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_pwd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_select_user_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(txt_select_user.SelectedIndex == 0) {
+                Teacher_panel.Visible = true;
+                studnet_panel.Visible = false;
+
+            }
+            else if (txt_select_user.SelectedIndex != 0)
+            {
+                
+                studnet_panel.Visible = true;
+            }
+        }
+
+        private void btn_studentLogin_Click(object sender, EventArgs e)
+        {
+            frm_Dashboard dashboard = new frm_Dashboard();
             dashboard.ShowDialog();
+           Close();
         }
     }
 }
