@@ -50,7 +50,9 @@ namespace QMS
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            
+            Login_form login = new Login_form();
+            login.ShowDialog();
+            Close();
         }
 
         private void frm_Dashboard_Load(object sender, EventArgs e)

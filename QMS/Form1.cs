@@ -119,9 +119,42 @@ namespace QMS
 
         private void btn_studentLogin_Click(object sender, EventArgs e)
         {
-            frm_Dashboard dashboard = new frm_Dashboard();
-            dashboard.ShowDialog();
-           Close();
+            if (txt_StudentNo.Text == "3998" && txt_Stpwd.Text == "st123")
+            {
+                lbl_wrong_cred_st.Visible = false;
+                this.Hide();
+            }
+            else
+            {
+                lbl_wrong_cred_st.Visible = true;
+            }
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            if (Uname_txt.Text=="admin" && Pwd_txt.Text=="admin123") {
+            lbl_wrong_cred.Visible = false;
+                this.Hide();
+            }
+            else
+            {
+                lbl_wrong_cred.Visible= true;
+            }
+        }
+
+        private void lbl_Type_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

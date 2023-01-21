@@ -40,16 +40,16 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel_quiz = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_quizActive = new QMS.roundedbtn();
+            this.roundedbtn3 = new QMS.roundedbtn();
+            this.btn_quiz = new QMS.roundedbtn();
             this.roundedbtn4 = new QMS.roundedbtn();
             this.roundedbtn2 = new QMS.roundedbtn();
             this.roundedbtn1 = new QMS.roundedbtn();
             this.btn_chem = new QMS.roundedbtn();
+            this.btn_dashboard = new QMS.roundedbtn();
             this.roundedbtn5 = new QMS.roundedbtn();
             this.btn_logout = new QMS.roundedbtn();
-            this.btn_dashboard = new QMS.roundedbtn();
-            this.btn_quizActive = new QMS.roundedbtn();
-            this.roundedbtn3 = new QMS.roundedbtn();
-            this.btn_quiz = new QMS.roundedbtn();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -78,12 +78,13 @@
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.btn_quizActive);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.btn_quiz);
             this.panel4.Location = new System.Drawing.Point(1, 227);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(127, 82);
+            this.panel4.Size = new System.Drawing.Size(124, 82);
             this.panel4.TabIndex = 2;
             // 
             // panel5
@@ -185,6 +186,66 @@
             this.label1.Text = "Quiz Category";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // btn_quizActive
+            // 
+            this.btn_quizActive.BackColor = System.Drawing.Color.Black;
+            this.btn_quizActive.BackgroundColor = System.Drawing.Color.Black;
+            this.btn_quizActive.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_quizActive.BackgroundImage")));
+            this.btn_quizActive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_quizActive.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_quizActive.BorderRadius = 16;
+            this.btn_quizActive.BorderSize = 0;
+            this.btn_quizActive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_quizActive.FlatAppearance.BorderSize = 0;
+            this.btn_quizActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_quizActive.ForeColor = System.Drawing.Color.White;
+            this.btn_quizActive.Location = new System.Drawing.Point(40, 18);
+            this.btn_quizActive.Name = "btn_quizActive";
+            this.btn_quizActive.Size = new System.Drawing.Size(52, 54);
+            this.btn_quizActive.TabIndex = 3;
+            this.btn_quizActive.TextColor = System.Drawing.Color.White;
+            this.btn_quizActive.UseVisualStyleBackColor = false;
+            // 
+            // roundedbtn3
+            // 
+            this.roundedbtn3.BackColor = System.Drawing.Color.Transparent;
+            this.roundedbtn3.BackgroundColor = System.Drawing.Color.Transparent;
+            this.roundedbtn3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn3.BackgroundImage")));
+            this.roundedbtn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedbtn3.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn3.BorderRadius = 16;
+            this.roundedbtn3.BorderSize = 0;
+            this.roundedbtn3.FlatAppearance.BorderSize = 0;
+            this.roundedbtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn3.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn3.Location = new System.Drawing.Point(64, 11);
+            this.roundedbtn3.Name = "roundedbtn3";
+            this.roundedbtn3.Size = new System.Drawing.Size(61, 63);
+            this.roundedbtn3.TabIndex = 0;
+            this.roundedbtn3.TextColor = System.Drawing.Color.White;
+            this.roundedbtn3.UseVisualStyleBackColor = false;
+            // 
+            // btn_quiz
+            // 
+            this.btn_quiz.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_quiz.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_quiz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_quiz.BackgroundImage")));
+            this.btn_quiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_quiz.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_quiz.BorderRadius = 16;
+            this.btn_quiz.BorderSize = 0;
+            this.btn_quiz.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_quiz.FlatAppearance.BorderSize = 0;
+            this.btn_quiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_quiz.ForeColor = System.Drawing.Color.White;
+            this.btn_quiz.Location = new System.Drawing.Point(40, 18);
+            this.btn_quiz.Name = "btn_quiz";
+            this.btn_quiz.Size = new System.Drawing.Size(52, 54);
+            this.btn_quiz.TabIndex = 0;
+            this.btn_quiz.TextColor = System.Drawing.Color.White;
+            this.btn_quiz.UseVisualStyleBackColor = false;
+            this.btn_quiz.Click += new System.EventHandler(this.btn_quiz_Click);
+            // 
             // roundedbtn4
             // 
             this.roundedbtn4.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -276,6 +337,28 @@
             this.btn_chem.UseVisualStyleBackColor = false;
             this.btn_chem.Click += new System.EventHandler(this.btn_studentLogin_Click);
             // 
+            // btn_dashboard
+            // 
+            this.btn_dashboard.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_dashboard.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_dashboard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_dashboard.BackgroundImage")));
+            this.btn_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_dashboard.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_dashboard.BorderRadius = 16;
+            this.btn_dashboard.BorderSize = 0;
+            this.btn_dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_dashboard.FlatAppearance.BorderSize = 0;
+            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dashboard.ForeColor = System.Drawing.Color.White;
+            this.btn_dashboard.Location = new System.Drawing.Point(40, 19);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(52, 54);
+            this.btn_dashboard.TabIndex = 0;
+            this.btn_dashboard.TextColor = System.Drawing.Color.White;
+            this.btn_dashboard.UseVisualStyleBackColor = false;
+            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
+            this.btn_dashboard.MouseHover += new System.EventHandler(this.btn_dashboard_MouseHover);
+            // 
             // roundedbtn5
             // 
             this.roundedbtn5.BackColor = System.Drawing.Color.Transparent;
@@ -315,88 +398,6 @@
             this.btn_logout.TextColor = System.Drawing.Color.White;
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
-            // 
-            // btn_dashboard
-            // 
-            this.btn_dashboard.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_dashboard.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.btn_dashboard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_dashboard.BackgroundImage")));
-            this.btn_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_dashboard.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_dashboard.BorderRadius = 16;
-            this.btn_dashboard.BorderSize = 0;
-            this.btn_dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_dashboard.FlatAppearance.BorderSize = 0;
-            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dashboard.ForeColor = System.Drawing.Color.White;
-            this.btn_dashboard.Location = new System.Drawing.Point(40, 19);
-            this.btn_dashboard.Name = "btn_dashboard";
-            this.btn_dashboard.Size = new System.Drawing.Size(52, 54);
-            this.btn_dashboard.TabIndex = 0;
-            this.btn_dashboard.TextColor = System.Drawing.Color.White;
-            this.btn_dashboard.UseVisualStyleBackColor = false;
-            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
-            this.btn_dashboard.MouseHover += new System.EventHandler(this.btn_dashboard_MouseHover);
-            // 
-            // btn_quizActive
-            // 
-            this.btn_quizActive.BackColor = System.Drawing.Color.Black;
-            this.btn_quizActive.BackgroundColor = System.Drawing.Color.Black;
-            this.btn_quizActive.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_quizActive.BackgroundImage")));
-            this.btn_quizActive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_quizActive.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_quizActive.BorderRadius = 16;
-            this.btn_quizActive.BorderSize = 0;
-            this.btn_quizActive.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_quizActive.FlatAppearance.BorderSize = 0;
-            this.btn_quizActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_quizActive.ForeColor = System.Drawing.Color.White;
-            this.btn_quizActive.Location = new System.Drawing.Point(40, 18);
-            this.btn_quizActive.Name = "btn_quizActive";
-            this.btn_quizActive.Size = new System.Drawing.Size(52, 54);
-            this.btn_quizActive.TabIndex = 3;
-            this.btn_quizActive.TextColor = System.Drawing.Color.White;
-            this.btn_quizActive.UseVisualStyleBackColor = false;
-            // 
-            // roundedbtn3
-            // 
-            this.roundedbtn3.BackColor = System.Drawing.Color.Transparent;
-            this.roundedbtn3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedbtn3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn3.BackgroundImage")));
-            this.roundedbtn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn3.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn3.BorderRadius = 16;
-            this.roundedbtn3.BorderSize = 0;
-            this.roundedbtn3.FlatAppearance.BorderSize = 0;
-            this.roundedbtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn3.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn3.Location = new System.Drawing.Point(64, 11);
-            this.roundedbtn3.Name = "roundedbtn3";
-            this.roundedbtn3.Size = new System.Drawing.Size(61, 63);
-            this.roundedbtn3.TabIndex = 0;
-            this.roundedbtn3.TextColor = System.Drawing.Color.White;
-            this.roundedbtn3.UseVisualStyleBackColor = false;
-            // 
-            // btn_quiz
-            // 
-            this.btn_quiz.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_quiz.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.btn_quiz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_quiz.BackgroundImage")));
-            this.btn_quiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_quiz.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_quiz.BorderRadius = 16;
-            this.btn_quiz.BorderSize = 0;
-            this.btn_quiz.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_quiz.FlatAppearance.BorderSize = 0;
-            this.btn_quiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_quiz.ForeColor = System.Drawing.Color.White;
-            this.btn_quiz.Location = new System.Drawing.Point(40, 18);
-            this.btn_quiz.Name = "btn_quiz";
-            this.btn_quiz.Size = new System.Drawing.Size(52, 54);
-            this.btn_quiz.TabIndex = 0;
-            this.btn_quiz.TextColor = System.Drawing.Color.White;
-            this.btn_quiz.UseVisualStyleBackColor = false;
-            this.btn_quiz.Click += new System.EventHandler(this.btn_quiz_Click);
             // 
             // frm_Dashboard
             // 
