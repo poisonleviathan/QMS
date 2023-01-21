@@ -38,8 +38,7 @@ namespace QMS
         private void btn_quiz_Click(object sender, EventArgs e)
         {
 
-            panel_quiz.Visible = true;
-            btn_quizActive.Visible = true;
+           
 
         }
 
@@ -57,8 +56,7 @@ namespace QMS
 
         private void frm_Dashboard_Load(object sender, EventArgs e)
         {
-           panel_quiz.Visible= false;
-           btn_quizActive.Visible= false;
+           
             
         }
 
