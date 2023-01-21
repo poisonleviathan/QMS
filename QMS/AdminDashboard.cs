@@ -94,5 +94,10 @@ namespace QMS
         {
 
         }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
