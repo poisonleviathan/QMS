@@ -16,7 +16,7 @@ namespace QMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new admin_dashboard());
+            Application.Run(new StudentReg());
         }
     }
 }
