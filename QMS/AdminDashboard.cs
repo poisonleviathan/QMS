@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace QMS
 {
-    public partial class frm_Dashboard : Form
+    public partial class admin_dashboard : Form
     {
         
-        public frm_Dashboard()
+        public admin_dashboard()
         {
             InitializeComponent();
         }
@@ -50,7 +50,9 @@ namespace QMS
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            
+            Login_form login = new Login_form();
+            login.ShowDialog();
+            Close();
         }
 
         private void frm_Dashboard_Load(object sender, EventArgs e)
@@ -66,6 +68,11 @@ namespace QMS
         }
 
         private void roundedbtn2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_quizActive_Click(object sender, EventArgs e)
         {
 
         }

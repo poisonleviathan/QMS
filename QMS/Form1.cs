@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.UI.Design;
 using System.Windows.Forms;
 
 namespace QMS
@@ -105,23 +106,86 @@ namespace QMS
 
         private void txt_select_user_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(txt_select_user.SelectedIndex == 0) {
-                Teacher_panel.Visible = true;
-                studnet_panel.Visible = false;
+         
+                if (txt_select_user.SelectedIndex == 0)
+                {
+                    Teacher_panel.Visible = true;
+                    studnet_panel.Visible = false;
+                    pnl_greeting.Visible = false;
 
             }
-            else if (txt_select_user.SelectedIndex != 0)
-            {
-                
-                studnet_panel.Visible = true;
+                else if (txt_select_user.SelectedIndex != 0)
+                {
+                    studnet_panel.Visible = true;
+
+                    Teacher_panel.Visible = false;
+                     pnl_greeting.Visible = false;
+
             }
+
+            
+            
+            
         }
 
         private void btn_studentLogin_Click(object sender, EventArgs e)
         {
-            frm_Dashboard dashboard = new frm_Dashboard();
-            dashboard.ShowDialog();
-           Close();
+            if (txt_StudentNo.Text == "3998" && txt_Stpwd.Text == "st123")
+            {
+                lbl_wrong_cred_st.Visible = false;
+                Quiz studentQuiz =new Quiz();
+                studentQuiz.Show();
+                this.Hide();
+            }
+            else
+            {
+                lbl_wrong_cred_st.Visible = true;
+            }
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            if (Uname_txt.Text=="admin" && Pwd_txt.Text=="admin123") {
+
+            lbl_wrong_cred.Visible = false;
+                admin_dashboard admin = new admin_dashboard();
+                admin.Show();
+                this.Hide();
+            }
+            else
+            {
+                lbl_wrong_cred.Visible= true;
+            }
+        }
+
+        private void lbl_Type_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_Stpwd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

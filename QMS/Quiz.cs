@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QMS
 {
-    public partial class StudenQuiz : Form
+    public partial class Quiz : Form
     {
-        public StudenQuiz()
+        public Quiz()
         {
             InitializeComponent();
+        }
+
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

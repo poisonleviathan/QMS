@@ -1,6 +1,6 @@
 ﻿namespace QMS
 {
-    partial class StudenQuiz
+    partial class Quiz
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudenQuiz));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Quiz));
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.roundedbtn5 = new QMS.roundedbtn();
@@ -41,8 +41,8 @@
             this.roundedbtn3 = new QMS.roundedbtn();
             this.btn_quiz = new QMS.roundedbtn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Login_logo_img = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.Login_logo_img = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -141,6 +141,7 @@
             this.btn_dashboard.TabIndex = 0;
             this.btn_dashboard.TextColor = System.Drawing.Color.White;
             this.btn_dashboard.UseVisualStyleBackColor = false;
+            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
             // 
             // panel1
             // 
@@ -221,6 +222,15 @@
             this.panel2.Size = new System.Drawing.Size(127, 100);
             this.panel2.TabIndex = 0;
             // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel6.Location = new System.Drawing.Point(133, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(669, 450);
+            this.panel6.TabIndex = 8;
+            // 
             // Login_logo_img
             // 
             this.Login_logo_img.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -233,15 +243,6 @@
             this.Login_logo_img.TabIndex = 1;
             this.Login_logo_img.TabStop = false;
             // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel6.Location = new System.Drawing.Point(133, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(669, 450);
-            this.panel6.TabIndex = 8;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -251,7 +252,7 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // StudenQuiz
+            // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -260,7 +261,7 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Name = "StudenQuiz";
+            this.Name = "Quiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudenQuiz";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
