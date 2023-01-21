@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_form));
             this.Login_left_panel = new System.Windows.Forms.Panel();
             this.panel_teacher = new System.Windows.Forms.Panel();
@@ -56,9 +55,11 @@
             this.txt_Stpwd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.Subject_cat = new System.Windows.Forms.ComboBox();
             this.lbl_wrong_cred_st = new System.Windows.Forms.Label();
+            this.pnl_greeting = new System.Windows.Forms.Panel();
+            this.img_greet = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.Login_left_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Login_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).BeginInit();
@@ -68,12 +69,13 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnl_greeting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_greet)).BeginInit();
             this.SuspendLayout();
             // 
             // Login_left_panel
             // 
             this.Login_left_panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Login_left_panel.BackgroundImage")));
-            this.Login_left_panel.Controls.Add(this.studnet_panel);
             this.Login_left_panel.Controls.Add(this.panel_teacher);
             this.Login_left_panel.Controls.Add(this.Login_img);
             this.Login_left_panel.Controls.Add(this.Login_logo_img);
@@ -85,9 +87,9 @@
             // 
             // panel_teacher
             // 
-            this.panel_teacher.Location = new System.Drawing.Point(478, 125);
+            this.panel_teacher.Location = new System.Drawing.Point(478, 158);
             this.panel_teacher.Name = "panel_teacher";
-            this.panel_teacher.Size = new System.Drawing.Size(322, 325);
+            this.panel_teacher.Size = new System.Drawing.Size(322, 292);
             this.panel_teacher.TabIndex = 12;
             // 
             // Login_img
@@ -96,7 +98,7 @@
             this.Login_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Login_img.Image = ((System.Drawing.Image)(resources.GetObject("Login_img.Image")));
             this.Login_img.InitialImage = null;
-            this.Login_img.Location = new System.Drawing.Point(77, 44);
+            this.Login_img.Location = new System.Drawing.Point(82, 44);
             this.Login_img.Name = "Login_img";
             this.Login_img.Size = new System.Drawing.Size(303, 339);
             this.Login_img.TabIndex = 0;
@@ -117,7 +119,9 @@
             // Login_right_panel
             // 
             this.Login_right_panel.BackColor = System.Drawing.SystemColors.Control;
+            this.Login_right_panel.Controls.Add(this.studnet_panel);
             this.Login_right_panel.Controls.Add(this.Teacher_panel);
+            this.Login_right_panel.Controls.Add(this.pnl_greeting);
             this.Login_right_panel.Controls.Add(this.panel3);
             this.Login_right_panel.Controls.Add(this.panel2);
             this.Login_right_panel.Controls.Add(this.Login_exit_btn);
@@ -130,17 +134,18 @@
             // 
             // studnet_panel
             // 
+            this.studnet_panel.Controls.Add(this.label3);
             this.studnet_panel.Controls.Add(this.lbl_wrong_cred_st);
             this.studnet_panel.Controls.Add(this.panel1);
             this.studnet_panel.Controls.Add(this.label2);
             this.studnet_panel.Controls.Add(this.txt_Stpwd);
-            this.studnet_panel.Controls.Add(this.btn_studentLogin);
             this.studnet_panel.Controls.Add(this.lbl_Type);
+            this.studnet_panel.Controls.Add(this.btn_studentLogin);
             this.studnet_panel.Controls.Add(this.lbl_StNo);
             this.studnet_panel.Controls.Add(this.txt_StudentNo);
-            this.studnet_panel.Location = new System.Drawing.Point(138, 140);
+            this.studnet_panel.Location = new System.Drawing.Point(0, 131);
             this.studnet_panel.Name = "studnet_panel";
-            this.studnet_panel.Size = new System.Drawing.Size(322, 298);
+            this.studnet_panel.Size = new System.Drawing.Size(322, 322);
             this.studnet_panel.TabIndex = 36;
             // 
             // btn_studentLogin
@@ -157,7 +162,7 @@
             this.btn_studentLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_studentLogin.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_studentLogin.ForeColor = System.Drawing.Color.White;
-            this.btn_studentLogin.Location = new System.Drawing.Point(63, 241);
+            this.btn_studentLogin.Location = new System.Drawing.Point(75, 232);
             this.btn_studentLogin.Name = "btn_studentLogin";
             this.btn_studentLogin.Size = new System.Drawing.Size(173, 40);
             this.btn_studentLogin.TabIndex = 34;
@@ -172,7 +177,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_Type.AutoSize = true;
             this.lbl_Type.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Type.Location = new System.Drawing.Point(103, 0);
+            this.lbl_Type.Location = new System.Drawing.Point(104, 8);
             this.lbl_Type.Name = "lbl_Type";
             this.lbl_Type.Size = new System.Drawing.Size(108, 19);
             this.lbl_Type.TabIndex = 33;
@@ -186,7 +191,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_StNo.AutoSize = true;
             this.lbl_StNo.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_StNo.Location = new System.Drawing.Point(72, 51);
+            this.lbl_StNo.Location = new System.Drawing.Point(84, 41);
             this.lbl_StNo.Name = "lbl_StNo";
             this.lbl_StNo.Size = new System.Drawing.Size(164, 19);
             this.lbl_StNo.TabIndex = 30;
@@ -196,7 +201,7 @@
             // 
             this.txt_StudentNo.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_StudentNo.ForeColor = System.Drawing.Color.Indigo;
-            this.txt_StudentNo.Location = new System.Drawing.Point(38, 73);
+            this.txt_StudentNo.Location = new System.Drawing.Point(37, 63);
             this.txt_StudentNo.Name = "txt_StudentNo";
             this.txt_StudentNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txt_StudentNo.Size = new System.Drawing.Size(242, 25);
@@ -212,9 +217,9 @@
             this.Teacher_panel.Controls.Add(this.Pwd_txt);
             this.Teacher_panel.Controls.Add(this.Uname_txt);
             this.Teacher_panel.Controls.Add(this.lbl_pwd);
-            this.Teacher_panel.Location = new System.Drawing.Point(0, 152);
+            this.Teacher_panel.Location = new System.Drawing.Point(0, 136);
             this.Teacher_panel.Name = "Teacher_panel";
-            this.Teacher_panel.Size = new System.Drawing.Size(322, 298);
+            this.Teacher_panel.Size = new System.Drawing.Size(322, 317);
             this.Teacher_panel.TabIndex = 29;
             // 
             // btn_login
@@ -334,7 +339,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.txt_select_user);
-            this.panel2.Location = new System.Drawing.Point(39, 81);
+            this.panel2.Location = new System.Drawing.Point(49, 77);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(243, 36);
             this.panel2.TabIndex = 10;
@@ -374,12 +379,13 @@
             // 
             this.txt_Stpwd.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Stpwd.ForeColor = System.Drawing.Color.Indigo;
-            this.txt_Stpwd.Location = new System.Drawing.Point(38, 136);
+            this.txt_Stpwd.Location = new System.Drawing.Point(37, 126);
             this.txt_Stpwd.Name = "txt_Stpwd";
             this.txt_Stpwd.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txt_Stpwd.Size = new System.Drawing.Size(242, 25);
             this.txt_Stpwd.TabIndex = 35;
             this.txt_Stpwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_Stpwd.TextChanged += new System.EventHandler(this.txt_Stpwd_TextChanged);
             // 
             // label2
             // 
@@ -387,7 +393,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(87, 114);
+            this.label2.Location = new System.Drawing.Point(90, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 19);
             this.label2.TabIndex = 36;
@@ -397,14 +403,10 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.Subject_cat);
-            this.panel1.Location = new System.Drawing.Point(63, 198);
+            this.panel1.Location = new System.Drawing.Point(68, 193);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(181, 28);
             this.panel1.TabIndex = 37;
-            // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.TargetControl = null;
             // 
             // Subject_cat
             // 
@@ -428,12 +430,45 @@
             this.lbl_wrong_cred_st.AutoSize = true;
             this.lbl_wrong_cred_st.Font = new System.Drawing.Font("Roboto", 10F);
             this.lbl_wrong_cred_st.ForeColor = System.Drawing.Color.Red;
-            this.lbl_wrong_cred_st.Location = new System.Drawing.Point(53, 168);
+            this.lbl_wrong_cred_st.Location = new System.Drawing.Point(59, 287);
             this.lbl_wrong_cred_st.Name = "lbl_wrong_cred_st";
             this.lbl_wrong_cred_st.Size = new System.Drawing.Size(211, 17);
             this.lbl_wrong_cred_st.TabIndex = 38;
             this.lbl_wrong_cred_st.Text = "Wrong Username \"OR\" Password";
             this.lbl_wrong_cred_st.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // pnl_greeting
+            // 
+            this.pnl_greeting.Controls.Add(this.img_greet);
+            this.pnl_greeting.Location = new System.Drawing.Point(39, 178);
+            this.pnl_greeting.Name = "pnl_greeting";
+            this.pnl_greeting.Size = new System.Drawing.Size(243, 185);
+            this.pnl_greeting.TabIndex = 12;
+            // 
+            // img_greet
+            // 
+            this.img_greet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img_greet.BackgroundImage")));
+            this.img_greet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.img_greet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.img_greet.Location = new System.Drawing.Point(0, 0);
+            this.img_greet.Name = "img_greet";
+            this.img_greet.Size = new System.Drawing.Size(243, 185);
+            this.img_greet.TabIndex = 0;
+            this.img_greet.TabStop = false;
+            this.img_greet.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(103, 171);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 19);
+            this.label3.TabIndex = 39;
+            this.label3.Text = "Select a Subject";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Login_form
             // 
@@ -459,6 +494,8 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.pnl_greeting.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.img_greet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -493,7 +530,9 @@
         private System.Windows.Forms.Label lbl_wrong_cred_st;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox Subject_cat;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private System.Windows.Forms.Panel pnl_greeting;
+        private System.Windows.Forms.PictureBox img_greet;
+        private System.Windows.Forms.Label label3;
     }
 }
 
