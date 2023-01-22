@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QMS
 {
@@ -16,7 +17,7 @@ namespace QMS
         {
             InitializeComponent();
         }
-
+        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-3IN531N\SQLEXPRESS;Initial Catalog=QMS_DB;Integrated Security=True;Pooling=False");
         private void ScreenPanel_Paint(object sender, PaintEventArgs e)
         {
 
@@ -44,7 +45,33 @@ namespace QMS
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-
+            if(CNameTb.Text == "" || CAgeTb.Text==""|| PasswordTb.Text =="" || addressTb.Text == "")
+            {
+                MessageBox.Show("Missing Information");
+            }
+            else
+            {
+                try
+                {
+                    int score = 0;
+                    Con.Open();
+                    SqlCommand cmd = new SqlCommand("insert into StudentTable  (CName,CAge,CPass,CScore,CAdd,CPhone) values (@CN,@CA,@CP,@CS,@CAd,@Cph)", Con);
+                    cmd.Parameters.AddWithValue("@CN", CNameTb.Text);
+                    cmd.Parameters.AddWithValue("@CA", CAgeTb.Text);
+                    cmd.Parameters.AddWithValue("@CP", PasswordTb.Text);
+                    cmd.Parameters.AddWithValue("@CS", score);
+                    cmd.Parameters.AddWithValue("@CAd", addressTb.Text);
+                    cmd.Parameters.AddWithValue("@Cph", PhoneTb.Text);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Student Saved");
+                    Con.Close();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+               
+            }
         }
 
         private void lbl_DashHeader_Click(object sender, EventArgs e)
