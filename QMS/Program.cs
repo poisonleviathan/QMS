@@ -16,7 +16,7 @@ namespace QMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Quiz());
+            Application.Run(new StudentReg());
         }
     }
 }

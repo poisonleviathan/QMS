@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentReg));
             this.ScreenPanel = new System.Windows.Forms.Panel();
             this.lbl_StudentList = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.StudentsDGV = new System.Windows.Forms.Panel();
             this.btn_reset = new QMS.roundedbtn();
             this.btn_edit = new QMS.roundedbtn();
             this.btn_save = new QMS.roundedbtn();
             this.lbl_DashHeader = new System.Windows.Forms.Label();
-            this.txt_StAddress = new System.Windows.Forms.TextBox();
-            this.txt_StPhone = new System.Windows.Forms.TextBox();
-            this.txt_StAge = new System.Windows.Forms.TextBox();
-            this.txt_StPassword = new System.Windows.Forms.TextBox();
-            this.txt_StName = new System.Windows.Forms.TextBox();
+            this.addressTb = new System.Windows.Forms.TextBox();
+            this.PhoneTb = new System.Windows.Forms.TextBox();
+            this.CAgeTb = new System.Windows.Forms.TextBox();
+            this.PasswordTb = new System.Windows.Forms.TextBox();
+            this.CNameTb = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.roundedbtn6 = new QMS.roundedbtn();
@@ -89,16 +89,16 @@
             this.ScreenPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ScreenPanel.BackgroundImage")));
             this.ScreenPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ScreenPanel.Controls.Add(this.lbl_StudentList);
-            this.ScreenPanel.Controls.Add(this.panel10);
+            this.ScreenPanel.Controls.Add(this.StudentsDGV);
             this.ScreenPanel.Controls.Add(this.btn_reset);
             this.ScreenPanel.Controls.Add(this.btn_edit);
             this.ScreenPanel.Controls.Add(this.btn_save);
             this.ScreenPanel.Controls.Add(this.lbl_DashHeader);
-            this.ScreenPanel.Controls.Add(this.txt_StAddress);
-            this.ScreenPanel.Controls.Add(this.txt_StPhone);
-            this.ScreenPanel.Controls.Add(this.txt_StAge);
-            this.ScreenPanel.Controls.Add(this.txt_StPassword);
-            this.ScreenPanel.Controls.Add(this.txt_StName);
+            this.ScreenPanel.Controls.Add(this.addressTb);
+            this.ScreenPanel.Controls.Add(this.PhoneTb);
+            this.ScreenPanel.Controls.Add(this.CAgeTb);
+            this.ScreenPanel.Controls.Add(this.PasswordTb);
+            this.ScreenPanel.Controls.Add(this.CNameTb);
             this.ScreenPanel.Location = new System.Drawing.Point(129, 0);
             this.ScreenPanel.Name = "ScreenPanel";
             this.ScreenPanel.Size = new System.Drawing.Size(951, 647);
@@ -117,17 +117,17 @@
             this.lbl_StudentList.Text = "Students LIst";
             this.lbl_StudentList.Click += new System.EventHandler(this.lbl_StudentList_Click);
             // 
-            // panel10
+            // StudentsDGV
             // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.StudentsDGV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel10.Location = new System.Drawing.Point(2, 377);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(946, 270);
-            this.panel10.TabIndex = 13;
-            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
+            this.StudentsDGV.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.StudentsDGV.Location = new System.Drawing.Point(2, 377);
+            this.StudentsDGV.Name = "StudentsDGV";
+            this.StudentsDGV.Size = new System.Drawing.Size(946, 270);
+            this.StudentsDGV.TabIndex = 13;
+            this.StudentsDGV.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // btn_reset
             // 
@@ -203,69 +203,69 @@
             this.lbl_DashHeader.Text = "Student Registration";
             this.lbl_DashHeader.Click += new System.EventHandler(this.lbl_DashHeader_Click);
             // 
-            // txt_StAddress
+            // addressTb
             // 
-            this.txt_StAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_StAddress.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_StAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
-            this.txt_StAddress.Location = new System.Drawing.Point(614, 136);
-            this.txt_StAddress.Name = "txt_StAddress";
-            this.txt_StAddress.Size = new System.Drawing.Size(238, 27);
-            this.txt_StAddress.TabIndex = 6;
-            this.txt_StAddress.Text = "Address";
-            this.txt_StAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_StAddress.TextChanged += new System.EventHandler(this.txt_StAddress_TextChanged);
+            this.addressTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.addressTb.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
+            this.addressTb.Location = new System.Drawing.Point(614, 136);
+            this.addressTb.Name = "addressTb";
+            this.addressTb.Size = new System.Drawing.Size(238, 27);
+            this.addressTb.TabIndex = 6;
+            this.addressTb.Text = "Address";
+            this.addressTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.addressTb.TextChanged += new System.EventHandler(this.txt_StAddress_TextChanged);
             // 
-            // txt_StPhone
+            // PhoneTb
             // 
-            this.txt_StPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_StPhone.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_StPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
-            this.txt_StPhone.Location = new System.Drawing.Point(614, 186);
-            this.txt_StPhone.Name = "txt_StPhone";
-            this.txt_StPhone.Size = new System.Drawing.Size(238, 27);
-            this.txt_StPhone.TabIndex = 5;
-            this.txt_StPhone.Text = "Phone";
-            this.txt_StPhone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_StPhone.TextChanged += new System.EventHandler(this.txt_StPhone_TextChanged);
+            this.PhoneTb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PhoneTb.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
+            this.PhoneTb.Location = new System.Drawing.Point(614, 186);
+            this.PhoneTb.Name = "PhoneTb";
+            this.PhoneTb.Size = new System.Drawing.Size(238, 27);
+            this.PhoneTb.TabIndex = 5;
+            this.PhoneTb.Text = "Phone";
+            this.PhoneTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PhoneTb.TextChanged += new System.EventHandler(this.txt_StPhone_TextChanged);
             // 
-            // txt_StAge
+            // CAgeTb
             // 
-            this.txt_StAge.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_StAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
-            this.txt_StAge.Location = new System.Drawing.Point(88, 136);
-            this.txt_StAge.MaxLength = 3;
-            this.txt_StAge.Name = "txt_StAge";
-            this.txt_StAge.Size = new System.Drawing.Size(238, 27);
-            this.txt_StAge.TabIndex = 4;
-            this.txt_StAge.Text = "Age";
-            this.txt_StAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_StAge.TextChanged += new System.EventHandler(this.txt_StAge_TextChanged);
+            this.CAgeTb.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CAgeTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
+            this.CAgeTb.Location = new System.Drawing.Point(88, 136);
+            this.CAgeTb.MaxLength = 3;
+            this.CAgeTb.Name = "CAgeTb";
+            this.CAgeTb.Size = new System.Drawing.Size(238, 27);
+            this.CAgeTb.TabIndex = 4;
+            this.CAgeTb.Text = "Age";
+            this.CAgeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CAgeTb.TextChanged += new System.EventHandler(this.txt_StAge_TextChanged);
             // 
-            // txt_StPassword
+            // PasswordTb
             // 
-            this.txt_StPassword.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_StPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
-            this.txt_StPassword.Location = new System.Drawing.Point(88, 199);
-            this.txt_StPassword.Name = "txt_StPassword";
-            this.txt_StPassword.Size = new System.Drawing.Size(238, 27);
-            this.txt_StPassword.TabIndex = 3;
-            this.txt_StPassword.Text = "Password";
-            this.txt_StPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_StPassword.TextChanged += new System.EventHandler(this.txt_StPassword_TextChanged);
+            this.PasswordTb.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
+            this.PasswordTb.Location = new System.Drawing.Point(88, 199);
+            this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.Size = new System.Drawing.Size(238, 27);
+            this.PasswordTb.TabIndex = 3;
+            this.PasswordTb.Text = "Password";
+            this.PasswordTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.PasswordTb.TextChanged += new System.EventHandler(this.txt_StPassword_TextChanged);
             // 
-            // txt_StName
+            // CNameTb
             // 
-            this.txt_StName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txt_StName.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_StName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
-            this.txt_StName.Location = new System.Drawing.Point(346, 83);
-            this.txt_StName.Name = "txt_StName";
-            this.txt_StName.Size = new System.Drawing.Size(229, 27);
-            this.txt_StName.TabIndex = 2;
-            this.txt_StName.Text = "Name";
-            this.txt_StName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_StName.TextChanged += new System.EventHandler(this.txt_StName_TextChanged);
+            this.CNameTb.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.CNameTb.Font = new System.Drawing.Font("Inter", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CNameTb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(2)))), ((int)(((byte)(108)))));
+            this.CNameTb.Location = new System.Drawing.Point(346, 83);
+            this.CNameTb.Name = "CNameTb";
+            this.CNameTb.Size = new System.Drawing.Size(229, 27);
+            this.CNameTb.TabIndex = 2;
+            this.CNameTb.Text = "Name";
+            this.CNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CNameTb.TextChanged += new System.EventHandler(this.txt_StName_TextChanged);
             // 
             // panel1
             // 
@@ -660,16 +660,16 @@
 
         private System.Windows.Forms.Panel ScreenPanel;
         private System.Windows.Forms.Label lbl_StudentList;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel StudentsDGV;
         private roundedbtn btn_reset;
         private roundedbtn btn_edit;
         private roundedbtn btn_save;
         private System.Windows.Forms.Label lbl_DashHeader;
-        private System.Windows.Forms.TextBox txt_StAddress;
-        private System.Windows.Forms.TextBox txt_StPhone;
-        private System.Windows.Forms.TextBox txt_StAge;
-        private System.Windows.Forms.TextBox txt_StPassword;
-        private System.Windows.Forms.TextBox txt_StName;
+        private System.Windows.Forms.TextBox addressTb;
+        private System.Windows.Forms.TextBox PhoneTb;
+        private System.Windows.Forms.TextBox CAgeTb;
+        private System.Windows.Forms.TextBox PasswordTb;
+        private System.Windows.Forms.TextBox CNameTb;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel11;
         private roundedbtn roundedbtn6;

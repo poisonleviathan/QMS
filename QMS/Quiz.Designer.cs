@@ -32,21 +32,33 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.roundedbtn6 = new QMS.roundedbtn();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.roundedbtn7 = new QMS.roundedbtn();
+            this.roundedbtn8 = new QMS.roundedbtn();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.roundedbtn1 = new QMS.roundedbtn();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.roundedbtn2 = new QMS.roundedbtn();
+            this.roundedbtn4 = new QMS.roundedbtn();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_dashboard = new QMS.roundedbtn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_quizActive = new QMS.roundedbtn();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.roundedbtn3 = new QMS.roundedbtn();
+            this.btn_quiz = new QMS.roundedbtn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Login_logo_img = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.roundedbtn5 = new QMS.roundedbtn();
+            this.btn_logout = new QMS.roundedbtn();
             this.grp_Question1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
@@ -93,18 +105,6 @@
             this.radioButton39 = new System.Windows.Forms.RadioButton();
             this.radioButton40 = new System.Windows.Forms.RadioButton();
             this.lbl_DashHeader = new System.Windows.Forms.Label();
-            this.roundedbtn6 = new QMS.roundedbtn();
-            this.roundedbtn7 = new QMS.roundedbtn();
-            this.roundedbtn8 = new QMS.roundedbtn();
-            this.roundedbtn1 = new QMS.roundedbtn();
-            this.roundedbtn2 = new QMS.roundedbtn();
-            this.roundedbtn4 = new QMS.roundedbtn();
-            this.btn_dashboard = new QMS.roundedbtn();
-            this.btn_quizActive = new QMS.roundedbtn();
-            this.roundedbtn3 = new QMS.roundedbtn();
-            this.btn_quiz = new QMS.roundedbtn();
-            this.roundedbtn5 = new QMS.roundedbtn();
-            this.btn_logout = new QMS.roundedbtn();
             this.btn_submit = new QMS.roundedbtn();
             this.lbl_subject = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -171,6 +171,26 @@
             this.panel11.Size = new System.Drawing.Size(127, 82);
             this.panel11.TabIndex = 6;
             // 
+            // roundedbtn6
+            // 
+            this.roundedbtn6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.roundedbtn6.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.roundedbtn6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn6.BackgroundImage")));
+            this.roundedbtn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedbtn6.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn6.BorderRadius = 16;
+            this.roundedbtn6.BorderSize = 0;
+            this.roundedbtn6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedbtn6.FlatAppearance.BorderSize = 0;
+            this.roundedbtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn6.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn6.Location = new System.Drawing.Point(40, 18);
+            this.roundedbtn6.Name = "roundedbtn6";
+            this.roundedbtn6.Size = new System.Drawing.Size(52, 54);
+            this.roundedbtn6.TabIndex = 3;
+            this.roundedbtn6.TextColor = System.Drawing.Color.White;
+            this.roundedbtn6.UseVisualStyleBackColor = false;
+            // 
             // panel12
             // 
             this.panel12.Controls.Add(this.roundedbtn7);
@@ -178,6 +198,45 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(200, 82);
             this.panel12.TabIndex = 2;
+            // 
+            // roundedbtn7
+            // 
+            this.roundedbtn7.BackColor = System.Drawing.Color.Transparent;
+            this.roundedbtn7.BackgroundColor = System.Drawing.Color.Transparent;
+            this.roundedbtn7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn7.BackgroundImage")));
+            this.roundedbtn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedbtn7.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn7.BorderRadius = 16;
+            this.roundedbtn7.BorderSize = 0;
+            this.roundedbtn7.FlatAppearance.BorderSize = 0;
+            this.roundedbtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn7.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn7.Location = new System.Drawing.Point(64, 11);
+            this.roundedbtn7.Name = "roundedbtn7";
+            this.roundedbtn7.Size = new System.Drawing.Size(61, 63);
+            this.roundedbtn7.TabIndex = 0;
+            this.roundedbtn7.TextColor = System.Drawing.Color.White;
+            this.roundedbtn7.UseVisualStyleBackColor = false;
+            // 
+            // roundedbtn8
+            // 
+            this.roundedbtn8.BackColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn8.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn8.BackgroundImage")));
+            this.roundedbtn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedbtn8.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn8.BorderRadius = 16;
+            this.roundedbtn8.BorderSize = 0;
+            this.roundedbtn8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedbtn8.FlatAppearance.BorderSize = 0;
+            this.roundedbtn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn8.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn8.Location = new System.Drawing.Point(40, 18);
+            this.roundedbtn8.Name = "roundedbtn8";
+            this.roundedbtn8.Size = new System.Drawing.Size(52, 54);
+            this.roundedbtn8.TabIndex = 0;
+            this.roundedbtn8.TextColor = System.Drawing.Color.White;
+            this.roundedbtn8.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
@@ -191,6 +250,26 @@
             this.panel6.Size = new System.Drawing.Size(127, 82);
             this.panel6.TabIndex = 5;
             // 
+            // roundedbtn1
+            // 
+            this.roundedbtn1.BackColor = System.Drawing.SystemColors.Control;
+            this.roundedbtn1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.roundedbtn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn1.BackgroundImage")));
+            this.roundedbtn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedbtn1.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn1.BorderRadius = 16;
+            this.roundedbtn1.BorderSize = 0;
+            this.roundedbtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedbtn1.FlatAppearance.BorderSize = 0;
+            this.roundedbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn1.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn1.Location = new System.Drawing.Point(40, 18);
+            this.roundedbtn1.Name = "roundedbtn1";
+            this.roundedbtn1.Size = new System.Drawing.Size(52, 54);
+            this.roundedbtn1.TabIndex = 3;
+            this.roundedbtn1.TextColor = System.Drawing.Color.White;
+            this.roundedbtn1.UseVisualStyleBackColor = false;
+            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.roundedbtn2);
@@ -198,6 +277,45 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 82);
             this.panel9.TabIndex = 2;
+            // 
+            // roundedbtn2
+            // 
+            this.roundedbtn2.BackColor = System.Drawing.Color.Transparent;
+            this.roundedbtn2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.roundedbtn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn2.BackgroundImage")));
+            this.roundedbtn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedbtn2.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn2.BorderRadius = 16;
+            this.roundedbtn2.BorderSize = 0;
+            this.roundedbtn2.FlatAppearance.BorderSize = 0;
+            this.roundedbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn2.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn2.Location = new System.Drawing.Point(64, 11);
+            this.roundedbtn2.Name = "roundedbtn2";
+            this.roundedbtn2.Size = new System.Drawing.Size(61, 63);
+            this.roundedbtn2.TabIndex = 0;
+            this.roundedbtn2.TextColor = System.Drawing.Color.White;
+            this.roundedbtn2.UseVisualStyleBackColor = false;
+            // 
+            // roundedbtn4
+            // 
+            this.roundedbtn4.BackColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn4.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.roundedbtn4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn4.BackgroundImage")));
+            this.roundedbtn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedbtn4.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn4.BorderRadius = 16;
+            this.roundedbtn4.BorderSize = 0;
+            this.roundedbtn4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedbtn4.FlatAppearance.BorderSize = 0;
+            this.roundedbtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn4.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn4.Location = new System.Drawing.Point(40, 18);
+            this.roundedbtn4.Name = "roundedbtn4";
+            this.roundedbtn4.Size = new System.Drawing.Size(52, 54);
+            this.roundedbtn4.TabIndex = 0;
+            this.roundedbtn4.TextColor = System.Drawing.Color.White;
+            this.roundedbtn4.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -208,6 +326,26 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(127, 82);
             this.panel3.TabIndex = 4;
+            // 
+            // btn_dashboard
+            // 
+            this.btn_dashboard.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_dashboard.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btn_dashboard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_dashboard.BackgroundImage")));
+            this.btn_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_dashboard.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_dashboard.BorderRadius = 16;
+            this.btn_dashboard.BorderSize = 0;
+            this.btn_dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_dashboard.FlatAppearance.BorderSize = 0;
+            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dashboard.ForeColor = System.Drawing.Color.White;
+            this.btn_dashboard.Location = new System.Drawing.Point(40, 19);
+            this.btn_dashboard.Name = "btn_dashboard";
+            this.btn_dashboard.Size = new System.Drawing.Size(52, 54);
+            this.btn_dashboard.TabIndex = 0;
+            this.btn_dashboard.TextColor = System.Drawing.Color.White;
+            this.btn_dashboard.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -221,6 +359,26 @@
             this.panel4.Size = new System.Drawing.Size(127, 82);
             this.panel4.TabIndex = 2;
             // 
+            // btn_quizActive
+            // 
+            this.btn_quizActive.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_quizActive.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btn_quizActive.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_quizActive.BackgroundImage")));
+            this.btn_quizActive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_quizActive.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_quizActive.BorderRadius = 16;
+            this.btn_quizActive.BorderSize = 0;
+            this.btn_quizActive.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_quizActive.FlatAppearance.BorderSize = 0;
+            this.btn_quizActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_quizActive.ForeColor = System.Drawing.Color.White;
+            this.btn_quizActive.Location = new System.Drawing.Point(40, 18);
+            this.btn_quizActive.Name = "btn_quizActive";
+            this.btn_quizActive.Size = new System.Drawing.Size(52, 54);
+            this.btn_quizActive.TabIndex = 3;
+            this.btn_quizActive.TextColor = System.Drawing.Color.White;
+            this.btn_quizActive.UseVisualStyleBackColor = false;
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.roundedbtn3);
@@ -228,6 +386,45 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 82);
             this.panel5.TabIndex = 2;
+            // 
+            // roundedbtn3
+            // 
+            this.roundedbtn3.BackColor = System.Drawing.Color.Transparent;
+            this.roundedbtn3.BackgroundColor = System.Drawing.Color.Transparent;
+            this.roundedbtn3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn3.BackgroundImage")));
+            this.roundedbtn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedbtn3.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn3.BorderRadius = 16;
+            this.roundedbtn3.BorderSize = 0;
+            this.roundedbtn3.FlatAppearance.BorderSize = 0;
+            this.roundedbtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn3.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn3.Location = new System.Drawing.Point(64, 11);
+            this.roundedbtn3.Name = "roundedbtn3";
+            this.roundedbtn3.Size = new System.Drawing.Size(61, 63);
+            this.roundedbtn3.TabIndex = 0;
+            this.roundedbtn3.TextColor = System.Drawing.Color.White;
+            this.roundedbtn3.UseVisualStyleBackColor = false;
+            // 
+            // btn_quiz
+            // 
+            this.btn_quiz.BackColor = System.Drawing.Color.Gainsboro;
+            this.btn_quiz.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.btn_quiz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_quiz.BackgroundImage")));
+            this.btn_quiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_quiz.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_quiz.BorderRadius = 16;
+            this.btn_quiz.BorderSize = 0;
+            this.btn_quiz.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_quiz.FlatAppearance.BorderSize = 0;
+            this.btn_quiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_quiz.ForeColor = System.Drawing.Color.White;
+            this.btn_quiz.Location = new System.Drawing.Point(40, 18);
+            this.btn_quiz.Name = "btn_quiz";
+            this.btn_quiz.Size = new System.Drawing.Size(52, 54);
+            this.btn_quiz.TabIndex = 0;
+            this.btn_quiz.TextColor = System.Drawing.Color.White;
+            this.btn_quiz.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -268,6 +465,45 @@
             this.panel8.Size = new System.Drawing.Size(200, 82);
             this.panel8.TabIndex = 2;
             // 
+            // roundedbtn5
+            // 
+            this.roundedbtn5.BackColor = System.Drawing.Color.Transparent;
+            this.roundedbtn5.BackgroundColor = System.Drawing.Color.Transparent;
+            this.roundedbtn5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn5.BackgroundImage")));
+            this.roundedbtn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.roundedbtn5.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn5.BorderRadius = 16;
+            this.roundedbtn5.BorderSize = 0;
+            this.roundedbtn5.FlatAppearance.BorderSize = 0;
+            this.roundedbtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn5.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn5.Location = new System.Drawing.Point(64, 11);
+            this.roundedbtn5.Name = "roundedbtn5";
+            this.roundedbtn5.Size = new System.Drawing.Size(61, 63);
+            this.roundedbtn5.TabIndex = 0;
+            this.roundedbtn5.TextColor = System.Drawing.Color.White;
+            this.roundedbtn5.UseVisualStyleBackColor = false;
+            // 
+            // btn_logout
+            // 
+            this.btn_logout.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_logout.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.btn_logout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_logout.BackgroundImage")));
+            this.btn_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_logout.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_logout.BorderRadius = 16;
+            this.btn_logout.BorderSize = 0;
+            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_logout.FlatAppearance.BorderSize = 0;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.ForeColor = System.Drawing.Color.White;
+            this.btn_logout.Location = new System.Drawing.Point(40, 18);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(52, 54);
+            this.btn_logout.TabIndex = 0;
+            this.btn_logout.TextColor = System.Drawing.Color.White;
+            this.btn_logout.UseVisualStyleBackColor = false;
+            // 
             // grp_Question1
             // 
             this.grp_Question1.Controls.Add(this.radioButton4);
@@ -282,29 +518,17 @@
             this.grp_Question1.TabStop = false;
             this.grp_Question1.Text = "Question 1";
             // 
-            // radioButton1
+            // radioButton4
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(42, 37);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(91, 23);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Option 1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(42, 66);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(91, 23);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Option 1";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(42, 124);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(91, 23);
+            this.radioButton4.TabIndex = 3;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Option 1";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // radioButton3
             // 
@@ -318,17 +542,29 @@
             this.radioButton3.Text = "Option 1";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radioButton2
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(42, 124);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(91, 23);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Option 1";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(42, 66);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(91, 23);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Option 1";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(42, 37);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(91, 23);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Option 1";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -900,245 +1136,10 @@
             this.lbl_DashHeader.Text = "Take A Quiz";
             this.lbl_DashHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // roundedbtn6
-            // 
-            this.roundedbtn6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.roundedbtn6.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.roundedbtn6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn6.BackgroundImage")));
-            this.roundedbtn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn6.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn6.BorderRadius = 16;
-            this.roundedbtn6.BorderSize = 0;
-            this.roundedbtn6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedbtn6.FlatAppearance.BorderSize = 0;
-            this.roundedbtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn6.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn6.Location = new System.Drawing.Point(40, 18);
-            this.roundedbtn6.Name = "roundedbtn6";
-            this.roundedbtn6.Size = new System.Drawing.Size(52, 54);
-            this.roundedbtn6.TabIndex = 3;
-            this.roundedbtn6.TextColor = System.Drawing.Color.White;
-            this.roundedbtn6.UseVisualStyleBackColor = false;
-            // 
-            // roundedbtn7
-            // 
-            this.roundedbtn7.BackColor = System.Drawing.Color.Transparent;
-            this.roundedbtn7.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedbtn7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn7.BackgroundImage")));
-            this.roundedbtn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn7.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn7.BorderRadius = 16;
-            this.roundedbtn7.BorderSize = 0;
-            this.roundedbtn7.FlatAppearance.BorderSize = 0;
-            this.roundedbtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn7.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn7.Location = new System.Drawing.Point(64, 11);
-            this.roundedbtn7.Name = "roundedbtn7";
-            this.roundedbtn7.Size = new System.Drawing.Size(61, 63);
-            this.roundedbtn7.TabIndex = 0;
-            this.roundedbtn7.TextColor = System.Drawing.Color.White;
-            this.roundedbtn7.UseVisualStyleBackColor = false;
-            // 
-            // roundedbtn8
-            // 
-            this.roundedbtn8.BackColor = System.Drawing.Color.Gainsboro;
-            this.roundedbtn8.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.roundedbtn8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn8.BackgroundImage")));
-            this.roundedbtn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn8.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn8.BorderRadius = 16;
-            this.roundedbtn8.BorderSize = 0;
-            this.roundedbtn8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedbtn8.FlatAppearance.BorderSize = 0;
-            this.roundedbtn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn8.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn8.Location = new System.Drawing.Point(40, 18);
-            this.roundedbtn8.Name = "roundedbtn8";
-            this.roundedbtn8.Size = new System.Drawing.Size(52, 54);
-            this.roundedbtn8.TabIndex = 0;
-            this.roundedbtn8.TextColor = System.Drawing.Color.White;
-            this.roundedbtn8.UseVisualStyleBackColor = false;
-            // 
-            // roundedbtn1
-            // 
-            this.roundedbtn1.BackColor = System.Drawing.SystemColors.Control;
-            this.roundedbtn1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.roundedbtn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn1.BackgroundImage")));
-            this.roundedbtn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn1.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn1.BorderRadius = 16;
-            this.roundedbtn1.BorderSize = 0;
-            this.roundedbtn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedbtn1.FlatAppearance.BorderSize = 0;
-            this.roundedbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn1.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn1.Location = new System.Drawing.Point(40, 18);
-            this.roundedbtn1.Name = "roundedbtn1";
-            this.roundedbtn1.Size = new System.Drawing.Size(52, 54);
-            this.roundedbtn1.TabIndex = 3;
-            this.roundedbtn1.TextColor = System.Drawing.Color.White;
-            this.roundedbtn1.UseVisualStyleBackColor = false;
-            // 
-            // roundedbtn2
-            // 
-            this.roundedbtn2.BackColor = System.Drawing.Color.Transparent;
-            this.roundedbtn2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedbtn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn2.BackgroundImage")));
-            this.roundedbtn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn2.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn2.BorderRadius = 16;
-            this.roundedbtn2.BorderSize = 0;
-            this.roundedbtn2.FlatAppearance.BorderSize = 0;
-            this.roundedbtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn2.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn2.Location = new System.Drawing.Point(64, 11);
-            this.roundedbtn2.Name = "roundedbtn2";
-            this.roundedbtn2.Size = new System.Drawing.Size(61, 63);
-            this.roundedbtn2.TabIndex = 0;
-            this.roundedbtn2.TextColor = System.Drawing.Color.White;
-            this.roundedbtn2.UseVisualStyleBackColor = false;
-            // 
-            // roundedbtn4
-            // 
-            this.roundedbtn4.BackColor = System.Drawing.Color.Gainsboro;
-            this.roundedbtn4.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.roundedbtn4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn4.BackgroundImage")));
-            this.roundedbtn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn4.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn4.BorderRadius = 16;
-            this.roundedbtn4.BorderSize = 0;
-            this.roundedbtn4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedbtn4.FlatAppearance.BorderSize = 0;
-            this.roundedbtn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn4.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn4.Location = new System.Drawing.Point(40, 18);
-            this.roundedbtn4.Name = "roundedbtn4";
-            this.roundedbtn4.Size = new System.Drawing.Size(52, 54);
-            this.roundedbtn4.TabIndex = 0;
-            this.roundedbtn4.TextColor = System.Drawing.Color.White;
-            this.roundedbtn4.UseVisualStyleBackColor = false;
-            // 
-            // btn_dashboard
-            // 
-            this.btn_dashboard.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_dashboard.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.btn_dashboard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_dashboard.BackgroundImage")));
-            this.btn_dashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_dashboard.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_dashboard.BorderRadius = 16;
-            this.btn_dashboard.BorderSize = 0;
-            this.btn_dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_dashboard.FlatAppearance.BorderSize = 0;
-            this.btn_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dashboard.ForeColor = System.Drawing.Color.White;
-            this.btn_dashboard.Location = new System.Drawing.Point(40, 19);
-            this.btn_dashboard.Name = "btn_dashboard";
-            this.btn_dashboard.Size = new System.Drawing.Size(52, 54);
-            this.btn_dashboard.TabIndex = 0;
-            this.btn_dashboard.TextColor = System.Drawing.Color.White;
-            this.btn_dashboard.UseVisualStyleBackColor = false;
-            // 
-            // btn_quizActive
-            // 
-            this.btn_quizActive.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_quizActive.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.btn_quizActive.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_quizActive.BackgroundImage")));
-            this.btn_quizActive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_quizActive.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_quizActive.BorderRadius = 16;
-            this.btn_quizActive.BorderSize = 0;
-            this.btn_quizActive.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_quizActive.FlatAppearance.BorderSize = 0;
-            this.btn_quizActive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_quizActive.ForeColor = System.Drawing.Color.White;
-            this.btn_quizActive.Location = new System.Drawing.Point(40, 18);
-            this.btn_quizActive.Name = "btn_quizActive";
-            this.btn_quizActive.Size = new System.Drawing.Size(52, 54);
-            this.btn_quizActive.TabIndex = 3;
-            this.btn_quizActive.TextColor = System.Drawing.Color.White;
-            this.btn_quizActive.UseVisualStyleBackColor = false;
-            // 
-            // roundedbtn3
-            // 
-            this.roundedbtn3.BackColor = System.Drawing.Color.Transparent;
-            this.roundedbtn3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedbtn3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn3.BackgroundImage")));
-            this.roundedbtn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn3.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn3.BorderRadius = 16;
-            this.roundedbtn3.BorderSize = 0;
-            this.roundedbtn3.FlatAppearance.BorderSize = 0;
-            this.roundedbtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn3.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn3.Location = new System.Drawing.Point(64, 11);
-            this.roundedbtn3.Name = "roundedbtn3";
-            this.roundedbtn3.Size = new System.Drawing.Size(61, 63);
-            this.roundedbtn3.TabIndex = 0;
-            this.roundedbtn3.TextColor = System.Drawing.Color.White;
-            this.roundedbtn3.UseVisualStyleBackColor = false;
-            // 
-            // btn_quiz
-            // 
-            this.btn_quiz.BackColor = System.Drawing.Color.Gainsboro;
-            this.btn_quiz.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.btn_quiz.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_quiz.BackgroundImage")));
-            this.btn_quiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_quiz.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_quiz.BorderRadius = 16;
-            this.btn_quiz.BorderSize = 0;
-            this.btn_quiz.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_quiz.FlatAppearance.BorderSize = 0;
-            this.btn_quiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_quiz.ForeColor = System.Drawing.Color.White;
-            this.btn_quiz.Location = new System.Drawing.Point(40, 18);
-            this.btn_quiz.Name = "btn_quiz";
-            this.btn_quiz.Size = new System.Drawing.Size(52, 54);
-            this.btn_quiz.TabIndex = 0;
-            this.btn_quiz.TextColor = System.Drawing.Color.White;
-            this.btn_quiz.UseVisualStyleBackColor = false;
-            // 
-            // roundedbtn5
-            // 
-            this.roundedbtn5.BackColor = System.Drawing.Color.Transparent;
-            this.roundedbtn5.BackgroundColor = System.Drawing.Color.Transparent;
-            this.roundedbtn5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn5.BackgroundImage")));
-            this.roundedbtn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn5.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn5.BorderRadius = 16;
-            this.roundedbtn5.BorderSize = 0;
-            this.roundedbtn5.FlatAppearance.BorderSize = 0;
-            this.roundedbtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn5.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn5.Location = new System.Drawing.Point(64, 11);
-            this.roundedbtn5.Name = "roundedbtn5";
-            this.roundedbtn5.Size = new System.Drawing.Size(61, 63);
-            this.roundedbtn5.TabIndex = 0;
-            this.roundedbtn5.TextColor = System.Drawing.Color.White;
-            this.roundedbtn5.UseVisualStyleBackColor = false;
-            // 
-            // btn_logout
-            // 
-            this.btn_logout.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_logout.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.btn_logout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_logout.BackgroundImage")));
-            this.btn_logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_logout.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_logout.BorderRadius = 16;
-            this.btn_logout.BorderSize = 0;
-            this.btn_logout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_logout.FlatAppearance.BorderSize = 0;
-            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.ForeColor = System.Drawing.Color.White;
-            this.btn_logout.Location = new System.Drawing.Point(40, 18);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(52, 54);
-            this.btn_logout.TabIndex = 0;
-            this.btn_logout.TextColor = System.Drawing.Color.White;
-            this.btn_logout.UseVisualStyleBackColor = false;
-            // 
             // btn_submit
             // 
-            this.btn_submit.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_submit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_submit.BackColor = System.Drawing.Color.Navy;
             this.btn_submit.BackgroundColor = System.Drawing.Color.Navy;
             this.btn_submit.BorderColor = System.Drawing.Color.Tomato;
@@ -1148,7 +1149,7 @@
             this.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_submit.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_submit.ForeColor = System.Drawing.Color.White;
-            this.btn_submit.Location = new System.Drawing.Point(628, 657);
+            this.btn_submit.Location = new System.Drawing.Point(600, 657);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(115, 34);
             this.btn_submit.TabIndex = 25;
