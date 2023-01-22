@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentReg));
             this.ScreenPanel = new System.Windows.Forms.Panel();
             this.lbl_StudentList = new System.Windows.Forms.Label();
-            this.StudentsDGV = new System.Windows.Forms.Panel();
             this.btn_reset = new QMS.roundedbtn();
             this.btn_edit = new QMS.roundedbtn();
             this.btn_save = new QMS.roundedbtn();
@@ -65,6 +64,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.roundedbtn5 = new QMS.roundedbtn();
             this.btn_logout = new QMS.roundedbtn();
+            this.StudentsDGV = new System.Windows.Forms.DataGridView();
             this.ScreenPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -78,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // ScreenPanel
@@ -88,8 +89,8 @@
             this.ScreenPanel.BackColor = System.Drawing.Color.Transparent;
             this.ScreenPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ScreenPanel.BackgroundImage")));
             this.ScreenPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ScreenPanel.Controls.Add(this.lbl_StudentList);
             this.ScreenPanel.Controls.Add(this.StudentsDGV);
+            this.ScreenPanel.Controls.Add(this.lbl_StudentList);
             this.ScreenPanel.Controls.Add(this.btn_reset);
             this.ScreenPanel.Controls.Add(this.btn_edit);
             this.ScreenPanel.Controls.Add(this.btn_save);
@@ -110,24 +111,12 @@
             this.lbl_StudentList.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_StudentList.AutoSize = true;
             this.lbl_StudentList.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_StudentList.Location = new System.Drawing.Point(400, 346);
+            this.lbl_StudentList.Location = new System.Drawing.Point(393, 335);
             this.lbl_StudentList.Name = "lbl_StudentList";
             this.lbl_StudentList.Size = new System.Drawing.Size(146, 25);
             this.lbl_StudentList.TabIndex = 14;
             this.lbl_StudentList.Text = "Students LIst";
             this.lbl_StudentList.Click += new System.EventHandler(this.lbl_StudentList_Click);
-            // 
-            // StudentsDGV
-            // 
-            this.StudentsDGV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.StudentsDGV.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.StudentsDGV.Location = new System.Drawing.Point(2, 377);
-            this.StudentsDGV.Name = "StudentsDGV";
-            this.StudentsDGV.Size = new System.Drawing.Size(946, 270);
-            this.StudentsDGV.TabIndex = 13;
-            this.StudentsDGV.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
             // btn_reset
             // 
@@ -628,6 +617,20 @@
             this.btn_logout.TextColor = System.Drawing.Color.White;
             this.btn_logout.UseVisualStyleBackColor = false;
             // 
+            // StudentsDGV
+            // 
+            this.StudentsDGV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.StudentsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StudentsDGV.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.StudentsDGV.EnableHeadersVisualStyles = false;
+            this.StudentsDGV.Location = new System.Drawing.Point(0, 372);
+            this.StudentsDGV.Name = "StudentsDGV";
+            this.StudentsDGV.RowHeadersVisible = false;
+            this.StudentsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
+            this.StudentsDGV.Size = new System.Drawing.Size(951, 275);
+            this.StudentsDGV.TabIndex = 15;
+            this.StudentsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentsDGV_CellContentClick_1);
+            // 
             // StudentReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -652,6 +655,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -660,7 +664,6 @@
 
         private System.Windows.Forms.Panel ScreenPanel;
         private System.Windows.Forms.Label lbl_StudentList;
-        private System.Windows.Forms.Panel StudentsDGV;
         private roundedbtn btn_reset;
         private roundedbtn btn_edit;
         private roundedbtn btn_save;
@@ -694,5 +697,6 @@
         private System.Windows.Forms.Panel panel8;
         private roundedbtn roundedbtn5;
         private roundedbtn btn_logout;
+        private System.Windows.Forms.DataGridView StudentsDGV;
     }
 }
