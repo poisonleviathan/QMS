@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace QMS
 {
-    public partial class Quiz : Form
+    public partial class Splash : Form
     {
-        public Quiz()
+        public Splash()
         {
             InitializeComponent();
-        }
-
-        private void btn_dashboard_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Quiz_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
