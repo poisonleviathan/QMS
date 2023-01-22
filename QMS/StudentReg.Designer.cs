@@ -376,8 +376,8 @@
             // 
             // roundedbtn1
             // 
-            this.roundedbtn1.BackColor = System.Drawing.SystemColors.Control;
-            this.roundedbtn1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.roundedbtn1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.roundedbtn1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.roundedbtn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn1.BackgroundImage")));
             this.roundedbtn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.roundedbtn1.BorderColor = System.Drawing.Color.Tomato;
