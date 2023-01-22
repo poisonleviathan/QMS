@@ -16,13 +16,26 @@ namespace QMS
         public StudentReg()
         {
             InitializeComponent();
+           
+            DisplayStudents();
+        }
+        private void Reset()
+        {
+            CNameTb.Text = "";
+            CAgeTb.Text = "";
+            PhoneTb.Text = "";
+            addressTb.Text = "";
+            PasswordTb.Text="";
         }
         SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-3IN531N\SQLEXPRESS;Initial Catalog=QMS_DB;Integrated Security=True;Pooling=False");
+      
+
+      
         private void ScreenPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
+        
         private void lbl_StudentList_Click(object sender, EventArgs e)
         {
 
@@ -35,14 +48,26 @@ namespace QMS
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
-
+            Reset();
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
         {
 
         }
+        int Key = 0;
+        private void DisplayStudents()
+        {
+            Con.Open();
+            string Query = "select * from StudentTable";
+            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            StudentsDGV.DataSource = ds.Tables[0];
 
+            Con.Close();
+        }
         private void btn_save_Click(object sender, EventArgs e)
         {
             if(CNameTb.Text == "" || CAgeTb.Text==""|| PasswordTb.Text =="" || addressTb.Text == "")
@@ -65,6 +90,8 @@ namespace QMS
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Student Saved");
                     Con.Close();
+                    Reset();
+                    DisplayStudents();
                 }
                 catch (Exception Ex)
                 {
@@ -202,6 +229,28 @@ namespace QMS
         private void StudentReg_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void StudentsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void StudentsDGV_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            CNameTb.Text = StudentsDGV.SelectedRows[0].Cells[1].Value.ToString();
+            CAgeTb.Text = StudentsDGV.SelectedRows[0].Cells[2].Value.ToString();
+            PhoneTb.Text = StudentsDGV.SelectedRows[0].Cells[3].Value.ToString();
+            addressTb.Text = StudentsDGV.SelectedRows[0].Cells[5].Value.ToString();
+            PasswordTb.Text = StudentsDGV.SelectedRows[0].Cells[6].Value.ToString();
+         
+            if (CNameTb.Text == "")
+            {
+                Key = 0;
+            }else
+            {
+                Key = Convert.ToInt32(StudentsDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
     }
 }
