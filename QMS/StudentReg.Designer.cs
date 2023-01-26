@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentReg));
             this.ScreenPanel = new System.Windows.Forms.Panel();
+            this.StudentsDGV = new System.Windows.Forms.DataGridView();
             this.lbl_StudentList = new System.Windows.Forms.Label();
             this.btn_reset = new QMS.roundedbtn();
             this.btn_edit = new QMS.roundedbtn();
@@ -64,8 +65,8 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.roundedbtn5 = new QMS.roundedbtn();
             this.btn_logout = new QMS.roundedbtn();
-            this.StudentsDGV = new System.Windows.Forms.DataGridView();
             this.ScreenPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsDGV)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -78,7 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.StudentsDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // ScreenPanel
@@ -105,6 +105,19 @@
             this.ScreenPanel.Size = new System.Drawing.Size(951, 647);
             this.ScreenPanel.TabIndex = 5;
             this.ScreenPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ScreenPanel_Paint);
+            // 
+            // StudentsDGV
+            // 
+            this.StudentsDGV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.StudentsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StudentsDGV.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.StudentsDGV.EnableHeadersVisualStyles = false;
+            this.StudentsDGV.Location = new System.Drawing.Point(0, 372);
+            this.StudentsDGV.Name = "StudentsDGV";
+            this.StudentsDGV.RowHeadersVisible = false;
+            this.StudentsDGV.Size = new System.Drawing.Size(951, 275);
+            this.StudentsDGV.TabIndex = 15;
+            this.StudentsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentsDGV_CellContentClick_1);
             // 
             // lbl_StudentList
             // 
@@ -204,6 +217,8 @@
             this.addressTb.Text = "Address";
             this.addressTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.addressTb.TextChanged += new System.EventHandler(this.txt_StAddress_TextChanged);
+            this.addressTb.Enter += new System.EventHandler(this.addressTb_Enter);
+            this.addressTb.Leave += new System.EventHandler(this.addressTb_Leave);
             // 
             // PhoneTb
             // 
@@ -217,6 +232,8 @@
             this.PhoneTb.Text = "Phone";
             this.PhoneTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.PhoneTb.TextChanged += new System.EventHandler(this.txt_StPhone_TextChanged);
+            this.PhoneTb.Enter += new System.EventHandler(this.PhoneTb_Enter);
+            this.PhoneTb.Leave += new System.EventHandler(this.PhoneTb_Leave);
             // 
             // CAgeTb
             // 
@@ -230,6 +247,8 @@
             this.CAgeTb.Text = "Age";
             this.CAgeTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CAgeTb.TextChanged += new System.EventHandler(this.txt_StAge_TextChanged);
+            this.CAgeTb.Enter += new System.EventHandler(this.CAgeTb_Enter);
+            this.CAgeTb.Leave += new System.EventHandler(this.CAgeTb_Leave);
             // 
             // PasswordTb
             // 
@@ -242,6 +261,8 @@
             this.PasswordTb.Text = "Password";
             this.PasswordTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.PasswordTb.TextChanged += new System.EventHandler(this.txt_StPassword_TextChanged);
+            this.PasswordTb.Enter += new System.EventHandler(this.PasswordTb_Enter);
+            this.PasswordTb.Leave += new System.EventHandler(this.PasswordTb_Leave);
             // 
             // CNameTb
             // 
@@ -255,6 +276,8 @@
             this.CNameTb.Text = "Name";
             this.CNameTb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.CNameTb.TextChanged += new System.EventHandler(this.txt_StName_TextChanged);
+            this.CNameTb.Enter += new System.EventHandler(this.CNameTb_Enter);
+            this.CNameTb.Leave += new System.EventHandler(this.CNameTb_Leave);
             // 
             // panel1
             // 
@@ -303,6 +326,7 @@
             this.roundedbtn6.TabIndex = 3;
             this.roundedbtn6.TextColor = System.Drawing.Color.White;
             this.roundedbtn6.UseVisualStyleBackColor = false;
+            this.roundedbtn6.Click += new System.EventHandler(this.roundedbtn6_Click);
             // 
             // panel12
             // 
@@ -459,6 +483,7 @@
             this.btn_dashboard.TabIndex = 0;
             this.btn_dashboard.TextColor = System.Drawing.Color.White;
             this.btn_dashboard.UseVisualStyleBackColor = false;
+            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click_1);
             // 
             // panel4
             // 
@@ -491,6 +516,7 @@
             this.btn_quizActive.TabIndex = 3;
             this.btn_quizActive.TextColor = System.Drawing.Color.White;
             this.btn_quizActive.UseVisualStyleBackColor = false;
+            this.btn_quizActive.Click += new System.EventHandler(this.btn_quizActive_Click_1);
             // 
             // panel5
             // 
@@ -561,7 +587,7 @@
             // 
             // panel7
             // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.btn_logout);
@@ -616,20 +642,7 @@
             this.btn_logout.TabIndex = 0;
             this.btn_logout.TextColor = System.Drawing.Color.White;
             this.btn_logout.UseVisualStyleBackColor = false;
-            // 
-            // StudentsDGV
-            // 
-            this.StudentsDGV.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.StudentsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StudentsDGV.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.StudentsDGV.EnableHeadersVisualStyles = false;
-            this.StudentsDGV.Location = new System.Drawing.Point(0, 372);
-            this.StudentsDGV.Name = "StudentsDGV";
-            this.StudentsDGV.RowHeadersVisible = false;
-            this.StudentsDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect;
-            this.StudentsDGV.Size = new System.Drawing.Size(951, 275);
-            this.StudentsDGV.TabIndex = 15;
-            this.StudentsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentsDGV_CellContentClick_1);
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
             // 
             // StudentReg
             // 
@@ -640,9 +653,11 @@
             this.Controls.Add(this.ScreenPanel);
             this.Name = "StudentReg";
             this.Text = "StudentReg";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.StudentReg_Load);
             this.ScreenPanel.ResumeLayout(false);
             this.ScreenPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentsDGV)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
@@ -655,7 +670,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.StudentsDGV)).EndInit();
             this.ResumeLayout(false);
 
         }

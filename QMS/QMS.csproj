@@ -67,6 +67,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QMS_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QMS_DBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="roundedbtn.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -139,6 +144,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QMS_DBDataSet.xsc">
+      <DependentUpon>QMS_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QMS_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QMS_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QMS_DBDataSet.xss">
+      <DependentUpon>QMS_DBDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

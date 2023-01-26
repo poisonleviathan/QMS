@@ -99,5 +99,31 @@ namespace QMS
         {
 
         }
+
+        private void btn_quizActive_Click_1(object sender, EventArgs e)
+        {
+            Subjects Obj = new Subjects();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void roundedbtn1_Click(object sender, EventArgs e)
+        {
+            StudentReg Obj = new StudentReg();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void roundedbtn6_Click(object sender, EventArgs e)
+        {
+            Quiz Obj = new Quiz();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void btn_logout_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

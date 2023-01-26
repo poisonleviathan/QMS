@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Quiz));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -107,6 +108,10 @@
             this.btn_quiz = new QMS.roundedbtn();
             this.roundedbtn5 = new QMS.roundedbtn();
             this.btn_logout = new QMS.roundedbtn();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.qMS_DBDataSet = new QMS.QMS_DBDataSet();
+            this.subjectTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.subjectTableTableAdapter = new QMS.QMS_DBDataSetTableAdapters.SubjectTableTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -130,17 +135,17 @@
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qMS_DBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(131, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1121, 703);
+            this.pictureBox1.Size = new System.Drawing.Size(1226, 653);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -156,7 +161,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(102, 702);
+            this.panel1.Size = new System.Drawing.Size(134, 653);
             this.panel1.TabIndex = 17;
             // 
             // panel11
@@ -166,7 +171,7 @@
             this.panel11.Controls.Add(this.roundedbtn6);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.roundedbtn8);
-            this.panel11.Location = new System.Drawing.Point(0, 430);
+            this.panel11.Location = new System.Drawing.Point(0, 405);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(127, 82);
             this.panel11.TabIndex = 6;
@@ -186,7 +191,7 @@
             this.panel6.Controls.Add(this.roundedbtn1);
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.roundedbtn4);
-            this.panel6.Location = new System.Drawing.Point(0, 344);
+            this.panel6.Location = new System.Drawing.Point(0, 319);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(127, 82);
             this.panel6.TabIndex = 5;
@@ -204,7 +209,7 @@
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.btn_dashboard);
-            this.panel3.Location = new System.Drawing.Point(0, 170);
+            this.panel3.Location = new System.Drawing.Point(0, 145);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(127, 82);
             this.panel3.TabIndex = 4;
@@ -216,7 +221,7 @@
             this.panel4.Controls.Add(this.btn_quizActive);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.btn_quiz);
-            this.panel4.Location = new System.Drawing.Point(0, 258);
+            this.panel4.Location = new System.Drawing.Point(0, 233);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(127, 82);
             this.panel4.TabIndex = 2;
@@ -255,7 +260,7 @@
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.btn_logout);
-            this.panel7.Location = new System.Drawing.Point(0, 516);
+            this.panel7.Location = new System.Drawing.Point(0, 491);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(127, 82);
             this.panel7.TabIndex = 4;
@@ -890,10 +895,11 @@
             // 
             // lbl_DashHeader
             // 
-            this.lbl_DashHeader.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_DashHeader.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_DashHeader.AutoSize = true;
             this.lbl_DashHeader.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_DashHeader.Location = new System.Drawing.Point(598, 22);
+            this.lbl_DashHeader.Location = new System.Drawing.Point(662, 9);
             this.lbl_DashHeader.Name = "lbl_DashHeader";
             this.lbl_DashHeader.Size = new System.Drawing.Size(132, 25);
             this.lbl_DashHeader.TabIndex = 24;
@@ -902,10 +908,10 @@
             // 
             // lbl_subject
             // 
-            this.lbl_subject.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_subject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_subject.AutoSize = true;
             this.lbl_subject.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_subject.Location = new System.Drawing.Point(843, 42);
+            this.lbl_subject.Location = new System.Drawing.Point(851, 50);
             this.lbl_subject.Name = "lbl_subject";
             this.lbl_subject.Size = new System.Drawing.Size(88, 25);
             this.lbl_subject.TabIndex = 26;
@@ -914,8 +920,7 @@
             // 
             // btn_submit
             // 
-            this.btn_submit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_submit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_submit.BackColor = System.Drawing.Color.Navy;
             this.btn_submit.BackgroundColor = System.Drawing.Color.Navy;
             this.btn_submit.BorderColor = System.Drawing.Color.Tomato;
@@ -925,9 +930,9 @@
             this.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_submit.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_submit.ForeColor = System.Drawing.Color.White;
-            this.btn_submit.Location = new System.Drawing.Point(480, 666);
+            this.btn_submit.Location = new System.Drawing.Point(1004, 549);
             this.btn_submit.Name = "btn_submit";
-            this.btn_submit.Size = new System.Drawing.Size(337, 27);
+            this.btn_submit.Size = new System.Drawing.Size(137, 52);
             this.btn_submit.TabIndex = 25;
             this.btn_submit.Text = "Submit";
             this.btn_submit.TextColor = System.Drawing.Color.White;
@@ -1011,6 +1016,7 @@
             this.roundedbtn1.TabIndex = 3;
             this.roundedbtn1.TextColor = System.Drawing.Color.White;
             this.roundedbtn1.UseVisualStyleBackColor = false;
+            this.roundedbtn1.Click += new System.EventHandler(this.roundedbtn1_Click);
             // 
             // roundedbtn2
             // 
@@ -1070,6 +1076,7 @@
             this.btn_dashboard.TabIndex = 0;
             this.btn_dashboard.TextColor = System.Drawing.Color.White;
             this.btn_dashboard.UseVisualStyleBackColor = false;
+            this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click_1);
             // 
             // btn_quizActive
             // 
@@ -1090,6 +1097,7 @@
             this.btn_quizActive.TabIndex = 3;
             this.btn_quizActive.TextColor = System.Drawing.Color.White;
             this.btn_quizActive.UseVisualStyleBackColor = false;
+            this.btn_quizActive.Click += new System.EventHandler(this.btn_quizActive_Click);
             // 
             // roundedbtn3
             // 
@@ -1168,12 +1176,40 @@
             this.btn_logout.TabIndex = 0;
             this.btn_logout.TextColor = System.Drawing.Color.White;
             this.btn_logout.UseVisualStyleBackColor = false;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.subjectTableBindingSource, "SName", true));
+            this.comboBox1.DataSource = this.subjectTableBindingSource;
+            this.comboBox1.DisplayMember = "SName";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(667, 50);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(178, 21);
+            this.comboBox1.TabIndex = 27;
+            this.comboBox1.ValueMember = "SName";
+            // 
+            // qMS_DBDataSet
+            // 
+            this.qMS_DBDataSet.DataSetName = "QMS_DBDataSet";
+            this.qMS_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // subjectTableBindingSource
+            // 
+            this.subjectTableBindingSource.DataMember = "SubjectTable";
+            this.subjectTableBindingSource.DataSource = this.qMS_DBDataSet;
+            // 
+            // subjectTableTableAdapter
+            // 
+            this.subjectTableTableAdapter.ClearBeforeFill = true;
             // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1532, 878);
+            this.ClientSize = new System.Drawing.Size(1226, 653);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lbl_subject);
             this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.lbl_DashHeader);
@@ -1230,6 +1266,8 @@
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qMS_DBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subjectTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1315,5 +1353,9 @@
         private System.Windows.Forms.Label lbl_DashHeader;
         private roundedbtn btn_submit;
         private System.Windows.Forms.Label lbl_subject;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private QMS_DBDataSet qMS_DBDataSet;
+        private System.Windows.Forms.BindingSource subjectTableBindingSource;
+        private QMS_DBDataSetTableAdapters.SubjectTableTableAdapter subjectTableTableAdapter;
     }
 }
