@@ -50,7 +50,7 @@
             this.roundedbtn7 = new QMS.roundedbtn();
             this.roundedbtn8 = new QMS.roundedbtn();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.roundedbtn1 = new QMS.roundedbtn();
+            this.Studentsbtn = new QMS.roundedbtn();
             this.panel9 = new System.Windows.Forms.Panel();
             this.roundedbtn2 = new QMS.roundedbtn();
             this.roundedbtn4 = new QMS.roundedbtn();
@@ -337,6 +337,7 @@
             this.roundedbtn6.TabIndex = 3;
             this.roundedbtn6.TextColor = System.Drawing.Color.White;
             this.roundedbtn6.UseVisualStyleBackColor = false;
+            this.roundedbtn6.Click += new System.EventHandler(this.roundedbtn6_Click);
             // 
             // panel12
             // 
@@ -389,7 +390,7 @@
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.roundedbtn1);
+            this.panel6.Controls.Add(this.Studentsbtn);
             this.panel6.Controls.Add(this.panel9);
             this.panel6.Controls.Add(this.roundedbtn4);
             this.panel6.Location = new System.Drawing.Point(0, 305);
@@ -397,25 +398,26 @@
             this.panel6.Size = new System.Drawing.Size(127, 82);
             this.panel6.TabIndex = 5;
             // 
-            // roundedbtn1
+            // Studentsbtn
             // 
-            this.roundedbtn1.BackColor = System.Drawing.SystemColors.Control;
-            this.roundedbtn1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.roundedbtn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedbtn1.BackgroundImage")));
-            this.roundedbtn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedbtn1.BorderColor = System.Drawing.Color.Tomato;
-            this.roundedbtn1.BorderRadius = 16;
-            this.roundedbtn1.BorderSize = 0;
-            this.roundedbtn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedbtn1.FlatAppearance.BorderSize = 0;
-            this.roundedbtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedbtn1.ForeColor = System.Drawing.Color.White;
-            this.roundedbtn1.Location = new System.Drawing.Point(40, 18);
-            this.roundedbtn1.Name = "roundedbtn1";
-            this.roundedbtn1.Size = new System.Drawing.Size(52, 54);
-            this.roundedbtn1.TabIndex = 3;
-            this.roundedbtn1.TextColor = System.Drawing.Color.White;
-            this.roundedbtn1.UseVisualStyleBackColor = false;
+            this.Studentsbtn.BackColor = System.Drawing.SystemColors.Control;
+            this.Studentsbtn.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.Studentsbtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Studentsbtn.BackgroundImage")));
+            this.Studentsbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Studentsbtn.BorderColor = System.Drawing.Color.Tomato;
+            this.Studentsbtn.BorderRadius = 16;
+            this.Studentsbtn.BorderSize = 0;
+            this.Studentsbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Studentsbtn.FlatAppearance.BorderSize = 0;
+            this.Studentsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Studentsbtn.ForeColor = System.Drawing.Color.White;
+            this.Studentsbtn.Location = new System.Drawing.Point(40, 18);
+            this.Studentsbtn.Name = "Studentsbtn";
+            this.Studentsbtn.Size = new System.Drawing.Size(52, 54);
+            this.Studentsbtn.TabIndex = 3;
+            this.Studentsbtn.TextColor = System.Drawing.Color.White;
+            this.Studentsbtn.UseVisualStyleBackColor = false;
+            this.Studentsbtn.Click += new System.EventHandler(this.roundedbtn1_Click);
             // 
             // panel9
             // 
@@ -525,6 +527,7 @@
             this.btn_quizActive.TabIndex = 3;
             this.btn_quizActive.TextColor = System.Drawing.Color.White;
             this.btn_quizActive.UseVisualStyleBackColor = false;
+            this.btn_quizActive.Click += new System.EventHandler(this.btn_quizActive_Click_1);
             // 
             // panel5
             // 
@@ -595,6 +598,7 @@
             // 
             // panel8
             // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.panel13);
             this.panel8.Controls.Add(this.btn_logout);
@@ -649,6 +653,7 @@
             this.btn_logout.TabIndex = 0;
             this.btn_logout.TextColor = System.Drawing.Color.White;
             this.btn_logout.UseVisualStyleBackColor = false;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
             // 
             // admin_dashboard
             // 
@@ -704,7 +709,7 @@
         private roundedbtn roundedbtn7;
         private roundedbtn roundedbtn8;
         private System.Windows.Forms.Panel panel6;
-        private roundedbtn roundedbtn1;
+        private roundedbtn Studentsbtn;
         private System.Windows.Forms.Panel panel9;
         private roundedbtn roundedbtn2;
         private roundedbtn roundedbtn4;

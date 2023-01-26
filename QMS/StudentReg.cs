@@ -240,10 +240,11 @@ namespace QMS
         {
             CNameTb.Text = StudentsDGV.SelectedRows[0].Cells[1].Value.ToString();
             CAgeTb.Text = StudentsDGV.SelectedRows[0].Cells[2].Value.ToString();
-            PhoneTb.Text = StudentsDGV.SelectedRows[0].Cells[3].Value.ToString();
+            PasswordTb.Text = StudentsDGV.SelectedRows[0].Cells[3].Value.ToString();
             addressTb.Text = StudentsDGV.SelectedRows[0].Cells[5].Value.ToString();
-            PasswordTb.Text = StudentsDGV.SelectedRows[0].Cells[6].Value.ToString();
-         
+            PhoneTb.Text = StudentsDGV.SelectedRows[0].Cells[6].Value.ToString();
+
+
             if (CNameTb.Text == "")
             {
                 Key = 0;
@@ -251,6 +252,126 @@ namespace QMS
             {
                 Key = Convert.ToInt32(StudentsDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
+        }
+
+        private void CNameTb_Enter(object sender, EventArgs e)
+        {
+            if(CNameTb.Text == "Name")
+            {
+                CNameTb.Text = "";
+                CNameTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void CNameTb_Leave(object sender, EventArgs e)
+        {
+            if (CNameTb.Text == "")
+            {
+                CNameTb.Text = "Name";
+                CNameTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void CAgeTb_Enter(object sender, EventArgs e)
+        {
+            if (CAgeTb.Text == "Age")
+            {
+                CAgeTb.Text = "";
+                CAgeTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void CAgeTb_Leave(object sender, EventArgs e)
+        {
+            if (CAgeTb.Text == "")
+            {
+                CAgeTb.Text = "Age";
+                CAgeTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void addressTb_Enter(object sender, EventArgs e)
+        {
+            if (addressTb.Text == "Address")
+            {
+                addressTb.Text = "";
+               
+                addressTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+        private void addressTb_Leave(object sender, EventArgs e)
+        {
+            if (addressTb.Text == "")
+            {
+                addressTb.Text = "Address";
+                addressTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+       
+
+        private void PasswordTb_Enter(object sender, EventArgs e)
+        {
+            if (PasswordTb.Text == "Password")
+            {
+                PasswordTb.Text = "";
+                PasswordTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void PasswordTb_Leave(object sender, EventArgs e)
+        {
+            if (PasswordTb.Text == "")
+            {
+                PasswordTb.Text = "Password";
+                PasswordTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void PhoneTb_Enter(object sender, EventArgs e)
+        {
+            if (PhoneTb.Text == "Phone")
+            {
+                PhoneTb.Text = "";
+                PhoneTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+
+        }
+
+        private void PhoneTb_Leave(object sender, EventArgs e)
+        {
+            if (PhoneTb.Text == "")
+            {
+                PhoneTb.Text = "Phone";
+                PhoneTb.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void btn_dashboard_Click_1(object sender, EventArgs e)
+        {
+            admin_dashboard Obj = new admin_dashboard();
+
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void btn_quizActive_Click_1(object sender, EventArgs e)
+        {
+            Subjects Obj = new Subjects();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void roundedbtn6_Click(object sender, EventArgs e)
+        {
+            Quiz Obj = new Quiz();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void btn_logout_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
