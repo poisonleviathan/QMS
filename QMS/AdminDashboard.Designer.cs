@@ -31,12 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_dashboard));
             this.ScreenPanel = new System.Windows.Forms.Panel();
             this.lbl_question_bank = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.btn_reset = new QMS.roundedbtn();
             this.btn_edit = new QMS.roundedbtn();
             this.btn_save = new QMS.roundedbtn();
             this.lbl_DashHeader = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.SubjectCb = new System.Windows.Forms.ComboBox();
             this.txt_Option4 = new System.Windows.Forms.TextBox();
             this.txt_Option5 = new System.Windows.Forms.TextBox();
             this.txt_Option3 = new System.Windows.Forms.TextBox();
@@ -67,6 +66,7 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.roundedbtn9 = new QMS.roundedbtn();
             this.btn_logout = new QMS.roundedbtn();
+            this.QuestionDGV = new System.Windows.Forms.DataGridView();
             this.ScreenPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -80,6 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // ScreenPanel
@@ -90,13 +91,13 @@
             this.ScreenPanel.BackColor = System.Drawing.Color.Transparent;
             this.ScreenPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ScreenPanel.BackgroundImage")));
             this.ScreenPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ScreenPanel.Controls.Add(this.QuestionDGV);
             this.ScreenPanel.Controls.Add(this.lbl_question_bank);
-            this.ScreenPanel.Controls.Add(this.panel10);
             this.ScreenPanel.Controls.Add(this.btn_reset);
             this.ScreenPanel.Controls.Add(this.btn_edit);
             this.ScreenPanel.Controls.Add(this.btn_save);
             this.ScreenPanel.Controls.Add(this.lbl_DashHeader);
-            this.ScreenPanel.Controls.Add(this.comboBox1);
+            this.ScreenPanel.Controls.Add(this.SubjectCb);
             this.ScreenPanel.Controls.Add(this.txt_Option4);
             this.ScreenPanel.Controls.Add(this.txt_Option5);
             this.ScreenPanel.Controls.Add(this.txt_Option3);
@@ -119,17 +120,6 @@
             this.lbl_question_bank.TabIndex = 14;
             this.lbl_question_bank.Text = "Questions";
             // 
-            // panel10
-            // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel10.Location = new System.Drawing.Point(2, 377);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(947, 217);
-            this.panel10.TabIndex = 13;
-            // 
             // btn_reset
             // 
             this.btn_reset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -149,6 +139,7 @@
             this.btn_reset.Text = "Reset";
             this.btn_reset.TextColor = System.Drawing.Color.White;
             this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // btn_edit
             // 
@@ -189,6 +180,7 @@
             this.btn_save.Text = "Save";
             this.btn_save.TextColor = System.Drawing.Color.White;
             this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // lbl_DashHeader
             // 
@@ -201,22 +193,22 @@
             this.lbl_DashHeader.TabIndex = 8;
             this.lbl_DashHeader.Text = "Add Questions To a Quiz";
             // 
-            // comboBox1
+            // SubjectCb
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SubjectCb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.SubjectCb.Font = new System.Drawing.Font("Inter", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubjectCb.FormattingEnabled = true;
+            this.SubjectCb.Items.AddRange(new object[] {
             "Python",
             "Java ",
             "C#"});
-            this.comboBox1.Location = new System.Drawing.Point(399, 53);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(124, 24);
-            this.comboBox1.TabIndex = 7;
-            this.comboBox1.Tag = "";
-            this.comboBox1.Text = "Subject";
+            this.SubjectCb.Location = new System.Drawing.Point(399, 53);
+            this.SubjectCb.Name = "SubjectCb";
+            this.SubjectCb.Size = new System.Drawing.Size(124, 24);
+            this.SubjectCb.TabIndex = 7;
+            this.SubjectCb.Tag = "";
+            this.SubjectCb.Text = "Subject";
             // 
             // txt_Option4
             // 
@@ -239,7 +231,7 @@
             this.txt_Option5.Name = "txt_Option5";
             this.txt_Option5.Size = new System.Drawing.Size(238, 27);
             this.txt_Option5.TabIndex = 5;
-            this.txt_Option5.Text = "Option 5";
+            this.txt_Option5.Text = "Answer";
             this.txt_Option5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_Option3
@@ -655,6 +647,16 @@
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
             // 
+            // QuestionDGV
+            // 
+            this.QuestionDGV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.QuestionDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.QuestionDGV.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.QuestionDGV.Location = new System.Drawing.Point(0, 393);
+            this.QuestionDGV.Name = "QuestionDGV";
+            this.QuestionDGV.Size = new System.Drawing.Size(952, 201);
+            this.QuestionDGV.TabIndex = 15;
+            // 
             // admin_dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -683,6 +685,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionDGV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -695,9 +698,8 @@
         private System.Windows.Forms.TextBox txt_Option1;
         private System.Windows.Forms.TextBox txt_Option4;
         private System.Windows.Forms.TextBox txt_Option5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox SubjectCb;
         private System.Windows.Forms.Label lbl_DashHeader;
-        private System.Windows.Forms.Panel panel10;
         private roundedbtn btn_reset;
         private roundedbtn btn_edit;
         private roundedbtn btn_save;
@@ -726,5 +728,6 @@
         private System.Windows.Forms.Panel panel13;
         private roundedbtn roundedbtn9;
         private roundedbtn btn_logout;
+        private System.Windows.Forms.DataGridView QuestionDGV;
     }
 }
