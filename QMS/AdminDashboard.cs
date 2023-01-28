@@ -314,5 +314,15 @@ namespace QMS
                 txt_Option5.ForeColor = Color.FromArgb(71, 2, 108);
             }
         }
+
+        private void txt_Qustion1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QuestionDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

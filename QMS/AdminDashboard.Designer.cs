@@ -32,6 +32,9 @@
             this.ScreenPanel = new System.Windows.Forms.Panel();
             this.QuestionDGV = new System.Windows.Forms.DataGridView();
             this.lbl_question_bank = new System.Windows.Forms.Label();
+            this.btn_reset = new QMS.roundedbtn();
+            this.btn_edit = new QMS.roundedbtn();
+            this.btn_save = new QMS.roundedbtn();
             this.lbl_DashHeader = new System.Windows.Forms.Label();
             this.SubjectCb = new System.Windows.Forms.ComboBox();
             this.txt_Option4 = new System.Windows.Forms.TextBox();
@@ -42,31 +45,28 @@
             this.txt_Qustion1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.roundedbtn6 = new QMS.roundedbtn();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.roundedbtn7 = new QMS.roundedbtn();
+            this.roundedbtn8 = new QMS.roundedbtn();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.Studentsbtn = new QMS.roundedbtn();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.roundedbtn2 = new QMS.roundedbtn();
+            this.roundedbtn4 = new QMS.roundedbtn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.roundedbtn3 = new QMS.roundedbtn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_quizActive = new QMS.roundedbtn();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.roundedbtn5 = new QMS.roundedbtn();
+            this.btn_quiz = new QMS.roundedbtn();
             this.panel7 = new System.Windows.Forms.Panel();
             this.Login_logo_img = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.roundedbtn6 = new QMS.roundedbtn();
-            this.roundedbtn7 = new QMS.roundedbtn();
-            this.roundedbtn8 = new QMS.roundedbtn();
-            this.Studentsbtn = new QMS.roundedbtn();
-            this.roundedbtn2 = new QMS.roundedbtn();
-            this.roundedbtn4 = new QMS.roundedbtn();
-            this.roundedbtn3 = new QMS.roundedbtn();
-            this.btn_quizActive = new QMS.roundedbtn();
-            this.roundedbtn5 = new QMS.roundedbtn();
-            this.btn_quiz = new QMS.roundedbtn();
             this.roundedbtn9 = new QMS.roundedbtn();
             this.btn_logout = new QMS.roundedbtn();
-            this.btn_reset = new QMS.roundedbtn();
-            this.btn_edit = new QMS.roundedbtn();
-            this.btn_save = new QMS.roundedbtn();
             this.ScreenPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuestionDGV)).BeginInit();
             this.panel1.SuspendLayout();
@@ -114,12 +114,14 @@
             this.QuestionDGV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.QuestionDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.QuestionDGV.BackgroundColor = System.Drawing.SystemColors.Control;
             this.QuestionDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.QuestionDGV.Location = new System.Drawing.Point(0, 363);
             this.QuestionDGV.Name = "QuestionDGV";
             this.QuestionDGV.Size = new System.Drawing.Size(949, 231);
             this.QuestionDGV.TabIndex = 15;
+            this.QuestionDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.QuestionDGV_CellContentClick);
             // 
             // lbl_question_bank
             // 
@@ -131,6 +133,68 @@
             this.lbl_question_bank.Size = new System.Drawing.Size(113, 25);
             this.lbl_question_bank.TabIndex = 14;
             this.lbl_question_bank.Text = "Questions";
+            // 
+            // btn_reset
+            // 
+            this.btn_reset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_reset.BackColor = System.Drawing.Color.Navy;
+            this.btn_reset.BackgroundColor = System.Drawing.Color.Navy;
+            this.btn_reset.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_reset.BorderRadius = 18;
+            this.btn_reset.BorderSize = 0;
+            this.btn_reset.FlatAppearance.BorderSize = 0;
+            this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reset.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reset.ForeColor = System.Drawing.Color.White;
+            this.btn_reset.Location = new System.Drawing.Point(606, 276);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(99, 34);
+            this.btn_reset.TabIndex = 11;
+            this.btn_reset.Text = "Reset";
+            this.btn_reset.TextColor = System.Drawing.Color.White;
+            this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
+            // btn_edit
+            // 
+            this.btn_edit.BackColor = System.Drawing.Color.Navy;
+            this.btn_edit.BackgroundColor = System.Drawing.Color.Navy;
+            this.btn_edit.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_edit.BorderRadius = 18;
+            this.btn_edit.BorderSize = 0;
+            this.btn_edit.FlatAppearance.BorderSize = 0;
+            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_edit.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_edit.ForeColor = System.Drawing.Color.White;
+            this.btn_edit.Location = new System.Drawing.Point(216, 276);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(99, 34);
+            this.btn_edit.TabIndex = 10;
+            this.btn_edit.Text = "Edit";
+            this.btn_edit.TextColor = System.Drawing.Color.White;
+            this.btn_edit.UseVisualStyleBackColor = false;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // btn_save
+            // 
+            this.btn_save.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_save.BackColor = System.Drawing.Color.Navy;
+            this.btn_save.BackgroundColor = System.Drawing.Color.Navy;
+            this.btn_save.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_save.BorderRadius = 18;
+            this.btn_save.BorderSize = 0;
+            this.btn_save.FlatAppearance.BorderSize = 0;
+            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_save.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.ForeColor = System.Drawing.Color.White;
+            this.btn_save.Location = new System.Drawing.Point(399, 276);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(115, 34);
+            this.btn_save.TabIndex = 9;
+            this.btn_save.Text = "Save";
+            this.btn_save.TextColor = System.Drawing.Color.White;
+            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // lbl_DashHeader
             // 
@@ -241,6 +305,7 @@
             this.txt_Qustion1.TabIndex = 0;
             this.txt_Qustion1.Text = "Question ";
             this.txt_Qustion1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_Qustion1.TextChanged += new System.EventHandler(this.txt_Qustion1_TextChanged);
             this.txt_Qustion1.Enter += new System.EventHandler(this.txt_Qustion1_Enter);
             this.txt_Qustion1.Leave += new System.EventHandler(this.txt_Qustion1_Leave);
             // 
@@ -271,103 +336,6 @@
             this.panel11.Size = new System.Drawing.Size(127, 82);
             this.panel11.TabIndex = 6;
             // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.roundedbtn7);
-            this.panel12.Location = new System.Drawing.Point(0, 78);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(200, 82);
-            this.panel12.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.Studentsbtn);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Controls.Add(this.roundedbtn4);
-            this.panel6.Location = new System.Drawing.Point(0, 305);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(127, 82);
-            this.panel6.TabIndex = 5;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.roundedbtn2);
-            this.panel9.Location = new System.Drawing.Point(0, 78);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 82);
-            this.panel9.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.roundedbtn3);
-            this.panel2.Location = new System.Drawing.Point(0, 129);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(127, 82);
-            this.panel2.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.btn_quizActive);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.btn_quiz);
-            this.panel4.Location = new System.Drawing.Point(0, 217);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(127, 82);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.roundedbtn5);
-            this.panel5.Location = new System.Drawing.Point(0, 78);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 82);
-            this.panel5.TabIndex = 2;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.Login_logo_img);
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(127, 100);
-            this.panel7.TabIndex = 0;
-            // 
-            // Login_logo_img
-            // 
-            this.Login_logo_img.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Login_logo_img.BackColor = System.Drawing.Color.Transparent;
-            this.Login_logo_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Login_logo_img.Image = ((System.Drawing.Image)(resources.GetObject("Login_logo_img.Image")));
-            this.Login_logo_img.Location = new System.Drawing.Point(40, 27);
-            this.Login_logo_img.Name = "Login_logo_img";
-            this.Login_logo_img.Size = new System.Drawing.Size(52, 71);
-            this.Login_logo_img.TabIndex = 1;
-            this.Login_logo_img.TabStop = false;
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.panel13);
-            this.panel8.Controls.Add(this.btn_logout);
-            this.panel8.Location = new System.Drawing.Point(0, 482);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(127, 82);
-            this.panel8.TabIndex = 4;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.roundedbtn9);
-            this.panel13.Location = new System.Drawing.Point(0, 78);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(200, 82);
-            this.panel13.TabIndex = 2;
-            // 
             // roundedbtn6
             // 
             this.roundedbtn6.BackColor = System.Drawing.SystemColors.Control;
@@ -388,6 +356,14 @@
             this.roundedbtn6.TextColor = System.Drawing.Color.White;
             this.roundedbtn6.UseVisualStyleBackColor = false;
             this.roundedbtn6.Click += new System.EventHandler(this.roundedbtn6_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.roundedbtn7);
+            this.panel12.Location = new System.Drawing.Point(0, 78);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(200, 82);
+            this.panel12.TabIndex = 2;
             // 
             // roundedbtn7
             // 
@@ -428,6 +404,18 @@
             this.roundedbtn8.TextColor = System.Drawing.Color.White;
             this.roundedbtn8.UseVisualStyleBackColor = false;
             // 
+            // panel6
+            // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.Studentsbtn);
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Controls.Add(this.roundedbtn4);
+            this.panel6.Location = new System.Drawing.Point(0, 305);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(127, 82);
+            this.panel6.TabIndex = 5;
+            // 
             // Studentsbtn
             // 
             this.Studentsbtn.BackColor = System.Drawing.SystemColors.Control;
@@ -448,6 +436,14 @@
             this.Studentsbtn.TextColor = System.Drawing.Color.White;
             this.Studentsbtn.UseVisualStyleBackColor = false;
             this.Studentsbtn.Click += new System.EventHandler(this.roundedbtn1_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.roundedbtn2);
+            this.panel9.Location = new System.Drawing.Point(0, 78);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(200, 82);
+            this.panel9.TabIndex = 2;
             // 
             // roundedbtn2
             // 
@@ -488,6 +484,16 @@
             this.roundedbtn4.TextColor = System.Drawing.Color.White;
             this.roundedbtn4.UseVisualStyleBackColor = false;
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.roundedbtn3);
+            this.panel2.Location = new System.Drawing.Point(0, 129);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(127, 82);
+            this.panel2.TabIndex = 4;
+            // 
             // roundedbtn3
             // 
             this.roundedbtn3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -507,6 +513,18 @@
             this.roundedbtn3.TabIndex = 0;
             this.roundedbtn3.TextColor = System.Drawing.Color.White;
             this.roundedbtn3.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.btn_quizActive);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.btn_quiz);
+            this.panel4.Location = new System.Drawing.Point(0, 217);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(127, 82);
+            this.panel4.TabIndex = 2;
             // 
             // btn_quizActive
             // 
@@ -528,6 +546,14 @@
             this.btn_quizActive.TextColor = System.Drawing.Color.White;
             this.btn_quizActive.UseVisualStyleBackColor = false;
             this.btn_quizActive.Click += new System.EventHandler(this.btn_quizActive_Click_1);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.roundedbtn5);
+            this.panel5.Location = new System.Drawing.Point(0, 78);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 82);
+            this.panel5.TabIndex = 2;
             // 
             // roundedbtn5
             // 
@@ -568,6 +594,45 @@
             this.btn_quiz.TextColor = System.Drawing.Color.White;
             this.btn_quiz.UseVisualStyleBackColor = false;
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.Login_logo_img);
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(127, 100);
+            this.panel7.TabIndex = 0;
+            // 
+            // Login_logo_img
+            // 
+            this.Login_logo_img.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Login_logo_img.BackColor = System.Drawing.Color.Transparent;
+            this.Login_logo_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Login_logo_img.Image = ((System.Drawing.Image)(resources.GetObject("Login_logo_img.Image")));
+            this.Login_logo_img.Location = new System.Drawing.Point(40, 27);
+            this.Login_logo_img.Name = "Login_logo_img";
+            this.Login_logo_img.Size = new System.Drawing.Size(52, 71);
+            this.Login_logo_img.TabIndex = 1;
+            this.Login_logo_img.TabStop = false;
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.panel13);
+            this.panel8.Controls.Add(this.btn_logout);
+            this.panel8.Location = new System.Drawing.Point(0, 482);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(127, 82);
+            this.panel8.TabIndex = 4;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.roundedbtn9);
+            this.panel13.Location = new System.Drawing.Point(0, 78);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(200, 82);
+            this.panel13.TabIndex = 2;
+            // 
             // roundedbtn9
             // 
             this.roundedbtn9.BackColor = System.Drawing.Color.Transparent;
@@ -607,68 +672,6 @@
             this.btn_logout.TextColor = System.Drawing.Color.White;
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
-            // 
-            // btn_reset
-            // 
-            this.btn_reset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_reset.BackColor = System.Drawing.Color.Navy;
-            this.btn_reset.BackgroundColor = System.Drawing.Color.Navy;
-            this.btn_reset.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_reset.BorderRadius = 18;
-            this.btn_reset.BorderSize = 0;
-            this.btn_reset.FlatAppearance.BorderSize = 0;
-            this.btn_reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_reset.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reset.ForeColor = System.Drawing.Color.White;
-            this.btn_reset.Location = new System.Drawing.Point(606, 276);
-            this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(99, 34);
-            this.btn_reset.TabIndex = 11;
-            this.btn_reset.Text = "Reset";
-            this.btn_reset.TextColor = System.Drawing.Color.White;
-            this.btn_reset.UseVisualStyleBackColor = false;
-            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
-            // 
-            // btn_edit
-            // 
-            this.btn_edit.BackColor = System.Drawing.Color.Navy;
-            this.btn_edit.BackgroundColor = System.Drawing.Color.Navy;
-            this.btn_edit.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_edit.BorderRadius = 18;
-            this.btn_edit.BorderSize = 0;
-            this.btn_edit.FlatAppearance.BorderSize = 0;
-            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.ForeColor = System.Drawing.Color.White;
-            this.btn_edit.Location = new System.Drawing.Point(216, 276);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(99, 34);
-            this.btn_edit.TabIndex = 10;
-            this.btn_edit.Text = "Edit";
-            this.btn_edit.TextColor = System.Drawing.Color.White;
-            this.btn_edit.UseVisualStyleBackColor = false;
-            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
-            // 
-            // btn_save
-            // 
-            this.btn_save.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_save.BackColor = System.Drawing.Color.Navy;
-            this.btn_save.BackgroundColor = System.Drawing.Color.Navy;
-            this.btn_save.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_save.BorderRadius = 18;
-            this.btn_save.BorderSize = 0;
-            this.btn_save.FlatAppearance.BorderSize = 0;
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(399, 276);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(115, 34);
-            this.btn_save.TabIndex = 9;
-            this.btn_save.Text = "Save";
-            this.btn_save.TextColor = System.Drawing.Color.White;
-            this.btn_save.UseVisualStyleBackColor = false;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
             // admin_dashboard
             // 
