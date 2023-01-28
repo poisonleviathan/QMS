@@ -34,7 +34,7 @@ namespace QMS
         {
             try
             {
-                int Qnum =RandomQuestionGen();
+                int Qnum = RandomQuestionGen();
                 Con.Open();
                 string Query = "select * from QuestionTable where QId "+Qnum+"";
                 SqlCommand cmd =new SqlCommand(Query,Con);
