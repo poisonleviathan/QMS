@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admin_dashboard));
             this.ScreenPanel = new System.Windows.Forms.Panel();
+            this.QuestionDGV = new System.Windows.Forms.DataGridView();
             this.lbl_question_bank = new System.Windows.Forms.Label();
             this.btn_reset = new QMS.roundedbtn();
             this.btn_edit = new QMS.roundedbtn();
@@ -66,8 +67,8 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.roundedbtn9 = new QMS.roundedbtn();
             this.btn_logout = new QMS.roundedbtn();
-            this.QuestionDGV = new System.Windows.Forms.DataGridView();
             this.ScreenPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionDGV)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
@@ -80,7 +81,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.QuestionDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // ScreenPanel
@@ -109,12 +109,26 @@
             this.ScreenPanel.Size = new System.Drawing.Size(952, 594);
             this.ScreenPanel.TabIndex = 2;
             // 
+            // QuestionDGV
+            // 
+            this.QuestionDGV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.QuestionDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.QuestionDGV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.QuestionDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.QuestionDGV.Location = new System.Drawing.Point(0, 363);
+            this.QuestionDGV.Name = "QuestionDGV";
+            this.QuestionDGV.Size = new System.Drawing.Size(949, 231);
+            this.QuestionDGV.TabIndex = 15;
+            this.QuestionDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.QuestionDGV_CellContentClick);
+            // 
             // lbl_question_bank
             // 
             this.lbl_question_bank.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_question_bank.AutoSize = true;
             this.lbl_question_bank.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_question_bank.Location = new System.Drawing.Point(401, 346);
+            this.lbl_question_bank.Location = new System.Drawing.Point(401, 335);
             this.lbl_question_bank.Name = "lbl_question_bank";
             this.lbl_question_bank.Size = new System.Drawing.Size(113, 25);
             this.lbl_question_bank.TabIndex = 14;
@@ -221,6 +235,8 @@
             this.txt_Option4.TabIndex = 6;
             this.txt_Option4.Text = "Option 4";
             this.txt_Option4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_Option4.Enter += new System.EventHandler(this.txt_Option4_Enter);
+            this.txt_Option4.Leave += new System.EventHandler(this.txt_Option4_Leave);
             // 
             // txt_Option5
             // 
@@ -233,6 +249,8 @@
             this.txt_Option5.TabIndex = 5;
             this.txt_Option5.Text = "Answer";
             this.txt_Option5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_Option5.Enter += new System.EventHandler(this.txt_Option5_Enter);
+            this.txt_Option5.Leave += new System.EventHandler(this.txt_Option5_Leave);
             // 
             // txt_Option3
             // 
@@ -246,6 +264,8 @@
             this.txt_Option3.Text = "Option 3";
             this.txt_Option3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_Option3.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txt_Option3.Enter += new System.EventHandler(this.txt_Option3_Enter);
+            this.txt_Option3.Leave += new System.EventHandler(this.txt_Option3_Leave);
             // 
             // txt_Option2
             // 
@@ -257,6 +277,8 @@
             this.txt_Option2.TabIndex = 3;
             this.txt_Option2.Text = " Option 2";
             this.txt_Option2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_Option2.Enter += new System.EventHandler(this.txt_Option2_Enter);
+            this.txt_Option2.Leave += new System.EventHandler(this.txt_Option2_Leave);
             // 
             // txt_Option1
             // 
@@ -269,6 +291,8 @@
             this.txt_Option1.Text = "Option 1";
             this.txt_Option1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_Option1.TextChanged += new System.EventHandler(this.txt_Qustion2_TextChanged);
+            this.txt_Option1.Enter += new System.EventHandler(this.txt_Option1_Enter);
+            this.txt_Option1.Leave += new System.EventHandler(this.txt_Option1_Leave);
             // 
             // txt_Qustion1
             // 
@@ -281,7 +305,9 @@
             this.txt_Qustion1.TabIndex = 0;
             this.txt_Qustion1.Text = "Question ";
             this.txt_Qustion1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_Qustion1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_Qustion1.TextChanged += new System.EventHandler(this.txt_Qustion1_TextChanged);
+            this.txt_Qustion1.Enter += new System.EventHandler(this.txt_Qustion1_Enter);
+            this.txt_Qustion1.Leave += new System.EventHandler(this.txt_Qustion1_Leave);
             // 
             // panel1
             // 
@@ -647,16 +673,6 @@
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
             // 
-            // QuestionDGV
-            // 
-            this.QuestionDGV.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.QuestionDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.QuestionDGV.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.QuestionDGV.Location = new System.Drawing.Point(0, 393);
-            this.QuestionDGV.Name = "QuestionDGV";
-            this.QuestionDGV.Size = new System.Drawing.Size(952, 201);
-            this.QuestionDGV.TabIndex = 15;
-            // 
             // admin_dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -673,6 +689,7 @@
             this.Load += new System.EventHandler(this.frm_Dashboard_Load);
             this.ScreenPanel.ResumeLayout(false);
             this.ScreenPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionDGV)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
@@ -685,7 +702,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.QuestionDGV)).EndInit();
             this.ResumeLayout(false);
 
         }

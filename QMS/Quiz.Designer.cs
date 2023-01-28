@@ -33,85 +33,85 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.roundedbtn6 = new QMS.roundedbtn();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.roundedbtn7 = new QMS.roundedbtn();
+            this.roundedbtn8 = new QMS.roundedbtn();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.roundedbtn1 = new QMS.roundedbtn();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.roundedbtn2 = new QMS.roundedbtn();
+            this.roundedbtn4 = new QMS.roundedbtn();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_dashboard = new QMS.roundedbtn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_quizActive = new QMS.roundedbtn();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.roundedbtn3 = new QMS.roundedbtn();
+            this.btn_quiz = new QMS.roundedbtn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Login_logo_img = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.grp_Question1 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
-            this.radioButton19 = new System.Windows.Forms.RadioButton();
-            this.radioButton20 = new System.Windows.Forms.RadioButton();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radioButton21 = new System.Windows.Forms.RadioButton();
-            this.radioButton22 = new System.Windows.Forms.RadioButton();
-            this.radioButton23 = new System.Windows.Forms.RadioButton();
-            this.radioButton24 = new System.Windows.Forms.RadioButton();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.radioButton25 = new System.Windows.Forms.RadioButton();
-            this.radioButton26 = new System.Windows.Forms.RadioButton();
-            this.radioButton27 = new System.Windows.Forms.RadioButton();
-            this.radioButton28 = new System.Windows.Forms.RadioButton();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.radioButton29 = new System.Windows.Forms.RadioButton();
-            this.radioButton30 = new System.Windows.Forms.RadioButton();
-            this.radioButton31 = new System.Windows.Forms.RadioButton();
-            this.radioButton32 = new System.Windows.Forms.RadioButton();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.radioButton33 = new System.Windows.Forms.RadioButton();
-            this.radioButton34 = new System.Windows.Forms.RadioButton();
-            this.radioButton35 = new System.Windows.Forms.RadioButton();
-            this.radioButton36 = new System.Windows.Forms.RadioButton();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.radioButton37 = new System.Windows.Forms.RadioButton();
-            this.radioButton38 = new System.Windows.Forms.RadioButton();
-            this.radioButton39 = new System.Windows.Forms.RadioButton();
-            this.radioButton40 = new System.Windows.Forms.RadioButton();
+            this.roundedbtn5 = new QMS.roundedbtn();
+            this.btn_logout = new QMS.roundedbtn();
+            this.Q1 = new System.Windows.Forms.GroupBox();
+            this.Q104 = new System.Windows.Forms.RadioButton();
+            this.Q103 = new System.Windows.Forms.RadioButton();
+            this.Q101 = new System.Windows.Forms.RadioButton();
             this.lbl_DashHeader = new System.Windows.Forms.Label();
             this.lbl_subject = new System.Windows.Forms.Label();
             this.btn_submit = new QMS.roundedbtn();
-            this.roundedbtn6 = new QMS.roundedbtn();
-            this.roundedbtn7 = new QMS.roundedbtn();
-            this.roundedbtn8 = new QMS.roundedbtn();
-            this.roundedbtn1 = new QMS.roundedbtn();
-            this.roundedbtn2 = new QMS.roundedbtn();
-            this.roundedbtn4 = new QMS.roundedbtn();
-            this.btn_dashboard = new QMS.roundedbtn();
-            this.btn_quizActive = new QMS.roundedbtn();
-            this.roundedbtn3 = new QMS.roundedbtn();
-            this.btn_quiz = new QMS.roundedbtn();
-            this.roundedbtn5 = new QMS.roundedbtn();
-            this.btn_logout = new QMS.roundedbtn();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.qMS_DBDataSet = new QMS.QMS_DBDataSet();
             this.subjectTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qMS_DBDataSet = new QMS.QMS_DBDataSet();
             this.subjectTableTableAdapter = new QMS.QMS_DBDataSetTableAdapters.SubjectTableTableAdapter();
+            this.Q102 = new System.Windows.Forms.RadioButton();
+            this.Q2 = new System.Windows.Forms.GroupBox();
+            this.Q204 = new System.Windows.Forms.RadioButton();
+            this.Q203 = new System.Windows.Forms.RadioButton();
+            this.Q202 = new System.Windows.Forms.RadioButton();
+            this.Q201 = new System.Windows.Forms.RadioButton();
+            this.Q3 = new System.Windows.Forms.GroupBox();
+            this.Q304 = new System.Windows.Forms.RadioButton();
+            this.Q303 = new System.Windows.Forms.RadioButton();
+            this.Q302 = new System.Windows.Forms.RadioButton();
+            this.Q301 = new System.Windows.Forms.RadioButton();
+            this.Q4 = new System.Windows.Forms.GroupBox();
+            this.Q404 = new System.Windows.Forms.RadioButton();
+            this.Q403 = new System.Windows.Forms.RadioButton();
+            this.Q402 = new System.Windows.Forms.RadioButton();
+            this.Q401 = new System.Windows.Forms.RadioButton();
+            this.Q5 = new System.Windows.Forms.GroupBox();
+            this.Q504 = new System.Windows.Forms.RadioButton();
+            this.Q503 = new System.Windows.Forms.RadioButton();
+            this.Q502 = new System.Windows.Forms.RadioButton();
+            this.Q501 = new System.Windows.Forms.RadioButton();
+            this.Q6 = new System.Windows.Forms.GroupBox();
+            this.Q604 = new System.Windows.Forms.RadioButton();
+            this.Q603 = new System.Windows.Forms.RadioButton();
+            this.Q602 = new System.Windows.Forms.RadioButton();
+            this.Q601 = new System.Windows.Forms.RadioButton();
+            this.Q7 = new System.Windows.Forms.GroupBox();
+            this.Q704 = new System.Windows.Forms.RadioButton();
+            this.Q703 = new System.Windows.Forms.RadioButton();
+            this.Q702 = new System.Windows.Forms.RadioButton();
+            this.Q701 = new System.Windows.Forms.RadioButton();
+            this.Q8 = new System.Windows.Forms.GroupBox();
+            this.Q804 = new System.Windows.Forms.RadioButton();
+            this.Q803 = new System.Windows.Forms.RadioButton();
+            this.Q802 = new System.Windows.Forms.RadioButton();
+            this.Q801 = new System.Windows.Forms.RadioButton();
+            this.Q9 = new System.Windows.Forms.GroupBox();
+            this.Q904 = new System.Windows.Forms.RadioButton();
+            this.Q903 = new System.Windows.Forms.RadioButton();
+            this.Q902 = new System.Windows.Forms.RadioButton();
+            this.Q901 = new System.Windows.Forms.RadioButton();
+            this.Q10 = new System.Windows.Forms.GroupBox();
+            this.Q1004 = new System.Windows.Forms.RadioButton();
+            this.Q1003 = new System.Windows.Forms.RadioButton();
+            this.Q1002 = new System.Windows.Forms.RadioButton();
+            this.Q1001 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -125,18 +125,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.grp_Question1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qMS_DBDataSet)).BeginInit();
+            this.Q1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subjectTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qMS_DBDataSet)).BeginInit();
+            this.Q2.SuspendLayout();
+            this.Q3.SuspendLayout();
+            this.Q4.SuspendLayout();
+            this.Q5.SuspendLayout();
+            this.Q6.SuspendLayout();
+            this.Q7.SuspendLayout();
+            this.Q8.SuspendLayout();
+            this.Q9.SuspendLayout();
+            this.Q10.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -145,7 +145,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1226, 653);
+            this.pictureBox1.Size = new System.Drawing.Size(1254, 685);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -161,7 +161,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(134, 653);
+            this.panel1.Size = new System.Drawing.Size(134, 685);
             this.panel1.TabIndex = 17;
             // 
             // panel11
@@ -171,772 +171,10 @@
             this.panel11.Controls.Add(this.roundedbtn6);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.roundedbtn8);
-            this.panel11.Location = new System.Drawing.Point(0, 405);
+            this.panel11.Location = new System.Drawing.Point(0, 421);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(127, 82);
             this.panel11.TabIndex = 6;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.roundedbtn7);
-            this.panel12.Location = new System.Drawing.Point(0, 78);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(200, 82);
-            this.panel12.TabIndex = 2;
-            // 
-            // panel6
-            // 
-            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.roundedbtn1);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Controls.Add(this.roundedbtn4);
-            this.panel6.Location = new System.Drawing.Point(0, 319);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(127, 82);
-            this.panel6.TabIndex = 5;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.roundedbtn2);
-            this.panel9.Location = new System.Drawing.Point(0, 78);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 82);
-            this.panel9.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.btn_dashboard);
-            this.panel3.Location = new System.Drawing.Point(0, 145);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(127, 82);
-            this.panel3.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.btn_quizActive);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.btn_quiz);
-            this.panel4.Location = new System.Drawing.Point(0, 233);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(127, 82);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.roundedbtn3);
-            this.panel5.Location = new System.Drawing.Point(0, 78);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 82);
-            this.panel5.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.Login_logo_img);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(127, 100);
-            this.panel2.TabIndex = 0;
-            // 
-            // Login_logo_img
-            // 
-            this.Login_logo_img.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Login_logo_img.BackColor = System.Drawing.Color.Transparent;
-            this.Login_logo_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Login_logo_img.Image = ((System.Drawing.Image)(resources.GetObject("Login_logo_img.Image")));
-            this.Login_logo_img.Location = new System.Drawing.Point(40, 27);
-            this.Login_logo_img.Name = "Login_logo_img";
-            this.Login_logo_img.Size = new System.Drawing.Size(52, 71);
-            this.Login_logo_img.TabIndex = 1;
-            this.Login_logo_img.TabStop = false;
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.btn_logout);
-            this.panel7.Location = new System.Drawing.Point(0, 491);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(127, 82);
-            this.panel7.TabIndex = 4;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.roundedbtn5);
-            this.panel8.Location = new System.Drawing.Point(0, 78);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 82);
-            this.panel8.TabIndex = 2;
-            // 
-            // grp_Question1
-            // 
-            this.grp_Question1.Controls.Add(this.radioButton4);
-            this.grp_Question1.Controls.Add(this.radioButton3);
-            this.grp_Question1.Controls.Add(this.radioButton2);
-            this.grp_Question1.Controls.Add(this.radioButton1);
-            this.grp_Question1.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grp_Question1.Location = new System.Drawing.Point(171, 97);
-            this.grp_Question1.Name = "grp_Question1";
-            this.grp_Question1.Size = new System.Drawing.Size(252, 162);
-            this.grp_Question1.TabIndex = 18;
-            this.grp_Question1.TabStop = false;
-            this.grp_Question1.Text = "Question 1";
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(42, 124);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(91, 23);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Option 1";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(42, 95);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(91, 23);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Option 1";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(42, 66);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(91, 23);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Option 1";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(42, 37);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(91, 23);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Option 1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton6);
-            this.groupBox1.Controls.Add(this.radioButton7);
-            this.groupBox1.Controls.Add(this.radioButton8);
-            this.groupBox1.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(429, 97);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(252, 162);
-            this.groupBox1.TabIndex = 19;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Question 1";
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(42, 124);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(91, 23);
-            this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Option 1";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(42, 95);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(91, 23);
-            this.radioButton6.TabIndex = 2;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Option 1";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(42, 66);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(91, 23);
-            this.radioButton7.TabIndex = 1;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Option 1";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(42, 37);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(91, 23);
-            this.radioButton8.TabIndex = 0;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Option 1";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.radioButton9);
-            this.groupBox2.Controls.Add(this.radioButton10);
-            this.groupBox2.Controls.Add(this.radioButton11);
-            this.groupBox2.Controls.Add(this.radioButton12);
-            this.groupBox2.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(687, 97);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(252, 162);
-            this.groupBox2.TabIndex = 19;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Question 1";
-            // 
-            // radioButton9
-            // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(42, 124);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(91, 23);
-            this.radioButton9.TabIndex = 3;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Option 1";
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(42, 95);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(91, 23);
-            this.radioButton10.TabIndex = 2;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Option 1";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            // 
-            // radioButton11
-            // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(42, 66);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(91, 23);
-            this.radioButton11.TabIndex = 1;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Option 1";
-            this.radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.Location = new System.Drawing.Point(42, 37);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(91, 23);
-            this.radioButton12.TabIndex = 0;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Option 1";
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radioButton13);
-            this.groupBox3.Controls.Add(this.radioButton14);
-            this.groupBox3.Controls.Add(this.radioButton15);
-            this.groupBox3.Controls.Add(this.radioButton16);
-            this.groupBox3.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(171, 289);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(252, 162);
-            this.groupBox3.TabIndex = 20;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Question 1";
-            // 
-            // radioButton13
-            // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton13.Location = new System.Drawing.Point(42, 124);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(91, 23);
-            this.radioButton13.TabIndex = 3;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "Option 1";
-            this.radioButton13.UseVisualStyleBackColor = true;
-            // 
-            // radioButton14
-            // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton14.Location = new System.Drawing.Point(42, 95);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(91, 23);
-            this.radioButton14.TabIndex = 2;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "Option 1";
-            this.radioButton14.UseVisualStyleBackColor = true;
-            // 
-            // radioButton15
-            // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton15.Location = new System.Drawing.Point(42, 66);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(91, 23);
-            this.radioButton15.TabIndex = 1;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "Option 1";
-            this.radioButton15.UseVisualStyleBackColor = true;
-            // 
-            // radioButton16
-            // 
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton16.Location = new System.Drawing.Point(42, 37);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(91, 23);
-            this.radioButton16.TabIndex = 0;
-            this.radioButton16.TabStop = true;
-            this.radioButton16.Text = "Option 1";
-            this.radioButton16.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.radioButton17);
-            this.groupBox4.Controls.Add(this.radioButton18);
-            this.groupBox4.Controls.Add(this.radioButton19);
-            this.groupBox4.Controls.Add(this.radioButton20);
-            this.groupBox4.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(429, 292);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(252, 162);
-            this.groupBox4.TabIndex = 19;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Question 1";
-            // 
-            // radioButton17
-            // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton17.Location = new System.Drawing.Point(42, 124);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(91, 23);
-            this.radioButton17.TabIndex = 3;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.Text = "Option 1";
-            this.radioButton17.UseVisualStyleBackColor = true;
-            // 
-            // radioButton18
-            // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton18.Location = new System.Drawing.Point(42, 95);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(91, 23);
-            this.radioButton18.TabIndex = 2;
-            this.radioButton18.TabStop = true;
-            this.radioButton18.Text = "Option 1";
-            this.radioButton18.UseVisualStyleBackColor = true;
-            // 
-            // radioButton19
-            // 
-            this.radioButton19.AutoSize = true;
-            this.radioButton19.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton19.Location = new System.Drawing.Point(42, 66);
-            this.radioButton19.Name = "radioButton19";
-            this.radioButton19.Size = new System.Drawing.Size(91, 23);
-            this.radioButton19.TabIndex = 1;
-            this.radioButton19.TabStop = true;
-            this.radioButton19.Text = "Option 1";
-            this.radioButton19.UseVisualStyleBackColor = true;
-            // 
-            // radioButton20
-            // 
-            this.radioButton20.AutoSize = true;
-            this.radioButton20.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton20.Location = new System.Drawing.Point(42, 37);
-            this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(91, 23);
-            this.radioButton20.TabIndex = 0;
-            this.radioButton20.TabStop = true;
-            this.radioButton20.Text = "Option 1";
-            this.radioButton20.UseVisualStyleBackColor = true;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.radioButton21);
-            this.groupBox5.Controls.Add(this.radioButton22);
-            this.groupBox5.Controls.Add(this.radioButton23);
-            this.groupBox5.Controls.Add(this.radioButton24);
-            this.groupBox5.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(687, 295);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(252, 162);
-            this.groupBox5.TabIndex = 19;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Question 1";
-            // 
-            // radioButton21
-            // 
-            this.radioButton21.AutoSize = true;
-            this.radioButton21.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton21.Location = new System.Drawing.Point(42, 124);
-            this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(91, 23);
-            this.radioButton21.TabIndex = 3;
-            this.radioButton21.TabStop = true;
-            this.radioButton21.Text = "Option 1";
-            this.radioButton21.UseVisualStyleBackColor = true;
-            // 
-            // radioButton22
-            // 
-            this.radioButton22.AutoSize = true;
-            this.radioButton22.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton22.Location = new System.Drawing.Point(42, 95);
-            this.radioButton22.Name = "radioButton22";
-            this.radioButton22.Size = new System.Drawing.Size(91, 23);
-            this.radioButton22.TabIndex = 2;
-            this.radioButton22.TabStop = true;
-            this.radioButton22.Text = "Option 1";
-            this.radioButton22.UseVisualStyleBackColor = true;
-            // 
-            // radioButton23
-            // 
-            this.radioButton23.AutoSize = true;
-            this.radioButton23.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton23.Location = new System.Drawing.Point(42, 66);
-            this.radioButton23.Name = "radioButton23";
-            this.radioButton23.Size = new System.Drawing.Size(91, 23);
-            this.radioButton23.TabIndex = 1;
-            this.radioButton23.TabStop = true;
-            this.radioButton23.Text = "Option 1";
-            this.radioButton23.UseVisualStyleBackColor = true;
-            // 
-            // radioButton24
-            // 
-            this.radioButton24.AutoSize = true;
-            this.radioButton24.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton24.Location = new System.Drawing.Point(42, 37);
-            this.radioButton24.Name = "radioButton24";
-            this.radioButton24.Size = new System.Drawing.Size(91, 23);
-            this.radioButton24.TabIndex = 0;
-            this.radioButton24.TabStop = true;
-            this.radioButton24.Text = "Option 1";
-            this.radioButton24.UseVisualStyleBackColor = true;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.radioButton25);
-            this.groupBox6.Controls.Add(this.radioButton26);
-            this.groupBox6.Controls.Add(this.radioButton27);
-            this.groupBox6.Controls.Add(this.radioButton28);
-            this.groupBox6.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(945, 97);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(252, 162);
-            this.groupBox6.TabIndex = 21;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Question 1";
-            // 
-            // radioButton25
-            // 
-            this.radioButton25.AutoSize = true;
-            this.radioButton25.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton25.Location = new System.Drawing.Point(42, 124);
-            this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(91, 23);
-            this.radioButton25.TabIndex = 3;
-            this.radioButton25.TabStop = true;
-            this.radioButton25.Text = "Option 1";
-            this.radioButton25.UseVisualStyleBackColor = true;
-            // 
-            // radioButton26
-            // 
-            this.radioButton26.AutoSize = true;
-            this.radioButton26.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton26.Location = new System.Drawing.Point(42, 95);
-            this.radioButton26.Name = "radioButton26";
-            this.radioButton26.Size = new System.Drawing.Size(91, 23);
-            this.radioButton26.TabIndex = 2;
-            this.radioButton26.TabStop = true;
-            this.radioButton26.Text = "Option 1";
-            this.radioButton26.UseVisualStyleBackColor = true;
-            // 
-            // radioButton27
-            // 
-            this.radioButton27.AutoSize = true;
-            this.radioButton27.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton27.Location = new System.Drawing.Point(42, 66);
-            this.radioButton27.Name = "radioButton27";
-            this.radioButton27.Size = new System.Drawing.Size(91, 23);
-            this.radioButton27.TabIndex = 1;
-            this.radioButton27.TabStop = true;
-            this.radioButton27.Text = "Option 1";
-            this.radioButton27.UseVisualStyleBackColor = true;
-            // 
-            // radioButton28
-            // 
-            this.radioButton28.AutoSize = true;
-            this.radioButton28.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton28.Location = new System.Drawing.Point(42, 37);
-            this.radioButton28.Name = "radioButton28";
-            this.radioButton28.Size = new System.Drawing.Size(91, 23);
-            this.radioButton28.TabIndex = 0;
-            this.radioButton28.TabStop = true;
-            this.radioButton28.Text = "Option 1";
-            this.radioButton28.UseVisualStyleBackColor = true;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.radioButton29);
-            this.groupBox7.Controls.Add(this.radioButton30);
-            this.groupBox7.Controls.Add(this.radioButton31);
-            this.groupBox7.Controls.Add(this.radioButton32);
-            this.groupBox7.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(945, 295);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(252, 162);
-            this.groupBox7.TabIndex = 22;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Question 1";
-            // 
-            // radioButton29
-            // 
-            this.radioButton29.AutoSize = true;
-            this.radioButton29.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton29.Location = new System.Drawing.Point(42, 124);
-            this.radioButton29.Name = "radioButton29";
-            this.radioButton29.Size = new System.Drawing.Size(91, 23);
-            this.radioButton29.TabIndex = 3;
-            this.radioButton29.TabStop = true;
-            this.radioButton29.Text = "Option 1";
-            this.radioButton29.UseVisualStyleBackColor = true;
-            // 
-            // radioButton30
-            // 
-            this.radioButton30.AutoSize = true;
-            this.radioButton30.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton30.Location = new System.Drawing.Point(42, 95);
-            this.radioButton30.Name = "radioButton30";
-            this.radioButton30.Size = new System.Drawing.Size(91, 23);
-            this.radioButton30.TabIndex = 2;
-            this.radioButton30.TabStop = true;
-            this.radioButton30.Text = "Option 1";
-            this.radioButton30.UseVisualStyleBackColor = true;
-            // 
-            // radioButton31
-            // 
-            this.radioButton31.AutoSize = true;
-            this.radioButton31.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton31.Location = new System.Drawing.Point(42, 66);
-            this.radioButton31.Name = "radioButton31";
-            this.radioButton31.Size = new System.Drawing.Size(91, 23);
-            this.radioButton31.TabIndex = 1;
-            this.radioButton31.TabStop = true;
-            this.radioButton31.Text = "Option 1";
-            this.radioButton31.UseVisualStyleBackColor = true;
-            // 
-            // radioButton32
-            // 
-            this.radioButton32.AutoSize = true;
-            this.radioButton32.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton32.Location = new System.Drawing.Point(42, 37);
-            this.radioButton32.Name = "radioButton32";
-            this.radioButton32.Size = new System.Drawing.Size(91, 23);
-            this.radioButton32.TabIndex = 0;
-            this.radioButton32.TabStop = true;
-            this.radioButton32.Text = "Option 1";
-            this.radioButton32.UseVisualStyleBackColor = true;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.radioButton33);
-            this.groupBox8.Controls.Add(this.radioButton34);
-            this.groupBox8.Controls.Add(this.radioButton35);
-            this.groupBox8.Controls.Add(this.radioButton36);
-            this.groupBox8.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(429, 483);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(252, 162);
-            this.groupBox8.TabIndex = 23;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Question 1";
-            // 
-            // radioButton33
-            // 
-            this.radioButton33.AutoSize = true;
-            this.radioButton33.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton33.Location = new System.Drawing.Point(42, 124);
-            this.radioButton33.Name = "radioButton33";
-            this.radioButton33.Size = new System.Drawing.Size(91, 23);
-            this.radioButton33.TabIndex = 3;
-            this.radioButton33.TabStop = true;
-            this.radioButton33.Text = "Option 1";
-            this.radioButton33.UseVisualStyleBackColor = true;
-            // 
-            // radioButton34
-            // 
-            this.radioButton34.AutoSize = true;
-            this.radioButton34.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton34.Location = new System.Drawing.Point(42, 95);
-            this.radioButton34.Name = "radioButton34";
-            this.radioButton34.Size = new System.Drawing.Size(91, 23);
-            this.radioButton34.TabIndex = 2;
-            this.radioButton34.TabStop = true;
-            this.radioButton34.Text = "Option 1";
-            this.radioButton34.UseVisualStyleBackColor = true;
-            // 
-            // radioButton35
-            // 
-            this.radioButton35.AutoSize = true;
-            this.radioButton35.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton35.Location = new System.Drawing.Point(42, 66);
-            this.radioButton35.Name = "radioButton35";
-            this.radioButton35.Size = new System.Drawing.Size(91, 23);
-            this.radioButton35.TabIndex = 1;
-            this.radioButton35.TabStop = true;
-            this.radioButton35.Text = "Option 1";
-            this.radioButton35.UseVisualStyleBackColor = true;
-            // 
-            // radioButton36
-            // 
-            this.radioButton36.AutoSize = true;
-            this.radioButton36.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton36.Location = new System.Drawing.Point(42, 37);
-            this.radioButton36.Name = "radioButton36";
-            this.radioButton36.Size = new System.Drawing.Size(91, 23);
-            this.radioButton36.TabIndex = 0;
-            this.radioButton36.TabStop = true;
-            this.radioButton36.Text = "Option 1";
-            this.radioButton36.UseVisualStyleBackColor = true;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.radioButton37);
-            this.groupBox9.Controls.Add(this.radioButton38);
-            this.groupBox9.Controls.Add(this.radioButton39);
-            this.groupBox9.Controls.Add(this.radioButton40);
-            this.groupBox9.Font = new System.Drawing.Font("Inter Italic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.Location = new System.Drawing.Point(687, 483);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(252, 162);
-            this.groupBox9.TabIndex = 20;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Question 1";
-            // 
-            // radioButton37
-            // 
-            this.radioButton37.AutoSize = true;
-            this.radioButton37.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton37.Location = new System.Drawing.Point(42, 124);
-            this.radioButton37.Name = "radioButton37";
-            this.radioButton37.Size = new System.Drawing.Size(91, 23);
-            this.radioButton37.TabIndex = 3;
-            this.radioButton37.TabStop = true;
-            this.radioButton37.Text = "Option 1";
-            this.radioButton37.UseVisualStyleBackColor = true;
-            // 
-            // radioButton38
-            // 
-            this.radioButton38.AutoSize = true;
-            this.radioButton38.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton38.Location = new System.Drawing.Point(42, 95);
-            this.radioButton38.Name = "radioButton38";
-            this.radioButton38.Size = new System.Drawing.Size(91, 23);
-            this.radioButton38.TabIndex = 2;
-            this.radioButton38.TabStop = true;
-            this.radioButton38.Text = "Option 1";
-            this.radioButton38.UseVisualStyleBackColor = true;
-            // 
-            // radioButton39
-            // 
-            this.radioButton39.AutoSize = true;
-            this.radioButton39.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton39.Location = new System.Drawing.Point(42, 66);
-            this.radioButton39.Name = "radioButton39";
-            this.radioButton39.Size = new System.Drawing.Size(91, 23);
-            this.radioButton39.TabIndex = 1;
-            this.radioButton39.TabStop = true;
-            this.radioButton39.Text = "Option 1";
-            this.radioButton39.UseVisualStyleBackColor = true;
-            // 
-            // radioButton40
-            // 
-            this.radioButton40.AutoSize = true;
-            this.radioButton40.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton40.Location = new System.Drawing.Point(42, 37);
-            this.radioButton40.Name = "radioButton40";
-            this.radioButton40.Size = new System.Drawing.Size(91, 23);
-            this.radioButton40.TabIndex = 0;
-            this.radioButton40.TabStop = true;
-            this.radioButton40.Text = "Option 1";
-            this.radioButton40.UseVisualStyleBackColor = true;
-            // 
-            // lbl_DashHeader
-            // 
-            this.lbl_DashHeader.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_DashHeader.AutoSize = true;
-            this.lbl_DashHeader.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_DashHeader.Location = new System.Drawing.Point(662, 9);
-            this.lbl_DashHeader.Name = "lbl_DashHeader";
-            this.lbl_DashHeader.Size = new System.Drawing.Size(132, 25);
-            this.lbl_DashHeader.TabIndex = 24;
-            this.lbl_DashHeader.Text = "Take A Quiz";
-            this.lbl_DashHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lbl_subject
-            // 
-            this.lbl_subject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_subject.AutoSize = true;
-            this.lbl_subject.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_subject.Location = new System.Drawing.Point(851, 50);
-            this.lbl_subject.Name = "lbl_subject";
-            this.lbl_subject.Size = new System.Drawing.Size(88, 25);
-            this.lbl_subject.TabIndex = 26;
-            this.lbl_subject.Text = "Subject";
-            this.lbl_subject.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // btn_submit
-            // 
-            this.btn_submit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_submit.BackColor = System.Drawing.Color.Navy;
-            this.btn_submit.BackgroundColor = System.Drawing.Color.Navy;
-            this.btn_submit.BorderColor = System.Drawing.Color.Tomato;
-            this.btn_submit.BorderRadius = 18;
-            this.btn_submit.BorderSize = 0;
-            this.btn_submit.FlatAppearance.BorderSize = 0;
-            this.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_submit.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_submit.ForeColor = System.Drawing.Color.White;
-            this.btn_submit.Location = new System.Drawing.Point(1004, 549);
-            this.btn_submit.Name = "btn_submit";
-            this.btn_submit.Size = new System.Drawing.Size(137, 52);
-            this.btn_submit.TabIndex = 25;
-            this.btn_submit.Text = "Submit";
-            this.btn_submit.TextColor = System.Drawing.Color.White;
-            this.btn_submit.UseVisualStyleBackColor = false;
             // 
             // roundedbtn6
             // 
@@ -957,6 +195,14 @@
             this.roundedbtn6.TabIndex = 3;
             this.roundedbtn6.TextColor = System.Drawing.Color.White;
             this.roundedbtn6.UseVisualStyleBackColor = false;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.roundedbtn7);
+            this.panel12.Location = new System.Drawing.Point(0, 78);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(200, 82);
+            this.panel12.TabIndex = 2;
             // 
             // roundedbtn7
             // 
@@ -997,6 +243,18 @@
             this.roundedbtn8.TextColor = System.Drawing.Color.White;
             this.roundedbtn8.UseVisualStyleBackColor = false;
             // 
+            // panel6
+            // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.roundedbtn1);
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Controls.Add(this.roundedbtn4);
+            this.panel6.Location = new System.Drawing.Point(0, 335);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(127, 82);
+            this.panel6.TabIndex = 5;
+            // 
             // roundedbtn1
             // 
             this.roundedbtn1.BackColor = System.Drawing.SystemColors.Control;
@@ -1017,6 +275,14 @@
             this.roundedbtn1.TextColor = System.Drawing.Color.White;
             this.roundedbtn1.UseVisualStyleBackColor = false;
             this.roundedbtn1.Click += new System.EventHandler(this.roundedbtn1_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.roundedbtn2);
+            this.panel9.Location = new System.Drawing.Point(0, 78);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(200, 82);
+            this.panel9.TabIndex = 2;
             // 
             // roundedbtn2
             // 
@@ -1057,6 +323,16 @@
             this.roundedbtn4.TextColor = System.Drawing.Color.White;
             this.roundedbtn4.UseVisualStyleBackColor = false;
             // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.btn_dashboard);
+            this.panel3.Location = new System.Drawing.Point(0, 161);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(127, 82);
+            this.panel3.TabIndex = 4;
+            // 
             // btn_dashboard
             // 
             this.btn_dashboard.BackColor = System.Drawing.SystemColors.Control;
@@ -1078,6 +354,18 @@
             this.btn_dashboard.UseVisualStyleBackColor = false;
             this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click_1);
             // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.btn_quizActive);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.btn_quiz);
+            this.panel4.Location = new System.Drawing.Point(0, 249);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(127, 82);
+            this.panel4.TabIndex = 2;
+            // 
             // btn_quizActive
             // 
             this.btn_quizActive.BackColor = System.Drawing.SystemColors.Control;
@@ -1098,6 +386,14 @@
             this.btn_quizActive.TextColor = System.Drawing.Color.White;
             this.btn_quizActive.UseVisualStyleBackColor = false;
             this.btn_quizActive.Click += new System.EventHandler(this.btn_quizActive_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.roundedbtn3);
+            this.panel5.Location = new System.Drawing.Point(0, 78);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 82);
+            this.panel5.TabIndex = 2;
             // 
             // roundedbtn3
             // 
@@ -1137,6 +433,45 @@
             this.btn_quiz.TabIndex = 0;
             this.btn_quiz.TextColor = System.Drawing.Color.White;
             this.btn_quiz.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Login_logo_img);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(127, 100);
+            this.panel2.TabIndex = 0;
+            // 
+            // Login_logo_img
+            // 
+            this.Login_logo_img.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Login_logo_img.BackColor = System.Drawing.Color.Transparent;
+            this.Login_logo_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Login_logo_img.Image = ((System.Drawing.Image)(resources.GetObject("Login_logo_img.Image")));
+            this.Login_logo_img.Location = new System.Drawing.Point(40, 27);
+            this.Login_logo_img.Name = "Login_logo_img";
+            this.Login_logo_img.Size = new System.Drawing.Size(52, 71);
+            this.Login_logo_img.TabIndex = 1;
+            this.Login_logo_img.TabStop = false;
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Controls.Add(this.btn_logout);
+            this.panel7.Location = new System.Drawing.Point(0, 507);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(127, 82);
+            this.panel7.TabIndex = 4;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.roundedbtn5);
+            this.panel8.Location = new System.Drawing.Point(0, 78);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(200, 82);
+            this.panel8.TabIndex = 2;
             // 
             // roundedbtn5
             // 
@@ -1178,6 +513,103 @@
             this.btn_logout.UseVisualStyleBackColor = false;
             this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
+            // Q1
+            // 
+            this.Q1.Controls.Add(this.Q104);
+            this.Q1.Controls.Add(this.Q103);
+            this.Q1.Controls.Add(this.Q102);
+            this.Q1.Controls.Add(this.Q101);
+            this.Q1.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q1.Location = new System.Drawing.Point(171, 97);
+            this.Q1.Name = "Q1";
+            this.Q1.Size = new System.Drawing.Size(252, 162);
+            this.Q1.TabIndex = 18;
+            this.Q1.TabStop = false;
+            this.Q1.Text = "Question 1";
+            // 
+            // Q104
+            // 
+            this.Q104.AutoSize = true;
+            this.Q104.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q104.Location = new System.Drawing.Point(42, 124);
+            this.Q104.Name = "Q104";
+            this.Q104.Size = new System.Drawing.Size(83, 21);
+            this.Q104.TabIndex = 3;
+            this.Q104.TabStop = true;
+            this.Q104.Text = "Option 4";
+            this.Q104.UseVisualStyleBackColor = true;
+            // 
+            // Q103
+            // 
+            this.Q103.AutoSize = true;
+            this.Q103.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q103.Location = new System.Drawing.Point(42, 95);
+            this.Q103.Name = "Q103";
+            this.Q103.Size = new System.Drawing.Size(83, 21);
+            this.Q103.TabIndex = 2;
+            this.Q103.TabStop = true;
+            this.Q103.Text = "Option 3";
+            this.Q103.UseVisualStyleBackColor = true;
+            // 
+            // Q101
+            // 
+            this.Q101.AutoSize = true;
+            this.Q101.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q101.Location = new System.Drawing.Point(42, 37);
+            this.Q101.Name = "Q101";
+            this.Q101.Size = new System.Drawing.Size(81, 21);
+            this.Q101.TabIndex = 0;
+            this.Q101.TabStop = true;
+            this.Q101.Text = "Option 1";
+            this.Q101.UseVisualStyleBackColor = true;
+            this.Q101.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // lbl_DashHeader
+            // 
+            this.lbl_DashHeader.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_DashHeader.AutoSize = true;
+            this.lbl_DashHeader.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DashHeader.Location = new System.Drawing.Point(662, 9);
+            this.lbl_DashHeader.Name = "lbl_DashHeader";
+            this.lbl_DashHeader.Size = new System.Drawing.Size(132, 25);
+            this.lbl_DashHeader.TabIndex = 24;
+            this.lbl_DashHeader.Text = "Take A Quiz";
+            this.lbl_DashHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lbl_subject
+            // 
+            this.lbl_subject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_subject.AutoSize = true;
+            this.lbl_subject.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_subject.Location = new System.Drawing.Point(879, 50);
+            this.lbl_subject.Name = "lbl_subject";
+            this.lbl_subject.Size = new System.Drawing.Size(88, 25);
+            this.lbl_subject.TabIndex = 26;
+            this.lbl_subject.Text = "Subject";
+            this.lbl_subject.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // btn_submit
+            // 
+            this.btn_submit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_submit.BackColor = System.Drawing.Color.Navy;
+            this.btn_submit.BackgroundColor = System.Drawing.Color.Navy;
+            this.btn_submit.BorderColor = System.Drawing.Color.Tomato;
+            this.btn_submit.BorderRadius = 18;
+            this.btn_submit.BorderSize = 0;
+            this.btn_submit.FlatAppearance.BorderSize = 0;
+            this.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_submit.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_submit.ForeColor = System.Drawing.Color.White;
+            this.btn_submit.Location = new System.Drawing.Point(614, 607);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.Size = new System.Drawing.Size(165, 52);
+            this.btn_submit.TabIndex = 25;
+            this.btn_submit.Text = "Submit";
+            this.btn_submit.TextColor = System.Drawing.Color.White;
+            this.btn_submit.UseVisualStyleBackColor = false;
+            // 
             // comboBox1
             // 
             this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.subjectTableBindingSource, "SName", true));
@@ -1190,39 +622,610 @@
             this.comboBox1.TabIndex = 27;
             this.comboBox1.ValueMember = "SName";
             // 
-            // qMS_DBDataSet
-            // 
-            this.qMS_DBDataSet.DataSetName = "QMS_DBDataSet";
-            this.qMS_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // subjectTableBindingSource
             // 
             this.subjectTableBindingSource.DataMember = "SubjectTable";
             this.subjectTableBindingSource.DataSource = this.qMS_DBDataSet;
             // 
+            // qMS_DBDataSet
+            // 
+            this.qMS_DBDataSet.DataSetName = "QMS_DBDataSet";
+            this.qMS_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // subjectTableTableAdapter
             // 
             this.subjectTableTableAdapter.ClearBeforeFill = true;
+            // 
+            // Q102
+            // 
+            this.Q102.AutoSize = true;
+            this.Q102.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q102.Location = new System.Drawing.Point(42, 66);
+            this.Q102.Name = "Q102";
+            this.Q102.Size = new System.Drawing.Size(83, 21);
+            this.Q102.TabIndex = 1;
+            this.Q102.TabStop = true;
+            this.Q102.Text = "Option 2";
+            this.Q102.UseVisualStyleBackColor = true;
+            // 
+            // Q2
+            // 
+            this.Q2.Controls.Add(this.Q204);
+            this.Q2.Controls.Add(this.Q203);
+            this.Q2.Controls.Add(this.Q202);
+            this.Q2.Controls.Add(this.Q201);
+            this.Q2.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q2.Location = new System.Drawing.Point(429, 97);
+            this.Q2.Name = "Q2";
+            this.Q2.Size = new System.Drawing.Size(252, 162);
+            this.Q2.TabIndex = 19;
+            this.Q2.TabStop = false;
+            this.Q2.Text = "Question 1";
+            // 
+            // Q204
+            // 
+            this.Q204.AutoSize = true;
+            this.Q204.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q204.Location = new System.Drawing.Point(42, 124);
+            this.Q204.Name = "Q204";
+            this.Q204.Size = new System.Drawing.Size(83, 21);
+            this.Q204.TabIndex = 3;
+            this.Q204.TabStop = true;
+            this.Q204.Text = "Option 4";
+            this.Q204.UseVisualStyleBackColor = true;
+            // 
+            // Q203
+            // 
+            this.Q203.AutoSize = true;
+            this.Q203.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q203.Location = new System.Drawing.Point(42, 95);
+            this.Q203.Name = "Q203";
+            this.Q203.Size = new System.Drawing.Size(83, 21);
+            this.Q203.TabIndex = 2;
+            this.Q203.TabStop = true;
+            this.Q203.Text = "Option 3";
+            this.Q203.UseVisualStyleBackColor = true;
+            // 
+            // Q202
+            // 
+            this.Q202.AutoSize = true;
+            this.Q202.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q202.Location = new System.Drawing.Point(42, 66);
+            this.Q202.Name = "Q202";
+            this.Q202.Size = new System.Drawing.Size(83, 21);
+            this.Q202.TabIndex = 1;
+            this.Q202.TabStop = true;
+            this.Q202.Text = "Option 2";
+            this.Q202.UseVisualStyleBackColor = true;
+            // 
+            // Q201
+            // 
+            this.Q201.AutoSize = true;
+            this.Q201.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q201.Location = new System.Drawing.Point(42, 37);
+            this.Q201.Name = "Q201";
+            this.Q201.Size = new System.Drawing.Size(81, 21);
+            this.Q201.TabIndex = 0;
+            this.Q201.TabStop = true;
+            this.Q201.Text = "Option 1";
+            this.Q201.UseVisualStyleBackColor = true;
+            // 
+            // Q3
+            // 
+            this.Q3.Controls.Add(this.Q304);
+            this.Q3.Controls.Add(this.Q303);
+            this.Q3.Controls.Add(this.Q302);
+            this.Q3.Controls.Add(this.Q301);
+            this.Q3.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q3.Location = new System.Drawing.Point(687, 97);
+            this.Q3.Name = "Q3";
+            this.Q3.Size = new System.Drawing.Size(252, 162);
+            this.Q3.TabIndex = 19;
+            this.Q3.TabStop = false;
+            this.Q3.Text = "Question 1";
+            // 
+            // Q304
+            // 
+            this.Q304.AutoSize = true;
+            this.Q304.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q304.Location = new System.Drawing.Point(42, 124);
+            this.Q304.Name = "Q304";
+            this.Q304.Size = new System.Drawing.Size(83, 21);
+            this.Q304.TabIndex = 3;
+            this.Q304.TabStop = true;
+            this.Q304.Text = "Option 4";
+            this.Q304.UseVisualStyleBackColor = true;
+            // 
+            // Q303
+            // 
+            this.Q303.AutoSize = true;
+            this.Q303.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q303.Location = new System.Drawing.Point(42, 95);
+            this.Q303.Name = "Q303";
+            this.Q303.Size = new System.Drawing.Size(83, 21);
+            this.Q303.TabIndex = 2;
+            this.Q303.TabStop = true;
+            this.Q303.Text = "Option 3";
+            this.Q303.UseVisualStyleBackColor = true;
+            // 
+            // Q302
+            // 
+            this.Q302.AutoSize = true;
+            this.Q302.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q302.Location = new System.Drawing.Point(42, 66);
+            this.Q302.Name = "Q302";
+            this.Q302.Size = new System.Drawing.Size(83, 21);
+            this.Q302.TabIndex = 1;
+            this.Q302.TabStop = true;
+            this.Q302.Text = "Option 2";
+            this.Q302.UseVisualStyleBackColor = true;
+            // 
+            // Q301
+            // 
+            this.Q301.AutoSize = true;
+            this.Q301.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q301.Location = new System.Drawing.Point(42, 37);
+            this.Q301.Name = "Q301";
+            this.Q301.Size = new System.Drawing.Size(81, 21);
+            this.Q301.TabIndex = 0;
+            this.Q301.TabStop = true;
+            this.Q301.Text = "Option 1";
+            this.Q301.UseVisualStyleBackColor = true;
+            // 
+            // Q4
+            // 
+            this.Q4.Controls.Add(this.Q404);
+            this.Q4.Controls.Add(this.Q403);
+            this.Q4.Controls.Add(this.Q402);
+            this.Q4.Controls.Add(this.Q401);
+            this.Q4.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q4.Location = new System.Drawing.Point(945, 97);
+            this.Q4.Name = "Q4";
+            this.Q4.Size = new System.Drawing.Size(252, 162);
+            this.Q4.TabIndex = 19;
+            this.Q4.TabStop = false;
+            this.Q4.Text = "Question 1";
+            // 
+            // Q404
+            // 
+            this.Q404.AutoSize = true;
+            this.Q404.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q404.Location = new System.Drawing.Point(42, 124);
+            this.Q404.Name = "Q404";
+            this.Q404.Size = new System.Drawing.Size(83, 21);
+            this.Q404.TabIndex = 3;
+            this.Q404.TabStop = true;
+            this.Q404.Text = "Option 4";
+            this.Q404.UseVisualStyleBackColor = true;
+            // 
+            // Q403
+            // 
+            this.Q403.AutoSize = true;
+            this.Q403.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q403.Location = new System.Drawing.Point(42, 95);
+            this.Q403.Name = "Q403";
+            this.Q403.Size = new System.Drawing.Size(83, 21);
+            this.Q403.TabIndex = 2;
+            this.Q403.TabStop = true;
+            this.Q403.Text = "Option 3";
+            this.Q403.UseVisualStyleBackColor = true;
+            // 
+            // Q402
+            // 
+            this.Q402.AutoSize = true;
+            this.Q402.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q402.Location = new System.Drawing.Point(42, 66);
+            this.Q402.Name = "Q402";
+            this.Q402.Size = new System.Drawing.Size(83, 21);
+            this.Q402.TabIndex = 1;
+            this.Q402.TabStop = true;
+            this.Q402.Text = "Option 2";
+            this.Q402.UseVisualStyleBackColor = true;
+            // 
+            // Q401
+            // 
+            this.Q401.AutoSize = true;
+            this.Q401.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q401.Location = new System.Drawing.Point(42, 37);
+            this.Q401.Name = "Q401";
+            this.Q401.Size = new System.Drawing.Size(81, 21);
+            this.Q401.TabIndex = 0;
+            this.Q401.TabStop = true;
+            this.Q401.Text = "Option 1";
+            this.Q401.UseVisualStyleBackColor = true;
+            // 
+            // Q5
+            // 
+            this.Q5.Controls.Add(this.Q504);
+            this.Q5.Controls.Add(this.Q503);
+            this.Q5.Controls.Add(this.Q502);
+            this.Q5.Controls.Add(this.Q501);
+            this.Q5.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q5.Location = new System.Drawing.Point(171, 265);
+            this.Q5.Name = "Q5";
+            this.Q5.Size = new System.Drawing.Size(252, 162);
+            this.Q5.TabIndex = 28;
+            this.Q5.TabStop = false;
+            this.Q5.Text = "Question 1";
+            // 
+            // Q504
+            // 
+            this.Q504.AutoSize = true;
+            this.Q504.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q504.Location = new System.Drawing.Point(42, 124);
+            this.Q504.Name = "Q504";
+            this.Q504.Size = new System.Drawing.Size(83, 21);
+            this.Q504.TabIndex = 3;
+            this.Q504.TabStop = true;
+            this.Q504.Text = "Option 4";
+            this.Q504.UseVisualStyleBackColor = true;
+            // 
+            // Q503
+            // 
+            this.Q503.AutoSize = true;
+            this.Q503.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q503.Location = new System.Drawing.Point(42, 95);
+            this.Q503.Name = "Q503";
+            this.Q503.Size = new System.Drawing.Size(83, 21);
+            this.Q503.TabIndex = 2;
+            this.Q503.TabStop = true;
+            this.Q503.Text = "Option 3";
+            this.Q503.UseVisualStyleBackColor = true;
+            // 
+            // Q502
+            // 
+            this.Q502.AutoSize = true;
+            this.Q502.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q502.Location = new System.Drawing.Point(42, 66);
+            this.Q502.Name = "Q502";
+            this.Q502.Size = new System.Drawing.Size(83, 21);
+            this.Q502.TabIndex = 1;
+            this.Q502.TabStop = true;
+            this.Q502.Text = "Option 2";
+            this.Q502.UseVisualStyleBackColor = true;
+            // 
+            // Q501
+            // 
+            this.Q501.AutoSize = true;
+            this.Q501.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q501.Location = new System.Drawing.Point(42, 37);
+            this.Q501.Name = "Q501";
+            this.Q501.Size = new System.Drawing.Size(81, 21);
+            this.Q501.TabIndex = 0;
+            this.Q501.TabStop = true;
+            this.Q501.Text = "Option 1";
+            this.Q501.UseVisualStyleBackColor = true;
+            // 
+            // Q6
+            // 
+            this.Q6.Controls.Add(this.Q604);
+            this.Q6.Controls.Add(this.Q603);
+            this.Q6.Controls.Add(this.Q602);
+            this.Q6.Controls.Add(this.Q601);
+            this.Q6.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q6.Location = new System.Drawing.Point(429, 265);
+            this.Q6.Name = "Q6";
+            this.Q6.Size = new System.Drawing.Size(252, 162);
+            this.Q6.TabIndex = 19;
+            this.Q6.TabStop = false;
+            this.Q6.Text = "Question 1";
+            // 
+            // Q604
+            // 
+            this.Q604.AutoSize = true;
+            this.Q604.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q604.Location = new System.Drawing.Point(42, 124);
+            this.Q604.Name = "Q604";
+            this.Q604.Size = new System.Drawing.Size(83, 21);
+            this.Q604.TabIndex = 3;
+            this.Q604.TabStop = true;
+            this.Q604.Text = "Option 4";
+            this.Q604.UseVisualStyleBackColor = true;
+            // 
+            // Q603
+            // 
+            this.Q603.AutoSize = true;
+            this.Q603.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q603.Location = new System.Drawing.Point(42, 95);
+            this.Q603.Name = "Q603";
+            this.Q603.Size = new System.Drawing.Size(83, 21);
+            this.Q603.TabIndex = 2;
+            this.Q603.TabStop = true;
+            this.Q603.Text = "Option 3";
+            this.Q603.UseVisualStyleBackColor = true;
+            // 
+            // Q602
+            // 
+            this.Q602.AutoSize = true;
+            this.Q602.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q602.Location = new System.Drawing.Point(42, 66);
+            this.Q602.Name = "Q602";
+            this.Q602.Size = new System.Drawing.Size(83, 21);
+            this.Q602.TabIndex = 1;
+            this.Q602.TabStop = true;
+            this.Q602.Text = "Option 2";
+            this.Q602.UseVisualStyleBackColor = true;
+            // 
+            // Q601
+            // 
+            this.Q601.AutoSize = true;
+            this.Q601.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q601.Location = new System.Drawing.Point(42, 37);
+            this.Q601.Name = "Q601";
+            this.Q601.Size = new System.Drawing.Size(81, 21);
+            this.Q601.TabIndex = 0;
+            this.Q601.TabStop = true;
+            this.Q601.Text = "Option 1";
+            this.Q601.UseVisualStyleBackColor = true;
+            // 
+            // Q7
+            // 
+            this.Q7.Controls.Add(this.Q704);
+            this.Q7.Controls.Add(this.Q703);
+            this.Q7.Controls.Add(this.Q702);
+            this.Q7.Controls.Add(this.Q701);
+            this.Q7.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q7.Location = new System.Drawing.Point(687, 265);
+            this.Q7.Name = "Q7";
+            this.Q7.Size = new System.Drawing.Size(252, 162);
+            this.Q7.TabIndex = 19;
+            this.Q7.TabStop = false;
+            this.Q7.Text = "Question 1";
+            // 
+            // Q704
+            // 
+            this.Q704.AutoSize = true;
+            this.Q704.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q704.Location = new System.Drawing.Point(42, 124);
+            this.Q704.Name = "Q704";
+            this.Q704.Size = new System.Drawing.Size(83, 21);
+            this.Q704.TabIndex = 3;
+            this.Q704.TabStop = true;
+            this.Q704.Text = "Option 4";
+            this.Q704.UseVisualStyleBackColor = true;
+            // 
+            // Q703
+            // 
+            this.Q703.AutoSize = true;
+            this.Q703.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q703.Location = new System.Drawing.Point(42, 95);
+            this.Q703.Name = "Q703";
+            this.Q703.Size = new System.Drawing.Size(83, 21);
+            this.Q703.TabIndex = 2;
+            this.Q703.TabStop = true;
+            this.Q703.Text = "Option 3";
+            this.Q703.UseVisualStyleBackColor = true;
+            // 
+            // Q702
+            // 
+            this.Q702.AutoSize = true;
+            this.Q702.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q702.Location = new System.Drawing.Point(42, 66);
+            this.Q702.Name = "Q702";
+            this.Q702.Size = new System.Drawing.Size(83, 21);
+            this.Q702.TabIndex = 1;
+            this.Q702.TabStop = true;
+            this.Q702.Text = "Option 2";
+            this.Q702.UseVisualStyleBackColor = true;
+            // 
+            // Q701
+            // 
+            this.Q701.AutoSize = true;
+            this.Q701.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q701.Location = new System.Drawing.Point(42, 37);
+            this.Q701.Name = "Q701";
+            this.Q701.Size = new System.Drawing.Size(81, 21);
+            this.Q701.TabIndex = 0;
+            this.Q701.TabStop = true;
+            this.Q701.Text = "Option 1";
+            this.Q701.UseVisualStyleBackColor = true;
+            this.Q701.CheckedChanged += new System.EventHandler(this.Q701_CheckedChanged);
+            // 
+            // Q8
+            // 
+            this.Q8.Controls.Add(this.Q804);
+            this.Q8.Controls.Add(this.Q803);
+            this.Q8.Controls.Add(this.Q802);
+            this.Q8.Controls.Add(this.Q801);
+            this.Q8.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q8.Location = new System.Drawing.Point(945, 265);
+            this.Q8.Name = "Q8";
+            this.Q8.Size = new System.Drawing.Size(252, 162);
+            this.Q8.TabIndex = 19;
+            this.Q8.TabStop = false;
+            this.Q8.Text = "Question 1";
+            // 
+            // Q804
+            // 
+            this.Q804.AutoSize = true;
+            this.Q804.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q804.Location = new System.Drawing.Point(42, 124);
+            this.Q804.Name = "Q804";
+            this.Q804.Size = new System.Drawing.Size(83, 21);
+            this.Q804.TabIndex = 3;
+            this.Q804.TabStop = true;
+            this.Q804.Text = "Option 4";
+            this.Q804.UseVisualStyleBackColor = true;
+            // 
+            // Q803
+            // 
+            this.Q803.AutoSize = true;
+            this.Q803.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q803.Location = new System.Drawing.Point(42, 95);
+            this.Q803.Name = "Q803";
+            this.Q803.Size = new System.Drawing.Size(83, 21);
+            this.Q803.TabIndex = 2;
+            this.Q803.TabStop = true;
+            this.Q803.Text = "Option 3";
+            this.Q803.UseVisualStyleBackColor = true;
+            // 
+            // Q802
+            // 
+            this.Q802.AutoSize = true;
+            this.Q802.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q802.Location = new System.Drawing.Point(42, 66);
+            this.Q802.Name = "Q802";
+            this.Q802.Size = new System.Drawing.Size(83, 21);
+            this.Q802.TabIndex = 1;
+            this.Q802.TabStop = true;
+            this.Q802.Text = "Option 2";
+            this.Q802.UseVisualStyleBackColor = true;
+            // 
+            // Q801
+            // 
+            this.Q801.AutoSize = true;
+            this.Q801.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q801.Location = new System.Drawing.Point(42, 37);
+            this.Q801.Name = "Q801";
+            this.Q801.Size = new System.Drawing.Size(81, 21);
+            this.Q801.TabIndex = 0;
+            this.Q801.TabStop = true;
+            this.Q801.Text = "Option 1";
+            this.Q801.UseVisualStyleBackColor = true;
+            // 
+            // Q9
+            // 
+            this.Q9.Controls.Add(this.Q904);
+            this.Q9.Controls.Add(this.Q903);
+            this.Q9.Controls.Add(this.Q902);
+            this.Q9.Controls.Add(this.Q901);
+            this.Q9.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q9.Location = new System.Drawing.Point(429, 439);
+            this.Q9.Name = "Q9";
+            this.Q9.Size = new System.Drawing.Size(252, 162);
+            this.Q9.TabIndex = 20;
+            this.Q9.TabStop = false;
+            this.Q9.Text = "Question 1";
+            // 
+            // Q904
+            // 
+            this.Q904.AutoSize = true;
+            this.Q904.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q904.Location = new System.Drawing.Point(42, 124);
+            this.Q904.Name = "Q904";
+            this.Q904.Size = new System.Drawing.Size(83, 21);
+            this.Q904.TabIndex = 3;
+            this.Q904.TabStop = true;
+            this.Q904.Text = "Option 4";
+            this.Q904.UseVisualStyleBackColor = true;
+            // 
+            // Q903
+            // 
+            this.Q903.AutoSize = true;
+            this.Q903.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q903.Location = new System.Drawing.Point(42, 95);
+            this.Q903.Name = "Q903";
+            this.Q903.Size = new System.Drawing.Size(83, 21);
+            this.Q903.TabIndex = 2;
+            this.Q903.TabStop = true;
+            this.Q903.Text = "Option 3";
+            this.Q903.UseVisualStyleBackColor = true;
+            // 
+            // Q902
+            // 
+            this.Q902.AutoSize = true;
+            this.Q902.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q902.Location = new System.Drawing.Point(42, 66);
+            this.Q902.Name = "Q902";
+            this.Q902.Size = new System.Drawing.Size(83, 21);
+            this.Q902.TabIndex = 1;
+            this.Q902.TabStop = true;
+            this.Q902.Text = "Option 2";
+            this.Q902.UseVisualStyleBackColor = true;
+            // 
+            // Q901
+            // 
+            this.Q901.AutoSize = true;
+            this.Q901.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q901.Location = new System.Drawing.Point(42, 37);
+            this.Q901.Name = "Q901";
+            this.Q901.Size = new System.Drawing.Size(81, 21);
+            this.Q901.TabIndex = 0;
+            this.Q901.TabStop = true;
+            this.Q901.Text = "Option 1";
+            this.Q901.UseVisualStyleBackColor = true;
+            // 
+            // Q10
+            // 
+            this.Q10.Controls.Add(this.Q1004);
+            this.Q10.Controls.Add(this.Q1003);
+            this.Q10.Controls.Add(this.Q1002);
+            this.Q10.Controls.Add(this.Q1001);
+            this.Q10.Font = new System.Drawing.Font("Inter Italic", 10F, System.Drawing.FontStyle.Bold);
+            this.Q10.Location = new System.Drawing.Point(687, 439);
+            this.Q10.Name = "Q10";
+            this.Q10.Size = new System.Drawing.Size(252, 162);
+            this.Q10.TabIndex = 20;
+            this.Q10.TabStop = false;
+            this.Q10.Text = "Question 1";
+            // 
+            // Q1004
+            // 
+            this.Q1004.AutoSize = true;
+            this.Q1004.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q1004.Location = new System.Drawing.Point(42, 124);
+            this.Q1004.Name = "Q1004";
+            this.Q1004.Size = new System.Drawing.Size(83, 21);
+            this.Q1004.TabIndex = 3;
+            this.Q1004.TabStop = true;
+            this.Q1004.Text = "Option 4";
+            this.Q1004.UseVisualStyleBackColor = true;
+            // 
+            // Q1003
+            // 
+            this.Q1003.AutoSize = true;
+            this.Q1003.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q1003.Location = new System.Drawing.Point(42, 95);
+            this.Q1003.Name = "Q1003";
+            this.Q1003.Size = new System.Drawing.Size(83, 21);
+            this.Q1003.TabIndex = 2;
+            this.Q1003.TabStop = true;
+            this.Q1003.Text = "Option 3";
+            this.Q1003.UseVisualStyleBackColor = true;
+            // 
+            // Q1002
+            // 
+            this.Q1002.AutoSize = true;
+            this.Q1002.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q1002.Location = new System.Drawing.Point(42, 66);
+            this.Q1002.Name = "Q1002";
+            this.Q1002.Size = new System.Drawing.Size(83, 21);
+            this.Q1002.TabIndex = 1;
+            this.Q1002.TabStop = true;
+            this.Q1002.Text = "Option 2";
+            this.Q1002.UseVisualStyleBackColor = true;
+            // 
+            // Q1001
+            // 
+            this.Q1001.AutoSize = true;
+            this.Q1001.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q1001.Location = new System.Drawing.Point(42, 37);
+            this.Q1001.Name = "Q1001";
+            this.Q1001.Size = new System.Drawing.Size(81, 21);
+            this.Q1001.TabIndex = 0;
+            this.Q1001.TabStop = true;
+            this.Q1001.Text = "Option 1";
+            this.Q1001.UseVisualStyleBackColor = true;
             // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1226, 653);
+            this.ClientSize = new System.Drawing.Size(1254, 685);
+            this.Controls.Add(this.Q10);
+            this.Controls.Add(this.Q9);
+            this.Controls.Add(this.Q8);
+            this.Controls.Add(this.Q7);
+            this.Controls.Add(this.Q6);
+            this.Controls.Add(this.Q5);
+            this.Controls.Add(this.Q4);
+            this.Controls.Add(this.Q3);
+            this.Controls.Add(this.Q2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lbl_subject);
             this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.lbl_DashHeader);
-            this.Controls.Add(this.groupBox9);
-            this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.grp_Question1);
+            this.Controls.Add(this.Q1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.MinimizeBox = false;
@@ -1246,28 +1249,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.grp_Question1.ResumeLayout(false);
-            this.grp_Question1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qMS_DBDataSet)).EndInit();
+            this.Q1.ResumeLayout(false);
+            this.Q1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subjectTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qMS_DBDataSet)).EndInit();
+            this.Q2.ResumeLayout(false);
+            this.Q2.PerformLayout();
+            this.Q3.ResumeLayout(false);
+            this.Q3.PerformLayout();
+            this.Q4.ResumeLayout(false);
+            this.Q4.PerformLayout();
+            this.Q5.ResumeLayout(false);
+            this.Q5.PerformLayout();
+            this.Q6.ResumeLayout(false);
+            this.Q6.PerformLayout();
+            this.Q7.ResumeLayout(false);
+            this.Q7.PerformLayout();
+            this.Q8.ResumeLayout(false);
+            this.Q8.PerformLayout();
+            this.Q9.ResumeLayout(false);
+            this.Q9.PerformLayout();
+            this.Q10.ResumeLayout(false);
+            this.Q10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1300,56 +1303,10 @@
         private System.Windows.Forms.Panel panel8;
         private roundedbtn roundedbtn5;
         private roundedbtn btn_logout;
-        private System.Windows.Forms.GroupBox grp_Question1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton16;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton18;
-        private System.Windows.Forms.RadioButton radioButton19;
-        private System.Windows.Forms.RadioButton radioButton20;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.RadioButton radioButton21;
-        private System.Windows.Forms.RadioButton radioButton22;
-        private System.Windows.Forms.RadioButton radioButton23;
-        private System.Windows.Forms.RadioButton radioButton24;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.RadioButton radioButton25;
-        private System.Windows.Forms.RadioButton radioButton26;
-        private System.Windows.Forms.RadioButton radioButton27;
-        private System.Windows.Forms.RadioButton radioButton28;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.RadioButton radioButton29;
-        private System.Windows.Forms.RadioButton radioButton30;
-        private System.Windows.Forms.RadioButton radioButton31;
-        private System.Windows.Forms.RadioButton radioButton32;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.RadioButton radioButton33;
-        private System.Windows.Forms.RadioButton radioButton34;
-        private System.Windows.Forms.RadioButton radioButton35;
-        private System.Windows.Forms.RadioButton radioButton36;
-        private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.RadioButton radioButton37;
-        private System.Windows.Forms.RadioButton radioButton38;
-        private System.Windows.Forms.RadioButton radioButton39;
-        private System.Windows.Forms.RadioButton radioButton40;
+        private System.Windows.Forms.GroupBox Q1;
+        private System.Windows.Forms.RadioButton Q104;
+        private System.Windows.Forms.RadioButton Q103;
+        private System.Windows.Forms.RadioButton Q101;
         private System.Windows.Forms.Label lbl_DashHeader;
         private roundedbtn btn_submit;
         private System.Windows.Forms.Label lbl_subject;
@@ -1357,5 +1314,51 @@
         private QMS_DBDataSet qMS_DBDataSet;
         private System.Windows.Forms.BindingSource subjectTableBindingSource;
         private QMS_DBDataSetTableAdapters.SubjectTableTableAdapter subjectTableTableAdapter;
+        private System.Windows.Forms.RadioButton Q102;
+        private System.Windows.Forms.GroupBox Q2;
+        private System.Windows.Forms.RadioButton Q204;
+        private System.Windows.Forms.RadioButton Q203;
+        private System.Windows.Forms.RadioButton Q202;
+        private System.Windows.Forms.RadioButton Q201;
+        private System.Windows.Forms.GroupBox Q3;
+        private System.Windows.Forms.RadioButton Q304;
+        private System.Windows.Forms.RadioButton Q303;
+        private System.Windows.Forms.RadioButton Q302;
+        private System.Windows.Forms.RadioButton Q301;
+        private System.Windows.Forms.GroupBox Q4;
+        private System.Windows.Forms.RadioButton Q404;
+        private System.Windows.Forms.RadioButton Q403;
+        private System.Windows.Forms.RadioButton Q402;
+        private System.Windows.Forms.RadioButton Q401;
+        private System.Windows.Forms.GroupBox Q5;
+        private System.Windows.Forms.RadioButton Q504;
+        private System.Windows.Forms.RadioButton Q503;
+        private System.Windows.Forms.RadioButton Q502;
+        private System.Windows.Forms.RadioButton Q501;
+        private System.Windows.Forms.GroupBox Q6;
+        private System.Windows.Forms.RadioButton Q604;
+        private System.Windows.Forms.RadioButton Q603;
+        private System.Windows.Forms.RadioButton Q602;
+        private System.Windows.Forms.RadioButton Q601;
+        private System.Windows.Forms.GroupBox Q7;
+        private System.Windows.Forms.RadioButton Q704;
+        private System.Windows.Forms.RadioButton Q703;
+        private System.Windows.Forms.RadioButton Q702;
+        private System.Windows.Forms.RadioButton Q701;
+        private System.Windows.Forms.GroupBox Q8;
+        private System.Windows.Forms.RadioButton Q804;
+        private System.Windows.Forms.RadioButton Q803;
+        private System.Windows.Forms.RadioButton Q802;
+        private System.Windows.Forms.RadioButton Q801;
+        private System.Windows.Forms.GroupBox Q9;
+        private System.Windows.Forms.RadioButton Q904;
+        private System.Windows.Forms.RadioButton Q903;
+        private System.Windows.Forms.RadioButton Q902;
+        private System.Windows.Forms.RadioButton Q901;
+        private System.Windows.Forms.GroupBox Q10;
+        private System.Windows.Forms.RadioButton Q1004;
+        private System.Windows.Forms.RadioButton Q1003;
+        private System.Windows.Forms.RadioButton Q1002;
+        private System.Windows.Forms.RadioButton Q1001;
     }
 }

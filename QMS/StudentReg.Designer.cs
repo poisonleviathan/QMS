@@ -108,6 +108,7 @@
             // 
             // StudentsDGV
             // 
+            this.StudentsDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.StudentsDGV.BackgroundColor = System.Drawing.SystemColors.Control;
             this.StudentsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.StudentsDGV.Dock = System.Windows.Forms.DockStyle.Bottom;

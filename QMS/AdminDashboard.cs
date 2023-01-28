@@ -203,5 +203,126 @@ namespace QMS
         {
             Reset();
         }
+
+        private void txt_Qustion1_Enter(object sender, EventArgs e)
+        {
+            if (txt_Qustion1.Text == "Question ")
+            {
+                txt_Qustion1.Text = "";
+                txt_Qustion1.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Qustion1_Leave(object sender, EventArgs e)
+        {
+            if (txt_Qustion1.Text == "")
+            {
+                txt_Qustion1.Text = "Question ";
+                txt_Qustion1.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Option1_Enter(object sender, EventArgs e)
+        {
+            if (txt_Option1.Text == "Option 1")
+            {
+                txt_Option1.Text = "";
+                txt_Option1.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Option1_Leave(object sender, EventArgs e)
+        {
+            if (txt_Option1.Text == "")
+            {
+                txt_Option1.Text = "Option 1";
+                txt_Option1.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+    
+
+        private void txt_Option2_Enter(object sender, EventArgs e)
+        {
+            if (txt_Option2.Text == " Option 2")
+            {
+                txt_Option2.Text = "";
+                txt_Option2.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Option2_Leave(object sender, EventArgs e)
+        {
+            if (txt_Option2.Text == "")
+            {
+                txt_Option2.Text = " Option 2";
+                txt_Option2.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Option3_Enter(object sender, EventArgs e)
+        {
+            if (txt_Option3.Text == "Option 3")
+            {
+                txt_Option3.Text = "";
+                txt_Option3.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+
+        }
+
+        private void txt_Option3_Leave(object sender, EventArgs e)
+        {
+            if (txt_Option3.Text == "")
+            {
+                txt_Option3.Text = "Option 3";
+                txt_Option3.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Option4_Enter(object sender, EventArgs e)
+        {
+            if (txt_Option4.Text == "Option 4")
+            {
+                txt_Option4.Text = "";
+                txt_Option4.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Option4_Leave(object sender, EventArgs e)
+        {
+            if (txt_Option4.Text == "")
+            {
+                txt_Option4.Text = "Option 4";
+                txt_Option4.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Option5_Enter(object sender, EventArgs e)
+        {
+            if (txt_Option5.Text == "Answer")
+            {
+                txt_Option5.Text = "";
+                txt_Option5.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Option5_Leave(object sender, EventArgs e)
+        {
+            if (txt_Option5.Text == "")
+            {
+                txt_Option5.Text = "Answer";
+                txt_Option5.ForeColor = Color.FromArgb(71, 2, 108);
+            }
+        }
+
+        private void txt_Qustion1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QuestionDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
