@@ -72,6 +72,11 @@ namespace QMS
         {
 
         }
+        int Score = 0;
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+            
+        }
 
         private void FetchQuestions()
         {

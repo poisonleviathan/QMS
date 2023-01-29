@@ -625,6 +625,7 @@
             this.btn_submit.Text = "Submit";
             this.btn_submit.TextColor = System.Drawing.Color.White;
             this.btn_submit.UseVisualStyleBackColor = false;
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
             // comboBox1
             // 
