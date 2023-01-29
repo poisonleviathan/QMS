@@ -19,7 +19,9 @@ namespace QMS
 
         private void roundedbtn1_Click(object sender, EventArgs e)
         {
-            
+            Login_form studentQuiz = new Login_form();
+            studentQuiz.Show();
+            this.Close();
         }
     }
 }

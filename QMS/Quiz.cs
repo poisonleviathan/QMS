@@ -54,9 +54,10 @@ namespace QMS
 
                     timer1.Stop();
                     MessageBox.Show("Time Is Over");
-                    this.Hide();
                     CompleteScreen Obj = new CompleteScreen();
                     Obj.Show();
+                    this.Hide();
+                    
 
 
 
@@ -419,7 +420,9 @@ namespace QMS
             checkQ10();
 
             MessageBox.Show("" + Score);
-           
+            CompleteScreen Obj = new CompleteScreen();
+            Obj.Show();
+            this.Hide();
         }
 
         private void lbl_time_Click(object sender, EventArgs e)

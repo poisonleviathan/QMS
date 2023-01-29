@@ -579,6 +579,7 @@
             this.ClientSize = new System.Drawing.Size(1079, 646);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ScreenPanel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Subjects";
             this.Text = "Subjects";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

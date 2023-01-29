@@ -34,6 +34,7 @@
             this.Login_img = new System.Windows.Forms.PictureBox();
             this.Login_logo_img = new System.Windows.Forms.PictureBox();
             this.Login_right_panel = new System.Windows.Forms.Panel();
+            this.Teacher_panel = new System.Windows.Forms.Panel();
             this.studnet_panel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -44,7 +45,6 @@
             this.btn_studentLogin = new QMS.roundedbtn();
             this.lbl_StNo = new System.Windows.Forms.Label();
             this.txt_StudentNo = new System.Windows.Forms.TextBox();
-            this.Teacher_panel = new System.Windows.Forms.Panel();
             this.btn_login = new QMS.roundedbtn();
             this.lbl_wrong_cred = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,9 +63,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).BeginInit();
             this.Login_right_panel.SuspendLayout();
+            this.Teacher_panel.SuspendLayout();
             this.studnet_panel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.Teacher_panel.SuspendLayout();
             this.pnl_greeting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_greet)).BeginInit();
             this.panel3.SuspendLayout();
@@ -129,6 +129,21 @@
             this.Login_right_panel.Size = new System.Drawing.Size(322, 450);
             this.Login_right_panel.TabIndex = 1;
             this.Login_right_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // Teacher_panel
+            // 
+            this.Teacher_panel.Controls.Add(this.studnet_panel);
+            this.Teacher_panel.Controls.Add(this.btn_login);
+            this.Teacher_panel.Controls.Add(this.lbl_wrong_cred);
+            this.Teacher_panel.Controls.Add(this.label1);
+            this.Teacher_panel.Controls.Add(this.lbl_Uname);
+            this.Teacher_panel.Controls.Add(this.Pwd_txt);
+            this.Teacher_panel.Controls.Add(this.Uname_txt);
+            this.Teacher_panel.Controls.Add(this.lbl_pwd);
+            this.Teacher_panel.Location = new System.Drawing.Point(0, 136);
+            this.Teacher_panel.Name = "Teacher_panel";
+            this.Teacher_panel.Size = new System.Drawing.Size(322, 317);
+            this.Teacher_panel.TabIndex = 29;
             // 
             // studnet_panel
             // 
@@ -270,21 +285,6 @@
             this.txt_StudentNo.TabIndex = 31;
             this.txt_StudentNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_StudentNo.TextChanged += new System.EventHandler(this.txt_StudentNo_TextChanged);
-            // 
-            // Teacher_panel
-            // 
-            this.Teacher_panel.Controls.Add(this.studnet_panel);
-            this.Teacher_panel.Controls.Add(this.btn_login);
-            this.Teacher_panel.Controls.Add(this.lbl_wrong_cred);
-            this.Teacher_panel.Controls.Add(this.label1);
-            this.Teacher_panel.Controls.Add(this.lbl_Uname);
-            this.Teacher_panel.Controls.Add(this.Pwd_txt);
-            this.Teacher_panel.Controls.Add(this.Uname_txt);
-            this.Teacher_panel.Controls.Add(this.lbl_pwd);
-            this.Teacher_panel.Location = new System.Drawing.Point(0, 136);
-            this.Teacher_panel.Name = "Teacher_panel";
-            this.Teacher_panel.Size = new System.Drawing.Size(322, 317);
-            this.Teacher_panel.TabIndex = 29;
             // 
             // btn_login
             // 
@@ -476,11 +476,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.Login_img)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Login_logo_img)).EndInit();
             this.Login_right_panel.ResumeLayout(false);
+            this.Teacher_panel.ResumeLayout(false);
+            this.Teacher_panel.PerformLayout();
             this.studnet_panel.ResumeLayout(false);
             this.studnet_panel.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.Teacher_panel.ResumeLayout(false);
-            this.Teacher_panel.PerformLayout();
             this.pnl_greeting.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_greet)).EndInit();
             this.panel3.ResumeLayout(false);

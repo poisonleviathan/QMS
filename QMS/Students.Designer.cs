@@ -303,7 +303,7 @@
             this.lbl_time.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_time.AutoSize = true;
             this.lbl_time.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_time.Location = new System.Drawing.Point(244, 16);
+            this.lbl_time.Location = new System.Drawing.Point(256, 16);
             this.lbl_time.Name = "lbl_time";
             this.lbl_time.Size = new System.Drawing.Size(62, 25);
             this.lbl_time.TabIndex = 44;
@@ -318,6 +318,7 @@
             this.TimingBar.Name = "TimingBar";
             this.TimingBar.Size = new System.Drawing.Size(252, 23);
             this.TimingBar.TabIndex = 43;
+            this.TimingBar.Click += new System.EventHandler(this.TimingBar_Click);
             // 
             // Q10
             // 
