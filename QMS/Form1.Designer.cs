@@ -36,7 +36,6 @@
             this.Login_right_panel = new System.Windows.Forms.Panel();
             this.studnet_panel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.lbl_wrong_cred_st = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Subject_cat = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -119,7 +118,6 @@
             // Login_right_panel
             // 
             this.Login_right_panel.BackColor = System.Drawing.SystemColors.Control;
-            this.Login_right_panel.Controls.Add(this.studnet_panel);
             this.Login_right_panel.Controls.Add(this.Teacher_panel);
             this.Login_right_panel.Controls.Add(this.pnl_greeting);
             this.Login_right_panel.Controls.Add(this.panel3);
@@ -135,7 +133,6 @@
             // studnet_panel
             // 
             this.studnet_panel.Controls.Add(this.label3);
-            this.studnet_panel.Controls.Add(this.lbl_wrong_cred_st);
             this.studnet_panel.Controls.Add(this.panel1);
             this.studnet_panel.Controls.Add(this.label2);
             this.studnet_panel.Controls.Add(this.txt_Stpwd);
@@ -143,7 +140,7 @@
             this.studnet_panel.Controls.Add(this.btn_studentLogin);
             this.studnet_panel.Controls.Add(this.lbl_StNo);
             this.studnet_panel.Controls.Add(this.txt_StudentNo);
-            this.studnet_panel.Location = new System.Drawing.Point(0, 131);
+            this.studnet_panel.Location = new System.Drawing.Point(0, 0);
             this.studnet_panel.Name = "studnet_panel";
             this.studnet_panel.Size = new System.Drawing.Size(322, 322);
             this.studnet_panel.TabIndex = 36;
@@ -160,18 +157,6 @@
             this.label3.TabIndex = 39;
             this.label3.Text = "Select a Subject";
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // lbl_wrong_cred_st
-            // 
-            this.lbl_wrong_cred_st.AutoSize = true;
-            this.lbl_wrong_cred_st.Font = new System.Drawing.Font("Roboto", 10F);
-            this.lbl_wrong_cred_st.ForeColor = System.Drawing.Color.Red;
-            this.lbl_wrong_cred_st.Location = new System.Drawing.Point(59, 287);
-            this.lbl_wrong_cred_st.Name = "lbl_wrong_cred_st";
-            this.lbl_wrong_cred_st.Size = new System.Drawing.Size(211, 17);
-            this.lbl_wrong_cred_st.TabIndex = 38;
-            this.lbl_wrong_cred_st.Text = "Wrong Username \"OR\" Password";
-            this.lbl_wrong_cred_st.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panel1
             // 
@@ -221,6 +206,7 @@
             this.txt_Stpwd.Size = new System.Drawing.Size(242, 25);
             this.txt_Stpwd.TabIndex = 35;
             this.txt_Stpwd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_Stpwd.UseSystemPasswordChar = true;
             this.txt_Stpwd.TextChanged += new System.EventHandler(this.txt_Stpwd_TextChanged);
             // 
             // lbl_Type
@@ -283,9 +269,11 @@
             this.txt_StudentNo.Size = new System.Drawing.Size(242, 25);
             this.txt_StudentNo.TabIndex = 31;
             this.txt_StudentNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_StudentNo.TextChanged += new System.EventHandler(this.txt_StudentNo_TextChanged);
             // 
             // Teacher_panel
             // 
+            this.Teacher_panel.Controls.Add(this.studnet_panel);
             this.Teacher_panel.Controls.Add(this.btn_login);
             this.Teacher_panel.Controls.Add(this.lbl_wrong_cred);
             this.Teacher_panel.Controls.Add(this.label1);
@@ -379,6 +367,7 @@
             this.Uname_txt.Size = new System.Drawing.Size(242, 25);
             this.Uname_txt.TabIndex = 31;
             this.Uname_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Uname_txt.TextChanged += new System.EventHandler(this.Uname_txt_TextChanged_1);
             // 
             // lbl_pwd
             // 
@@ -528,7 +517,6 @@
         private System.Windows.Forms.TextBox txt_StudentNo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_Stpwd;
-        private System.Windows.Forms.Label lbl_wrong_cred_st;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox Subject_cat;
         private System.Windows.Forms.Panel pnl_greeting;

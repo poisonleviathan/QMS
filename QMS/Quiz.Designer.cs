@@ -112,6 +112,9 @@
             this.Q1003 = new System.Windows.Forms.RadioButton();
             this.Q1002 = new System.Windows.Forms.RadioButton();
             this.Q1001 = new System.Windows.Forms.RadioButton();
+            this.TimingBar = new System.Windows.Forms.ProgressBar();
+            this.lbl_time = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -589,13 +592,14 @@
             this.lbl_DashHeader.TabIndex = 24;
             this.lbl_DashHeader.Text = "Take A Quiz";
             this.lbl_DashHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_DashHeader.Click += new System.EventHandler(this.lbl_DashHeader_Click);
             // 
             // lbl_subject
             // 
             this.lbl_subject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_subject.AutoSize = true;
             this.lbl_subject.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_subject.Location = new System.Drawing.Point(879, 50);
+            this.lbl_subject.Location = new System.Drawing.Point(1154, 46);
             this.lbl_subject.Name = "lbl_subject";
             this.lbl_subject.Size = new System.Drawing.Size(88, 25);
             this.lbl_subject.TabIndex = 26;
@@ -615,13 +619,14 @@
             this.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_submit.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_submit.ForeColor = System.Drawing.Color.White;
-            this.btn_submit.Location = new System.Drawing.Point(614, 607);
+            this.btn_submit.Location = new System.Drawing.Point(601, 607);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(165, 52);
             this.btn_submit.TabIndex = 25;
             this.btn_submit.Text = "Submit";
             this.btn_submit.TextColor = System.Drawing.Color.White;
             this.btn_submit.UseVisualStyleBackColor = false;
+            this.btn_submit.Click += new System.EventHandler(this.btn_submit_Click);
             // 
             // comboBox1
             // 
@@ -629,7 +634,7 @@
             this.comboBox1.DataSource = this.subjectTableBindingSource;
             this.comboBox1.DisplayMember = "SName";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(667, 50);
+            this.comboBox1.Location = new System.Drawing.Point(970, 50);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(178, 21);
             this.comboBox1.TabIndex = 27;
@@ -662,6 +667,7 @@
             this.Q2.TabIndex = 19;
             this.Q2.TabStop = false;
             this.Q2.Text = "Question 1";
+            this.Q2.Enter += new System.EventHandler(this.Q2_Enter);
             // 
             // Q204
             // 
@@ -724,6 +730,7 @@
             this.Q3.TabIndex = 19;
             this.Q3.TabStop = false;
             this.Q3.Text = "Question 1";
+            this.Q3.Enter += new System.EventHandler(this.Q3_Enter);
             // 
             // Q304
             // 
@@ -786,6 +793,7 @@
             this.Q4.TabIndex = 19;
             this.Q4.TabStop = false;
             this.Q4.Text = "Question 1";
+            this.Q4.Enter += new System.EventHandler(this.Q4_Enter);
             // 
             // Q404
             // 
@@ -848,6 +856,7 @@
             this.Q5.TabIndex = 28;
             this.Q5.TabStop = false;
             this.Q5.Text = "Question 1";
+            this.Q5.Enter += new System.EventHandler(this.Q5_Enter);
             // 
             // Q504
             // 
@@ -910,6 +919,7 @@
             this.Q6.TabIndex = 19;
             this.Q6.TabStop = false;
             this.Q6.Text = "Question 1";
+            this.Q6.Enter += new System.EventHandler(this.Q6_Enter);
             // 
             // Q604
             // 
@@ -972,6 +982,7 @@
             this.Q7.TabIndex = 19;
             this.Q7.TabStop = false;
             this.Q7.Text = "Question 1";
+            this.Q7.Enter += new System.EventHandler(this.Q7_Enter);
             // 
             // Q704
             // 
@@ -1035,6 +1046,7 @@
             this.Q8.TabIndex = 19;
             this.Q8.TabStop = false;
             this.Q8.Text = "Question 1";
+            this.Q8.Enter += new System.EventHandler(this.Q8_Enter);
             // 
             // Q804
             // 
@@ -1097,6 +1109,7 @@
             this.Q9.TabIndex = 20;
             this.Q9.TabStop = false;
             this.Q9.Text = "Question 1";
+            this.Q9.Enter += new System.EventHandler(this.Q9_Enter);
             // 
             // Q904
             // 
@@ -1159,6 +1172,7 @@
             this.Q10.TabIndex = 20;
             this.Q10.TabStop = false;
             this.Q10.Text = "Question 1";
+            this.Q10.Enter += new System.EventHandler(this.Q10_Enter);
             // 
             // Q1004
             // 
@@ -1208,11 +1222,39 @@
             this.Q1001.Text = "Option 1";
             this.Q1001.UseVisualStyleBackColor = true;
             // 
+            // TimingBar
+            // 
+            this.TimingBar.Location = new System.Drawing.Point(171, 50);
+            this.TimingBar.Maximum = 300;
+            this.TimingBar.Name = "TimingBar";
+            this.TimingBar.Size = new System.Drawing.Size(252, 23);
+            this.TimingBar.TabIndex = 29;
+            this.TimingBar.Click += new System.EventHandler(this.TimingBar_Click);
+            // 
+            // lbl_time
+            // 
+            this.lbl_time.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_time.AutoSize = true;
+            this.lbl_time.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_time.Location = new System.Drawing.Point(260, 22);
+            this.lbl_time.Name = "lbl_time";
+            this.lbl_time.Size = new System.Drawing.Size(62, 25);
+            this.lbl_time.TabIndex = 30;
+            this.lbl_time.Text = "Time";
+            this.lbl_time.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_time.Click += new System.EventHandler(this.lbl_time_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 685);
+            this.Controls.Add(this.lbl_time);
+            this.Controls.Add(this.TimingBar);
             this.Controls.Add(this.Q10);
             this.Controls.Add(this.Q9);
             this.Controls.Add(this.Q8);
@@ -1361,5 +1403,8 @@
         private System.Windows.Forms.RadioButton Q1003;
         private System.Windows.Forms.RadioButton Q1002;
         private System.Windows.Forms.RadioButton Q1001;
+        private System.Windows.Forms.ProgressBar TimingBar;
+        private System.Windows.Forms.Label lbl_time;
+        private System.Windows.Forms.Timer timer1;
     }
 }
