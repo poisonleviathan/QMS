@@ -336,7 +336,9 @@ namespace QMS
       
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login_form Obj = new Login_form();
+            Obj.Show();
+            this.Hide();
         }
 
         private void TimingBar_Click(object sender, EventArgs e)
@@ -426,7 +428,10 @@ namespace QMS
             checkQ9();
             checkQ10();
 
-            MessageBox.Show("" + Score);
+            MessageBox.Show("Your Score is " + "" + Score);
+            CompleteScreen Obj = new CompleteScreen();
+            Obj.Show();
+            this.Hide();
         }
 
         private void lbl_time_Click_1(object sender, EventArgs e)

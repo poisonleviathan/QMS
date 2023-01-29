@@ -419,10 +419,8 @@ namespace QMS
             checkQ9();
             checkQ10();
 
-            MessageBox.Show("" + Score);
-            CompleteScreen Obj = new CompleteScreen();
-            Obj.Show();
-            this.Hide();
+            MessageBox.Show("Your Score is "+""+Score );
+           
         }
 
         private void lbl_time_Click(object sender, EventArgs e)
@@ -478,6 +476,11 @@ namespace QMS
         private void Q10_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void roundedbtn9_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
         }
 
         private void FetchQuestions()
@@ -702,7 +705,9 @@ namespace QMS
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login_form Obj = new Login_form();
+            Obj.Show();
+            this.Hide();
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

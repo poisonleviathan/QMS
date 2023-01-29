@@ -118,9 +118,7 @@ namespace QMS
             }
                 else if (txt_select_user.SelectedIndex != 0)
                 {
-                    studnet_panel.Visible = true;
-                
-                    
+                    studnet_panel.Visible = true;   
                     Teacher_panel.Visible = false;
                      pnl_greeting.Visible = false;
 
@@ -159,7 +157,7 @@ namespace QMS
                 }
                 else
                 {
-
+                    MessageBox.Show("Wrong Name and Password");
                 }
                 Con.Close();
 
@@ -223,6 +221,11 @@ namespace QMS
         }
 
         private void Uname_txt_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studnet_panel_Paint(object sender, PaintEventArgs e)
         {
 
         }

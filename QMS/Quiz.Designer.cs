@@ -115,6 +115,7 @@
             this.TimingBar = new System.Windows.Forms.ProgressBar();
             this.lbl_time = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.roundedbtn9 = new QMS.roundedbtn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -1248,11 +1249,34 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // roundedbtn9
+            // 
+            this.roundedbtn9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedbtn9.BackColor = System.Drawing.Color.Navy;
+            this.roundedbtn9.BackgroundColor = System.Drawing.Color.Navy;
+            this.roundedbtn9.BorderColor = System.Drawing.Color.Tomato;
+            this.roundedbtn9.BorderRadius = 18;
+            this.roundedbtn9.BorderSize = 0;
+            this.roundedbtn9.FlatAppearance.BorderSize = 0;
+            this.roundedbtn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedbtn9.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedbtn9.ForeColor = System.Drawing.Color.White;
+            this.roundedbtn9.Location = new System.Drawing.Point(429, 40);
+            this.roundedbtn9.Name = "roundedbtn9";
+            this.roundedbtn9.Size = new System.Drawing.Size(108, 41);
+            this.roundedbtn9.TabIndex = 31;
+            this.roundedbtn9.Text = "Stop ";
+            this.roundedbtn9.TextColor = System.Drawing.Color.White;
+            this.roundedbtn9.UseVisualStyleBackColor = false;
+            this.roundedbtn9.Click += new System.EventHandler(this.roundedbtn9_Click);
+            // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 685);
+            this.Controls.Add(this.roundedbtn9);
             this.Controls.Add(this.lbl_time);
             this.Controls.Add(this.TimingBar);
             this.Controls.Add(this.Q10);
@@ -1407,5 +1431,6 @@
         private System.Windows.Forms.ProgressBar TimingBar;
         private System.Windows.Forms.Label lbl_time;
         private System.Windows.Forms.Timer timer1;
+        private roundedbtn roundedbtn9;
     }
 }
