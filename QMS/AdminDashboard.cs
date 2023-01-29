@@ -153,7 +153,9 @@ namespace QMS
 
         private void btn_logout_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login_form Obj = new Login_form();
+            Obj.Show();
+            this.Hide();
         }
         private void Reset()
         {

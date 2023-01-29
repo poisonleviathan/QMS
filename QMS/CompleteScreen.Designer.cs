@@ -87,6 +87,7 @@
             this.Controls.Add(this.roundedbtn1);
             this.Controls.Add(this.lbl_DashHeader);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CompleteScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CompleteScreen";

@@ -1001,8 +1001,9 @@
             this.Controls.Add(this.Q1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Exam";
-            this.Text = "Students";
+            this.Text = "Exam";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Exam_Load);
             this.panel11.ResumeLayout(false);
