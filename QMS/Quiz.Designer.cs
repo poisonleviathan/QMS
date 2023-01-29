@@ -592,6 +592,7 @@
             this.lbl_DashHeader.TabIndex = 24;
             this.lbl_DashHeader.Text = "Take A Quiz";
             this.lbl_DashHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_DashHeader.Click += new System.EventHandler(this.lbl_DashHeader_Click);
             // 
             // lbl_subject
             // 
@@ -666,6 +667,7 @@
             this.Q2.TabIndex = 19;
             this.Q2.TabStop = false;
             this.Q2.Text = "Question 1";
+            this.Q2.Enter += new System.EventHandler(this.Q2_Enter);
             // 
             // Q204
             // 
@@ -728,6 +730,7 @@
             this.Q3.TabIndex = 19;
             this.Q3.TabStop = false;
             this.Q3.Text = "Question 1";
+            this.Q3.Enter += new System.EventHandler(this.Q3_Enter);
             // 
             // Q304
             // 
@@ -790,6 +793,7 @@
             this.Q4.TabIndex = 19;
             this.Q4.TabStop = false;
             this.Q4.Text = "Question 1";
+            this.Q4.Enter += new System.EventHandler(this.Q4_Enter);
             // 
             // Q404
             // 
@@ -852,6 +856,7 @@
             this.Q5.TabIndex = 28;
             this.Q5.TabStop = false;
             this.Q5.Text = "Question 1";
+            this.Q5.Enter += new System.EventHandler(this.Q5_Enter);
             // 
             // Q504
             // 
@@ -914,6 +919,7 @@
             this.Q6.TabIndex = 19;
             this.Q6.TabStop = false;
             this.Q6.Text = "Question 1";
+            this.Q6.Enter += new System.EventHandler(this.Q6_Enter);
             // 
             // Q604
             // 
@@ -976,6 +982,7 @@
             this.Q7.TabIndex = 19;
             this.Q7.TabStop = false;
             this.Q7.Text = "Question 1";
+            this.Q7.Enter += new System.EventHandler(this.Q7_Enter);
             // 
             // Q704
             // 
@@ -1039,6 +1046,7 @@
             this.Q8.TabIndex = 19;
             this.Q8.TabStop = false;
             this.Q8.Text = "Question 1";
+            this.Q8.Enter += new System.EventHandler(this.Q8_Enter);
             // 
             // Q804
             // 
@@ -1101,6 +1109,7 @@
             this.Q9.TabIndex = 20;
             this.Q9.TabStop = false;
             this.Q9.Text = "Question 1";
+            this.Q9.Enter += new System.EventHandler(this.Q9_Enter);
             // 
             // Q904
             // 
@@ -1163,6 +1172,7 @@
             this.Q10.TabIndex = 20;
             this.Q10.TabStop = false;
             this.Q10.Text = "Question 1";
+            this.Q10.Enter += new System.EventHandler(this.Q10_Enter);
             // 
             // Q1004
             // 
@@ -1232,6 +1242,7 @@
             this.lbl_time.TabIndex = 30;
             this.lbl_time.Text = "Time";
             this.lbl_time.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_time.Click += new System.EventHandler(this.lbl_time_Click);
             // 
             // timer1
             // 

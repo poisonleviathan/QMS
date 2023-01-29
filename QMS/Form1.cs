@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Data;
+using System.Data.SqlClient;
 using System.Web.UI.Design;
 using System.Windows.Forms;
 
@@ -10,7 +12,7 @@ namespace QMS
         {
             InitializeComponent();
         }
-
+        SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-3IN531N\SQLEXPRESS;Initial Catalog=QMS_DB;Integrated Security=True;Pooling=False");
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -117,7 +119,8 @@ namespace QMS
                 else if (txt_select_user.SelectedIndex != 0)
                 {
                     studnet_panel.Visible = true;
-
+                
+                    
                     Teacher_panel.Visible = false;
                      pnl_greeting.Visible = false;
 
@@ -127,19 +130,40 @@ namespace QMS
             
             
         }
-
+        public static string CandName = "";
         private void btn_studentLogin_Click(object sender, EventArgs e)
         {
-            if (txt_StudentNo.Text == "3998" && txt_Stpwd.Text == "st123")
+            
+            if (txt_StudentNo.Text == "" && txt_Stpwd.Text == "")
             {
-                lbl_wrong_cred_st.Visible = false;
-                Quiz studentQuiz =new Quiz();
-                studentQuiz.Show();
-                this.Hide();
+                MessageBox.Show("Enter Candidate Name and Password");
+                
+                    
+               
+               
             }
             else
             {
-                lbl_wrong_cred_st.Visible = true;
+                Con.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("select count (*) from StudentTable where CPass='"+ txt_Stpwd.Text +"' and CName='"+ txt_StudentNo.Text+"'",Con);
+               DataTable dt= new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows[0][0].ToString() =="1")
+                {
+                    CandName = txt_StudentNo.Text;
+                    Exam studentQuiz = new Exam();
+                    studentQuiz.Show();
+                    this.Hide();
+                    Con.Close();
+                 
+                }
+                else
+                {
+
+                }
+                Con.Close();
+
+                
             }
         }
 
@@ -157,14 +181,14 @@ namespace QMS
         {
             if (Uname_txt.Text=="admin" && Pwd_txt.Text=="admin123") {
 
-            lbl_wrong_cred.Visible = false;
+          
                 admin_dashboard admin = new admin_dashboard();
                 admin.Show();
                 this.Hide();
             }
             else
             {
-                lbl_wrong_cred.Visible= true;
+                
             }
         }
 
@@ -184,6 +208,21 @@ namespace QMS
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_StudentNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_wrong_cred_st_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Uname_txt_TextChanged_1(object sender, EventArgs e)
         {
 
         }
