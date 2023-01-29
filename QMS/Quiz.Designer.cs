@@ -58,6 +58,7 @@
             this.Q1 = new System.Windows.Forms.GroupBox();
             this.Q104 = new System.Windows.Forms.RadioButton();
             this.Q103 = new System.Windows.Forms.RadioButton();
+            this.Q102 = new System.Windows.Forms.RadioButton();
             this.Q101 = new System.Windows.Forms.RadioButton();
             this.lbl_DashHeader = new System.Windows.Forms.Label();
             this.lbl_subject = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.subjectTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qMS_DBDataSet = new QMS.QMS_DBDataSet();
             this.subjectTableTableAdapter = new QMS.QMS_DBDataSetTableAdapters.SubjectTableTableAdapter();
-            this.Q102 = new System.Windows.Forms.RadioButton();
             this.Q2 = new System.Windows.Forms.GroupBox();
             this.Q204 = new System.Windows.Forms.RadioButton();
             this.Q203 = new System.Windows.Forms.RadioButton();
@@ -526,6 +526,7 @@
             this.Q1.TabIndex = 18;
             this.Q1.TabStop = false;
             this.Q1.Text = "Question 1";
+            this.Q1.Enter += new System.EventHandler(this.Q1_Enter);
             // 
             // Q104
             // 
@@ -550,6 +551,18 @@
             this.Q103.TabStop = true;
             this.Q103.Text = "Option 3";
             this.Q103.UseVisualStyleBackColor = true;
+            // 
+            // Q102
+            // 
+            this.Q102.AutoSize = true;
+            this.Q102.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
+            this.Q102.Location = new System.Drawing.Point(42, 66);
+            this.Q102.Name = "Q102";
+            this.Q102.Size = new System.Drawing.Size(83, 21);
+            this.Q102.TabIndex = 1;
+            this.Q102.TabStop = true;
+            this.Q102.Text = "Option 2";
+            this.Q102.UseVisualStyleBackColor = true;
             // 
             // Q101
             // 
@@ -635,18 +648,6 @@
             // subjectTableTableAdapter
             // 
             this.subjectTableTableAdapter.ClearBeforeFill = true;
-            // 
-            // Q102
-            // 
-            this.Q102.AutoSize = true;
-            this.Q102.Font = new System.Drawing.Font("Inter Medium", 10F, System.Drawing.FontStyle.Bold);
-            this.Q102.Location = new System.Drawing.Point(42, 66);
-            this.Q102.Name = "Q102";
-            this.Q102.Size = new System.Drawing.Size(83, 21);
-            this.Q102.TabIndex = 1;
-            this.Q102.TabStop = true;
-            this.Q102.Text = "Option 2";
-            this.Q102.UseVisualStyleBackColor = true;
             // 
             // Q2
             // 
