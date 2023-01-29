@@ -17,6 +17,7 @@ namespace QMS
         {
             InitializeComponent();
             FetchQuestions();
+            timer1.Start();
 
         }
         SqlConnection Con = new SqlConnection(@"Data Source=DESKTOP-3IN531N\SQLEXPRESS;Initial Catalog=QMS_DB;Integrated Security=True;Pooling=False");
@@ -332,9 +333,15 @@ namespace QMS
             }
         }
 
+      
         private void btn_logout_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TimingBar_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void checkQ10()
@@ -391,7 +398,7 @@ namespace QMS
                     timer1.Stop();
                     MessageBox.Show("Time Is Over");
                     this.Hide();
-                    Login_form Obj = new Login_form();
+                    CompleteScreen Obj = new CompleteScreen();
                     Obj.Show();
 
 

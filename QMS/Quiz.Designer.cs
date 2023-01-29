@@ -1271,12 +1271,13 @@
             this.Controls.Add(this.Q1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1242, 692);
             this.Name = "Quiz";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "StudenQuiz";
+            this.Text = "Exam";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Quiz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
