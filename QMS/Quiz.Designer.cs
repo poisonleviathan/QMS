@@ -112,6 +112,9 @@
             this.Q1003 = new System.Windows.Forms.RadioButton();
             this.Q1002 = new System.Windows.Forms.RadioButton();
             this.Q1001 = new System.Windows.Forms.RadioButton();
+            this.TimingBar = new System.Windows.Forms.ProgressBar();
+            this.lbl_time = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -595,7 +598,7 @@
             this.lbl_subject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_subject.AutoSize = true;
             this.lbl_subject.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_subject.Location = new System.Drawing.Point(879, 50);
+            this.lbl_subject.Location = new System.Drawing.Point(1154, 46);
             this.lbl_subject.Name = "lbl_subject";
             this.lbl_subject.Size = new System.Drawing.Size(88, 25);
             this.lbl_subject.TabIndex = 26;
@@ -615,7 +618,7 @@
             this.btn_submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_submit.Font = new System.Drawing.Font("Inter Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_submit.ForeColor = System.Drawing.Color.White;
-            this.btn_submit.Location = new System.Drawing.Point(614, 607);
+            this.btn_submit.Location = new System.Drawing.Point(601, 607);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(165, 52);
             this.btn_submit.TabIndex = 25;
@@ -629,7 +632,7 @@
             this.comboBox1.DataSource = this.subjectTableBindingSource;
             this.comboBox1.DisplayMember = "SName";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(667, 50);
+            this.comboBox1.Location = new System.Drawing.Point(970, 50);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(178, 21);
             this.comboBox1.TabIndex = 27;
@@ -1208,11 +1211,38 @@
             this.Q1001.Text = "Option 1";
             this.Q1001.UseVisualStyleBackColor = true;
             // 
+            // TimingBar
+            // 
+            this.TimingBar.Location = new System.Drawing.Point(171, 50);
+            this.TimingBar.Maximum = 300;
+            this.TimingBar.Name = "TimingBar";
+            this.TimingBar.Size = new System.Drawing.Size(252, 23);
+            this.TimingBar.TabIndex = 29;
+            this.TimingBar.Click += new System.EventHandler(this.TimingBar_Click);
+            // 
+            // lbl_time
+            // 
+            this.lbl_time.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_time.AutoSize = true;
+            this.lbl_time.Font = new System.Drawing.Font("Inter Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_time.Location = new System.Drawing.Point(260, 22);
+            this.lbl_time.Name = "lbl_time";
+            this.lbl_time.Size = new System.Drawing.Size(62, 25);
+            this.lbl_time.TabIndex = 30;
+            this.lbl_time.Text = "Time";
+            this.lbl_time.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 685);
+            this.Controls.Add(this.lbl_time);
+            this.Controls.Add(this.TimingBar);
             this.Controls.Add(this.Q10);
             this.Controls.Add(this.Q9);
             this.Controls.Add(this.Q8);
@@ -1361,5 +1391,8 @@
         private System.Windows.Forms.RadioButton Q1003;
         private System.Windows.Forms.RadioButton Q1002;
         private System.Windows.Forms.RadioButton Q1001;
+        private System.Windows.Forms.ProgressBar TimingBar;
+        private System.Windows.Forms.Label lbl_time;
+        private System.Windows.Forms.Timer timer1;
     }
 }

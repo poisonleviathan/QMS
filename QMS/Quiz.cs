@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -35,8 +36,42 @@ namespace QMS
           
             return x;
         }
-        
 
+        int Chrono = 300;
+        int Count = 0 ;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+
+                Chrono -= 1;
+                Count += 1;
+                TimingBar.Value=Count;
+                lbl_time.Text = "" + Chrono;
+                
+                if (Chrono == 0)
+                {
+                    
+                    timer1.Stop();
+                    MessageBox.Show("Time Is Over");
+                    this.Hide();
+                    Login_form Obj = new Login_form();
+                    Obj.Show();
+                    
+
+
+                }
+            }
+            catch
+            {
+               
+            }
+        }
+
+        private void TimingBar_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void FetchQuestions()
         {
@@ -175,7 +210,7 @@ namespace QMS
                     Q802.Text = dr["Q02"].ToString();
                     Q803.Text = dr["Q03"].ToString();
                     Q804.Text = dr["Q04"].ToString();
-                    A7 = dr["QA"].ToString();
+                    A8 = dr["QA"].ToString();
 
                 }
                 string Query8 = "select * from QuestionTable where QId=18";
@@ -191,7 +226,7 @@ namespace QMS
                     Q902.Text = dr["Q02"].ToString();
                     Q903.Text = dr["Q03"].ToString();
                     Q904.Text = dr["Q04"].ToString();
-                    A7 = dr["QA"].ToString();
+                    A9 = dr["QA"].ToString();
 
                 }
                 string Query9 = "select * from QuestionTable where QId=19";
@@ -207,7 +242,7 @@ namespace QMS
                     Q1002.Text = dr["Q02"].ToString();
                     Q1003.Text = dr["Q03"].ToString();
                     Q1004.Text = dr["Q04"].ToString();
-                    A7 = dr["QA"].ToString();
+                    A10 = dr["QA"].ToString();
 
                 }
                
@@ -231,7 +266,7 @@ namespace QMS
 
         private void Quiz_Load(object sender, EventArgs e)
         {
-            
+            timer1.Start();
             this.subjectTableTableAdapter.Fill(this.qMS_DBDataSet.SubjectTable);
 
         }
